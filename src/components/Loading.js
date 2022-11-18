@@ -1,6 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import {Route, Link, Routes, useLocation} from 'react-router-dom';
+// import imagesLoaded from 'imagesloaded'
+
+// const imagesLoaded = require('imagesloaded');
+// Preload images
+// const preloadImages = (selector = 'img') => {
+//   return new Promise((resolve) => {
+//       imagesLoaded(document.querySelectorAll(selector), {background: true}, resolve);
+//   });
+// };
 
 import loadingCss from '../css/loading.module.scss'
 

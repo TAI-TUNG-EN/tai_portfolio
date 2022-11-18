@@ -100,7 +100,7 @@ export default function Works(){
   return(
     <>
       <Cursor cursorTypes='👋' />
-      <Loading bg_style={loadingCss.loader_works} loadingTimeControl='3000'/>
+      <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1500'/>
       <PageLayout>
         <section id={worksCss.works}>
           <Navbar />

@@ -14,7 +14,8 @@ import aboutCss from './css/about.module.scss'
 import loadingCss from './css/loading.module.scss'
 import specialContentsImg from './static/img/special_contents.png'
 import { images } from './images.ts'
-import avatarImg from './static/img/about_avatar.svg'
+// import avatarImg from './static/img/about_avatar.svg'
+import avatarImg from './static/img/about_avatar-min.png'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -84,6 +85,7 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
+
   // const [loading, setLoading] = useState(true)
   // useEffect(() => {
   //   setTimeout(() => setLoading(false), 6000)
@@ -130,6 +132,7 @@ export default function About() {
   const view_works_button_ref = useRef(null);
   const view_works_button_text_1_ref = useRef(null);
   const view_works_button_text_2_ref = useRef(null);
+  const loading_ref = useRef(null);
 
   const self_intro_ref = useRef(null);
   const special_contents_ref = useRef(null);
@@ -139,6 +142,7 @@ export default function About() {
   const [width, setWidth] = useState(window.innerWidth);
   const [kvParallax, setKvParallax] = useState([0, 0]);
   const [footerParallax, setFooterParallax] = useState([0, 0]);
+
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -297,13 +301,19 @@ export default function About() {
         exp_anchor.style.transition = 'all .7s ease-in-out';
       }
     }
+    
   }, [])
-
   
+  const loading_anchor = loading_ref.current;
+
+  function handleImageLoaded(){
+    console.log('Finished loading');
+  }
+
   return(
     <>
       <Cursor cursorTypes='👀' />
-      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='3000' />
+      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='3000' ref={loading_ref}/>
       <PageLayout>
         <section id={aboutCss.about}>
           <Navbar />
@@ -324,10 +334,13 @@ export default function About() {
               <div className={aboutCss.about_paragragh_contents_sec_container}>
                 <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
                   <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
-                  <span>毎日開いて閉じ、閉じて開くあのアプリも。</span>
-                  <span>ビジュアルなもの、そうではないもの、</span>
+                  <span>毎日開いては閉じてのあのアプリも。</span>
+                  <span>ビジュアル的なもの、そうではないもの、</span>
                   <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
                   <span>実は全てがデザインされています。</span>
+                  
+
+
                 </div>
                 <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
                   <span>だから私は信じている。</span>
@@ -350,7 +363,7 @@ export default function About() {
           <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
             <Parallax className={aboutCss.about_self_intro_contents}>
               <div className={aboutCss.about_self_intro_contents_container}>
-                <img src={avatarImg} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref}></img>
+                <img src={avatarImg} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref} onLoad = {handleImageLoaded()}></img>
                 <div className={aboutCss.about_self_intro_right_section_container}>
                   <div className={aboutCss.about_self_intro_circle_container}>
                     <div className={aboutCss.about_self_intro_circle_contents_container}>
