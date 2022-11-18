@@ -146,7 +146,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           justify-content: center;
           align-items: center;
           @include sm(){
-            flex-direction: column;
+            flex-direction: column-reverse;
           }
   
           .show_img_container{
