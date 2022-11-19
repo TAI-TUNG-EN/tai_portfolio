@@ -119,6 +119,9 @@ $COLOR_DESCRIPTION: #858A8B;
         
     }
     .banner_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 2rem 0;
       width: 75%;
       height: 50vh;

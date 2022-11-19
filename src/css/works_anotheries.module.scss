@@ -19,6 +19,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
     align-items: center;
     padding-bottom: 3rem;
   }
+  @include md(){
+    padding-bottom: 10rem;
+  }
 
 
   .kv_container{
