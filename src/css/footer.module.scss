@@ -31,6 +31,14 @@ a{
     overflow-x: hidden;
     margin-top: 0;
   }
+  @include md(){
+    overflow-x: hidden;
+    margin-top: 0;
+  }
+  @include lg(){
+    overflow-x: unset;
+    margin-top: -35vh;
+  }
 
   .upper_section_container{
     padding-top: 7.85rem;
@@ -44,6 +52,20 @@ a{
       padding-left: 20vw;
       justify-content: flex-start;
       overflow-x: hidden;
+    }
+    @include md(){
+      flex-direction: column;
+      width: 100%;
+      padding-left: 20vw;
+      justify-content: flex-start;
+      overflow-x: hidden;
+    }
+    @include lg(){
+      flex-direction: row;
+      width: 65%;
+      padding-left: unset;
+      justify-content: space-between;
+      overflow-x: unset;
     }
 
     .upper_left_container{
@@ -64,6 +86,12 @@ a{
         @include sm(){
           font-size: 2.5rem;
         }
+        @include md(){
+          font-size: 2.5rem;
+        }
+        @include lg(){
+          font-size: 4rem;
+        }
       }
     }
     .upper_right_container{
@@ -76,6 +104,15 @@ a{
         width: 100%;
         overflow-y: hidden;
       }
+      @include md(){
+        width: 100%;
+        overflow-y: hidden;
+      }
+      @include lg(){
+        width: 30%;
+        overflow-y: unset;
+        overflow-x: hidden;
+      }
 
       .upper_right_contents_prop_about{
         font-size: 1.2rem;
@@ -86,6 +123,12 @@ a{
         @include hover_footer;
         @include sm(){
           font-size: 1.3rem;
+        }
+        @include md(){
+          font-size: 1.3rem;
+        }
+        @include md(){
+          font-size: 1.1rem;
         }
       }
       .upper_right_contents_prop_hashtag{
@@ -98,6 +141,14 @@ a{
           font-size: 1rem;
           margin-bottom: 4.5rem;
         }
+        @include md(){
+          font-size: 1rem;
+          margin-bottom: 4.5rem;
+        }
+        @include md(){
+          font-size: .7rem;
+          margin-bottom: 1.5rem;
+        }
       }
       .upper_right_contents_prop_works{
         color: white;
@@ -107,6 +158,12 @@ a{
         @include hover_footer;
         @include sm(){
           font-size: 1.3rem;
+        }
+        @include md(){
+          font-size: 1.3rem;
+        }
+        @include md(){
+          font-size: 1.1rem;
         }
       }
       .upper_right_contents_prop_back_to_top{
@@ -123,6 +180,16 @@ a{
           bottom: 3vh;
           right: 10vw;
         }
+        @include md(){
+          position: absolute;
+          bottom: 3vh;
+          right: 10vw;
+        }
+        @include lg(){
+          position: unset;
+          bottom: unset;
+          right: unset;
+        }
       }
     }
   }
@@ -133,6 +200,15 @@ a{
     width: 65%;
     @include sm(){
       width: 80%;
+    }
+    @include md(){
+      width: 80%;
+    }
+    @include md(){
+      width: 80%;
+    }
+    @include lg(){
+      width: 65%;
     }
   }
 
@@ -145,6 +221,14 @@ a{
     @include sm(){
       width: 80%;
       flex-direction: column-reverse;
+    }
+    @include md(){
+      width: 80%;
+      flex-direction: column-reverse;
+    }
+    @include md(){
+      width: 65%;
+      flex-direction: row;
     }
 
     .copyright_prop{
@@ -159,12 +243,32 @@ a{
         bottom: 3vh;
         left: 10vw;
       }
+      @include md(){
+        position: absolute;
+        width: 40%;
+        bottom: 3vh;
+        left: 10vw;
+      }
+      @include lg(){
+        position: unset;
+        width: 70%;
+        bottom: unset;
+        left: unset;
+      }
     }
     .bottom_right_container{
       width: 30%;
       @include sm(){
         width: 100%;
         margin-bottom: 10vh;
+      }
+      @include md(){
+        width: 100%;
+        margin-bottom: 10vh;
+      }
+      @include lg(){
+        width: 30%;
+        margin-bottom: unset;
       }
 
       .author_container{

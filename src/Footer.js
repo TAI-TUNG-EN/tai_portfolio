@@ -29,7 +29,11 @@ export default function Footer(){
     if(isMobile){
       console.log('mobile');
       setFooterParallax([0, 0]);
-    }else{
+    }else if(isPad){
+      console.log('mobile');
+      setFooterParallax([0, 0]);
+    }
+    else{
       console.log('PC');
       setFooterParallax([50, -50]);
     }

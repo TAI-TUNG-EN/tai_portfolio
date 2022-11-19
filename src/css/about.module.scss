@@ -165,6 +165,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           display: flex;
           flex-direction: column;
         }
+        @include md(){
+        }
         .about_self_intro_img{
           // width: 50%;
           width: 21.2rem;
@@ -405,6 +407,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     align-items: center;
     @include sm(){
       height: 50vh;
+    }
+    @include md(){
+      height: 35vh;
+    }
+    @include lg(){
+      height: 70vh;
     }
 
     .about_view_my_works_button_prop_container{
