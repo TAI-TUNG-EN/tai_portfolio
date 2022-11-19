@@ -307,6 +307,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         @include md(){
           height: 57vh;
         }
+        @include lg(){
+          height: 80vh;
+        }
       }
     }
     
