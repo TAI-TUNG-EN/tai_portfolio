@@ -14,11 +14,8 @@ html{
 }
 
 $threshold-width: 768px;
-@mixin sm(){
-  @media all and (max-width: $threshold-width){
-    @content;
-  }
-}
+
+
 
 @mixin lg(){
   @media all and (min-width: $threshold-width){
@@ -26,6 +23,11 @@ $threshold-width: 768px;
   }
 }
 
+@mixin sm(){
+  @media all and (max-width: $threshold-width){
+    @content;
+  }
+}
 
 html, body{
   // font-family: 'Outfit', sans-serif; //$FONT_EN

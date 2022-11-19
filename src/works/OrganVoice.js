@@ -80,10 +80,9 @@ export default function OrganVoice(){
 
 
 
-
-                <div className={organCss.paragraph_1_description_prop}>「臓器の夜間問診」は政治大学デザインサークル「<span style={{fontFamily: FONT_EN}}>ITLAB</span>」の年次展示会で展示した作品です。</div>
+                <div className={organCss.paragraph_1_description_prop}>「臓器の夜間問診」は政治大学のデザインサークル「<span style={{fontFamily: FONT_EN}}>ITLAB</span>」の年次展示会で展示した作品です。</div>
                 <div className={organCss.paragraph_1_description_prop}>
-                大学生はよく徹夜や断食ダイエットなどの悪い生活習慣で体調を崩れたりします。「若いから大丈夫！」と言い張って、生活習慣を見直そうとしない人が自分達を含め、周りもたくさんいます。しかし、どんな丈夫な体にも限界があり、耐えられない日もいつか来ること、同世代の大学生に意識してほしいと思い、この作品を作りました。
+                大学生はよく徹夜や断食ダイエットなどの悪い生活習慣で体調が崩されたりします。「若いから大丈夫！」と言い張って、生活習慣を見直そうとしない人が自分達を含め、周りもたくさんいます。しかし、どんな丈夫な体にも限界があり、耐えられない日もいつか来ること、同世代の大学生に意識してほしいと思い、この作品を作りました。
                 </div>
               </div>
               
@@ -159,7 +158,7 @@ export default function OrganVoice(){
                 data-aos-once="false">
                 <div className={organCss.photo_description_container}>
                   <img src={organ_7} alt="everything is gonna be alright" className={organCss.photo_prop}></img>
-                  <div className={organCss.description_prop}>臓器たちからのメッセージを書いてある処方箋を注射器のおもちゃに入れて、薬として来場者に持ち帰りいただけます。</div>
+                  <div className={organCss.description_prop}>臓器たちからのメッセージが書かれた処方箋を注射器のおもちゃに入れて、薬として来場者に持ち帰りいただけます。</div>
                 </div>
                 <div className={organCss.photo_description_container}>
                   <img src={organ_8} alt="everything is gonna be alright" className={organCss.photo_prop}></img>
@@ -199,6 +198,7 @@ export default function OrganVoice(){
                     <div className={organCss.postscript_paragraph_prop}>あなたの身体が伝えたい、大事なこと。</div>
                   </div>
                 </div>
+
                 <div className={organCss.especially_thanks_container}
                   data-aos="fade-zoom-in"
                   data-aos-easing="ease-in-back"

@@ -80,12 +80,9 @@ export default function Qdinosaur(){
               <div className={dinasourCss.paragraph_1_title} style={{fontFamily: FONT_EN}}>Q dinosaur makes chat room a cozy place</div>
               <div className={dinasourCss.paragraph_1_description_container}>
                 <div className={dinasourCss.paragraph_1_description_prop}>「恐恐」は台湾語でちょっと天然バカで愛おしいと思われる人と言います。</div>
-                <div className={dinasourCss.paragraph_1_description_prop}>「出来の悪い子ほど可愛い」という言葉のように､「恐恐」は豊かな表情と天然さが溢れるポーズで癒しの存在になり、メッセージのやりとりにスパイスを加える役割を果たします。</div>
+                <div className={dinasourCss.paragraph_1_description_prop}>「出来の悪い子ほど可愛い」という言葉のように､「恐恐」は豊かな表情と天然さのあるポーズで癒しの存在になり、メッセージにスパイスを加える役割を果たします。</div>
               </div>
             </div>
-
-            
-
 
             <div className={dinasourCss.all_dinasours_container}
               data-aos="fade-zoom-in"
@@ -132,7 +129,7 @@ export default function Qdinosaur(){
                 <div className={dinasourCss.design_intro_description_container}>
                   <div className={dinasourCss.design_intro_description_title}>おすすめポイントは？</div>
                   <div className={dinasourCss.design_intro_description_prop}>可愛いだけではなく実用性も高いところがポイントです。</div>
-                  <div className={dinasourCss.design_intro_description_prop}>日常会話はもちろん､今時の流行りを乗りたいや雰囲気を和ませたい時に使えるスタンプも用意したので､どんな場面でも大活躍できて、長く使えるスタンプになります。</div>
+                  <div className={dinasourCss.design_intro_description_prop}>日常会話はもちろん､雰囲気を和ませたい時や気持ちをもっと表したい時に使えるスタンプも用意したので､どんな場面でも大活躍できて、長く使えるスタンプになります。</div>
                 </div>
                 <div className={dinasourCss.design_intro_img_container}>
                   <div className={dinasourCss.design_intro_img_content_container}>
@@ -145,7 +142,6 @@ export default function Qdinosaur(){
               </div>
             </div>
             
-            
             <div className={dinasourCss.postscript_container}>
               <div className={dinasourCss.postscript_contents_container}
                 data-aos="fade-zoom-in"
@@ -157,18 +153,17 @@ export default function Qdinosaur(){
                   <div className={dinasourCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={dinasourCss.postscript_paragraph_container}>
-                  <div className={dinasourCss.postscript_paragraph_prop}>元々口下手の私は、表情が見えない文字のやりとりがとても苦手で、「ちゃんと伝えているのかな」と、メッセージ送る度心配していました。そんな時、私を助けてくれてのはスタンプでした。表情豊かなスタンプをつけることで、より私の口調や表情が伝わるような気がします。</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>元々口下手な私は、表情が見えない文字のやりとりがとても苦手で、「ちゃんと伝わっているのか」と、メッセージを送る度心配しています。そんな時に私を助けてくれてのはスタンプでした。表情豊かなスタンプをつけることで、より私の口調や表情が伝わるような気がします。</div>
                 </div>
                 <br></br>
                 <div className={dinasourCss.postscript_paragraph_container}>
                   <div className={dinasourCss.postscript_paragraph_prop}>「こういう時、この表情のスタンプを使いたい！」</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>32</span>個スタンプの中にどうしても使わないのが入っている」</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>もっと日常的でかつ無駄のないスタンプを作りたくて、自分的に使いやすそうなものをはじめ、</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>32</span>個スタンプの中にどうしても使わないのがあるのでもったいない...」</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>もっと日常的で、無駄のないスタンプを作りたくて、自分的に使いやすそうなものをはじめ、</div>
                   <div className={dinasourCss.postscript_paragraph_prop}>周りの人にスタンプをつけたい会話やタイミングを聞きまくり、「恐恐」を描きました。</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>外国人の友達も使えるように、あえて文字を加えずに、表情と身振りだけで気持ちが伝わることを心がけていました。 </div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>外国人の友達も使えるように、あえて文字を加えずに、表情と身振りだけで気持ちを伝えることを心掛けていました。 </div>
                 </div>
-              </div>
-              
+              </div>  
             </div>
           
             <WorksBackToAnchor 

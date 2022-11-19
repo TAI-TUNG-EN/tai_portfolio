@@ -126,12 +126,12 @@ export default function EverythinsIsGonnaBeAlright(){
                       <div className={everythingCss.lyrics_contents_prop}>心に　二度と傷つかない</div>
                     </div>
                   </div>
-
+                  
                   <div className={everythingCss.paragraph_2_description_container}>
                     <div className={everythingCss.paragraph_2_description_prop}>癒しのある雰囲気が伝わるため、イラストは淡色を使用し、枠線も細くしました。</div>
                     <div className={everythingCss.paragraph_2_description_prop}>全体的に薄くなりすぎないように、テクスチャのあるシャドウで立体感を出してみました。</div>
                     <div className={everythingCss.paragraph_2_description_prop}>動画に出てきた蛇と虫は生活に溢れた悩みやストレスを象徴します。</div>
-                    <div className={everythingCss.paragraph_2_description_prop}>蛇と虫が出る度、私たちのそばにいる仲間はスプレーを持ち、パトロールし、不安を取り除いてくれます。</div>
+                    <div className={everythingCss.paragraph_2_description_prop}>蛇と虫が出るたび、私たちのそばにいる仲間はスプレーを持ち、パトロールし、不安を取り除いてくれます。</div>
                     <div className={everythingCss.paragraph_2_description_prop}>悩みが出ては消す、出ては消すを繰り返し、時間を重ねていくと、最終的に不安が一掃され、花もすくすく育てました。</div>
                   </div>
                 </div>
@@ -150,17 +150,18 @@ export default function EverythinsIsGonnaBeAlright(){
                 </div>
                 <div className={everythingCss.postscript_paragraph_container}>
                   <div className={everythingCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2020</span>年<span style={{fontFamily: FONT_EN}}>3</span>月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細くおうち生活を過ごしていました。そんな時に、大学の友人から「聞いてほしい曲がある」と、この曲が送られてきました。</div>
-                  <div className={everythingCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「あなたは一人じゃない」、歌詞に心に刺さる言葉ばかり。より多くの人に聞いてほしいと思い、この曲に合う愛おしくて、暖かい雰囲気が伝わる動画を作って、<span style={{fontFamily: FONT_EN}}>SNS</span>でシェアしようと、友達に提案した。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「あなたは一人じゃない」、歌詞に心に刺さる言葉ばかり。より多くの人に聞いてほしいと思い、この曲に合う愛おしくて、暖かい雰囲気が伝わる動画を作って、SNSでシェアしようと、友達に提案しました。<span style={{fontFamily: FONT_EN}}>SNS</span>でシェアしようと、友達に提案した。</div>
                   <div className={everythingCss.postscript_paragraph_prop}>中国語では「新年新希望」（新年に新しい希望が与える）という言葉があり、この曲を聞いてくれる人にこれからの日々に希望と期待を感じてもらいたくて、公開は大晦日に合わせました。</div>
                 </div>
                 <br></br>
                 <div className={everythingCss.postscript_paragraph_container}>
-                  <div className={everythingCss.postscript_paragraph_prop}>本当は年が替わっても、生活が大した変わらないと知っていたんげど、</div>
-                  <div className={everythingCss.postscript_paragraph_prop}>君がそばにいるから、少しだけでも良くなると信じたい。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}>本当は年が替わっても、生活が大した変わらない。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}>でも、君がそばにいるから、少しだけでも良くなると信じたい。</div>
                   <div className={everythingCss.postscript_paragraph_prop}>これからの日々は、もっと素敵なのもでありますように。</div>
                   <div className={everythingCss.postscript_paragraph_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
                 </div>
               </div>
+
               <div className={everythingCss.especially_thanks_container}
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"

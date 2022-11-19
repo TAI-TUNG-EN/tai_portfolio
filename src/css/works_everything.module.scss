@@ -101,8 +101,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         align-items: flex-start;
 
         .lyrics_container{
+          width: 100%;
           display: flex;
           flex-direction: row;
+          justify-content: flex-start;
           margin: 2rem 0;
           @include sm(){
             flex-direction: column;
@@ -110,8 +112,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           }
 
           .lyrics_contents_container{
-            width: 50%;
-            margin-right: 3rem;
+            &:nth-child(1){
+              margin-right: 2rem;
+            }
+            &:nth-child(2){
+              white-space:nowrap;
+            }
             @include sm(){
               width: 100%;
               margin: 1rem 0;

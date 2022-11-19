@@ -87,8 +87,8 @@ export default function SurfaceApporel(){
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={surfaceCss.show_project_row}>
-                  <img src={surface_3} className={surfaceCss.show_project_img_prop}></img>
-                  <img src={surface_4} className={surfaceCss.show_project_img_prop}></img>
+                  <img src={surface_1} className={surfaceCss.show_project_img_prop}></img>
+                  <img src={surface_2} className={surfaceCss.show_project_img_prop}></img>
                 </div>
               </div>
             </div>
@@ -116,8 +116,8 @@ export default function SurfaceApporel(){
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={surfaceCss.show_project_row}>
-                  <img src={surface_1} className={surfaceCss.show_project_img_prop}></img>
-                  <img src={surface_2} className={surfaceCss.show_project_img_prop}></img>
+                  <img src={surface_3} className={surfaceCss.show_project_img_prop}></img>
+                  <img src={surface_4} className={surfaceCss.show_project_img_prop}></img>
                 </div>
               </div>
             </div>
@@ -178,7 +178,12 @@ export default function SurfaceApporel(){
                 <div className={surfaceCss.postscript_paragraph_title_prop}>制作の振り返り</div>
               </div>
               <div className={surfaceCss.postscript_paragraph_container}>
-                <div className={surfaceCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>の動画を制作していた日々を思い返せば、ショーで登場されるモデルさんと服の雰囲気の確認しながら、音楽のを聞き倒してリズムを把握し、如何に服、音楽、動画を調和し、このステージを映えさせるのかをひたすら考えて、<span style={{fontFamily: FONT_EN}}>After Effects</span>で秒刻みの手作業をする時間でした。</div>
+                <div className={surfaceCss.postscript_paragraph_prop}>
+                  <span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>
+                  の動画を制作していた日々を思い返せば、
+                  <span style={{fontFamily: FONT_EN}}>After Effects</span>
+                  で秒刻みの手作業をする時間でした。ショーで登場されるモデルさんと服の雰囲気の確認しながら、音楽のを聞き倒してリズムを把握し、如何に服、音楽、動画を調和し、このステージを映えさせるのかをひたすら考えていました。
+                </div>
                 <br></br>
                 <div className={surfaceCss.postscript_paragraph_prop}>イベント当日、ステージはまだ暗いまま音楽が流され、</div>
                 <div className={surfaceCss.postscript_paragraph_prop}>パッと後ろのクリーンに映された動画で会場を照らし、ショーが始まる。</div>
@@ -191,6 +196,7 @@ export default function SurfaceApporel(){
               </div>
             </div>
           </div>
+
           
             <WorksBackToAnchor 
                 prevUrl="/works/organ_voice"
