@@ -35,6 +35,7 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
 
   useEffect(() => {
     const len = document.getElementsByClassName(`${worksCss.project_img_prop}`).length;

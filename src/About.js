@@ -154,6 +154,7 @@ export default function About() {
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
 
   const TopParagraph = () => {
     if(isMobile){
@@ -203,12 +204,12 @@ export default function About() {
   }
   
   useEffect(()=>{
-    if(!isMobile){
-      console.log('PC');
-      setKvParallax([0, -500]);
-    }else{
+    if(isMobile){
       console.log('mobile');
       setKvParallax([0, 0]);
+    }else{
+      console.log('PC');
+      setKvParallax([0, -500]);
     }
   }, [])
 

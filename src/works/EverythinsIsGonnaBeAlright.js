@@ -42,6 +42,7 @@ export default function EverythinsIsGonnaBeAlright(){
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
   if(!isMobile){width_worksBackToAnchor = '50%';}
   else{width_worksBackToAnchor = '80%'}
 

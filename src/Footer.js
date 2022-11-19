@@ -23,14 +23,15 @@ export default function Footer(){
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
 
   useEffect(()=>{
-    if(!isMobile){
-      console.log('PC');
-      setFooterParallax([50, -50]);
-    }else{
+    if(isMobile){
       console.log('mobile');
       setFooterParallax([0, 0]);
+    }else{
+      console.log('PC');
+      setFooterParallax([50, -50]);
     }
   }, [])
 

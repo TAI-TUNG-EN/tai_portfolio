@@ -85,6 +85,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     @include md(){
       height: 15vh;
     }
+    @include lg(){
+      height: 30vh;
+    }
 
     .about_paragraph_contents{
       display: flex;

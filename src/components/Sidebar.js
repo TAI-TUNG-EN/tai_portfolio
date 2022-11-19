@@ -17,6 +17,7 @@ const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text, m
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
 
   let marginTopSize;
   if(isMobile){

@@ -19,6 +19,7 @@ export default function BackTo({buttonName, url}){
       }
   }, []);
   const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
   const button_name_ref = useRef(null);
   const button_name = button_name_ref.current
   useEffect(()=>{
