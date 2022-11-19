@@ -26,7 +26,6 @@ import { images } from '../images.ts'
 export default function SurfaceApporel(){
   const FONT_EN = "'Outfit', sans-serif";
   const FONT_JP = "'BIZ UDGothic', sans-serif";
-    let width_worksBackToAnchor = '50%';
   
   useEffect(()=>{
     window.scrollTo({
@@ -48,8 +47,14 @@ export default function SurfaceApporel(){
     }, []);
     const isMobile = width <= 768;
     const isPad = (width > 768) && (width <= 992);
-    if(!isMobile){width_worksBackToAnchor = '50%';}
-    else{width_worksBackToAnchor = '80%'}
+    let width_worksBackToAnchor = '70%';
+    if(isMobile){
+      width_worksBackToAnchor = '80%'
+    } else if(isPad){
+      width_worksBackToAnchor = '75%'
+    } else{
+      width_worksBackToAnchor = '70%'
+    }
 
 
   return(

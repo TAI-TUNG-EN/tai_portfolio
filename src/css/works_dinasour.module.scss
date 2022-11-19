@@ -52,6 +52,7 @@ $COLOR_PARA: #282D2F;
           font-size: 1rem;
           color: $COLOR_PARA_DESCIPTION;
           line-height: 2rem;
+          text-align: justify;
           @include sm(){
             font-size: 1rem;
           }
@@ -90,6 +91,7 @@ $COLOR_PARA: #282D2F;
         margin: 0 0;
       }
       
+      
       .design_intro_contents_container{
         width: 75%;
         display: flex;
@@ -100,10 +102,18 @@ $COLOR_PARA: #282D2F;
           justify-content: center;
           align-items: center;
         }
+        @include md(){
+          flex-direction: column;
+        }
+        @include lg(){
+          flex-direction: row;
+        }
         
         .design_intro_img_container{
           display: flex;
           flex-direction: row;
+          justify-content: center;
+          align-items: center;
           .design_intro_img_content_container{
             display: flex;
               margin: 0 .5rem;
@@ -124,6 +134,12 @@ $COLOR_PARA: #282D2F;
           @include sm(){
             width: 90%;
             margin: 2rem 2rem;
+          }
+          @include md(){
+            width: 87%;
+          }
+          @include lg(){
+            width: 50%;
           }
           .design_intro_description_title{
             font-family: $FONT_JP;
@@ -178,6 +194,9 @@ $COLOR_PARA: #282D2F;
         @include sm(){
           padding: 3rem 2.5rem;
           width: 70%;
+        }
+        @include md(){
+          width: 60%;
         }
 
         .postscript_paragraph_container{

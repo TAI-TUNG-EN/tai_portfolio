@@ -42,7 +42,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         width: 85%;
       }
       @include md(){
-        width: 85%;
+        width: 75%;
       }
 
       .paragraph_1_title{
@@ -277,6 +277,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       .especially_thanks_contents_container{
         width: calc(40% + 8rem);
         margin: 2rem 0;
+        @include md(){
+          width: calc(60% + 8rem);
+        }
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;

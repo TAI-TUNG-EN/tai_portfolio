@@ -24,7 +24,6 @@ import dinasour_5 from '../static/img/works/dinasour/dinosaur_02_2.png'
 export default function Qdinosaur(){
   const FONT_EN = "'Outfit', sans-serif";
   const FONT_JP = "'BIZ UDGothic', sans-serif";
-  let width_worksBackToAnchor = '50%';
 
   const [width, setWidth] = useState(window.innerWidth);
   function handleWindowSizeChange() {
@@ -38,11 +37,23 @@ export default function Qdinosaur(){
   }, []);
   const isMobile = width <= 768;
   const isPad = (width > 768) && (width <= 992);
-  if(!isMobile){width_worksBackToAnchor = '50%';}
-  else{width_worksBackToAnchor = '80%'}
+  let width_worksBackToAnchor = '70%';
+  if(isMobile){
+    width_worksBackToAnchor = '80%'
+  } else if(isPad){
+    width_worksBackToAnchor = '75%'
+  } else{
+    width_worksBackToAnchor = '70%'
+  }
 
   useEffect(() => {
-    if(!isMobile){
+    if(isMobile){
+      document.getElementById('design_show_to_reverse').style.flexDirection = 'column';
+
+    }else if(isPad){
+      document.getElementById('design_show_to_reverse').style.flexDirection = 'column';
+
+    }else{
       document.getElementById('design_show_to_reverse').style.flexDirection = 'row-reverse';
     }
   }, []);

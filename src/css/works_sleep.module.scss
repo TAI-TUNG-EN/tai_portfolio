@@ -28,7 +28,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       font-family: $FONT_JP;
       font-weight: 400;
       font-size: .85rem;
-      line-height: 2rem;
+      line-height: 1.5rem;
       color: $COLOR_GRAY;
       letter-spacing: .1rem;
       margin-top: 2rem;
@@ -90,12 +90,24 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         @include sm(){
           flex-direction: column;
         }
+        @include md(){
+          flex-direction: column;
+        }
+        @include lg(){
+          flex-direction: row;
+        }
 
         .reason_contents_each_container{
           display: flex;
           flex-direction: column;
           @include sm(){
             margin: 1rem 0;
+          }
+          @include md(){
+            margin: 1rem 0;
+          }
+          @include lg(){
+            margin: 0;
           }
 
           .reason_title_prop{
@@ -159,6 +171,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           @include sm(){
             flex-direction: column-reverse;
           }
+          @include md(){
+            flex-direction: column-reverse;
+          }
+          @include lg(){
+            flex-direction: row;
+          }
   
           .show_img_container{
             width: 50%;
@@ -170,6 +188,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
               margin: 0 0;
               justify-content: center;
               align-items: center;
+            }
+            @include md(){
+              width: 100%;
+              margin: 0;
+            }
+            @include lg(){
+              width: 50%;
+              margin-right: 1.5rem;
             }
           
             .show_img_prop{
@@ -201,6 +227,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
               margin: 1rem 0;
               width: 80%;
             }
+            @include md(){
+              width: 100%;
+              margin: 0;
+            }
+            @include lg(){
+              width: 50%;
+              margin-left: 1.5rem;
+            }
   
             .show_description_title_prop{
               font-family: $FONT_JP;
@@ -211,6 +245,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
               @include sm(){
                 font-size: 1.2rem;
                 line-height: 2rem;
+              }
+              @include md(){
+                margin: .1rem 0;
+              }
+              @include lg(){
+                max-resolution: 1rem 0;
               }
             }
             .show_description_contents_container{
@@ -264,6 +304,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           width: 80vw;
           height: 80vh;
         }
+        @include md(){
+          height: 57vh;
+        }
       }
     }
     
@@ -291,6 +334,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         @include sm(){
           padding: 3rem 2.5rem;
           width: 70%;
+        }
+        @include md(){
+          width: 60%;
         }
 
         .postscript_paragraph_container{
@@ -333,6 +379,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       .especially_thanks_contents_container{
         width: calc(40% + 8rem);
         margin: 2rem 0;
+        @include md(){
+          width: calc(60% + 8rem);
+        }
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;

@@ -110,6 +110,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             flex-direction: column;
             margin: 1rem 0;
           }
+          @include md(){
+            flex-direction: column;
+          }
 
           .lyrics_contents_container{
             &:nth-child(1){
@@ -121,6 +124,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             @include sm(){
               width: 100%;
               margin: 1rem 0;
+            }
+            @include md(){
+              margin: .5rem 0;
             }
 
             .lyrics_contents_prop{
@@ -183,6 +189,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           padding: 3rem 2.5rem;
           width: 70%;
         }
+        @include md(){
+          width: 60%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
@@ -224,6 +233,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       .especially_thanks_contents_container{
         width: calc(40% + 8rem);
         margin: 2rem 0;
+        @include md(){
+          width: calc(60% + 8rem);
+        }
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;

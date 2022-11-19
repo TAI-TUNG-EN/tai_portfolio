@@ -130,6 +130,12 @@ $COLOR_DESCRIPTION: #858A8B;
         height: 30vh;
         margin: 0 0;
       }
+      @include md(){
+        height: 20vh;
+      }
+      @include lg(){
+        height: 50vh;
+      }
       .banner_img_prop{
         width: 100%;
         height: 100%;

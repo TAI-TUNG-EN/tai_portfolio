@@ -146,6 +146,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           padding: 3rem 2.5rem;
           width: 70%;
         }
+        @include md(){
+          width: 80%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
@@ -187,6 +190,9 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       .especially_thanks_contents_container{
         width: calc(75% + 5rem);
         margin: 2rem 0;
+        @include md(){
+          width: calc(80% + 8rem);
+        }
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;
