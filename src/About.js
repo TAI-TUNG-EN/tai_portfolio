@@ -155,6 +155,53 @@ export default function About() {
   }, []);
   const isMobile = width <= 768;
 
+  const TopParagraph = () => {
+    if(isMobile){
+      return(
+        <div className={aboutCss.about_paragragh_contents_sec_container}>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
+            <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
+            <span>毎日開いては閉じてのあのアプリも。</span>
+            <span>ビジュアル的なもの、そうではないもの、私たちの行動や体験、あたりまえに繰り返している日常、実は全てがデザインされています。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
+            <span>だから私は信じている。</span>
+            <span>物事をデザインするのによって私たちの生活をよくすること。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
+            <span>だから私は考えている。</span>
+            <span>何かブラッシュアップできることがないか。何か新しいアイデアを生み出せるではないか。今までも、これからも、より良い明日のために、精度と質の高いデザインを追求し続けます。</span>
+          </div>
+        </div>
+      )
+    }else{
+      return(
+        <div className={aboutCss.about_paragragh_contents_sec_container}>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
+            <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
+            <span>毎日開いては閉じてのあのアプリも。</span>
+            <span>ビジュアル的なもの、そうではないもの、</span>
+            <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
+            <span>実は全てがデザインされています。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
+            <span>だから私は信じている。</span>
+            <span>物事をデザインするのによって私たちの生活をよくすること。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
+            <span>だから私は考えている。</span>
+            <span>何かブラッシュアップできることがないか。</span>
+            <span>何か新しいアイデアを生み出せるではないか。</span>
+          </div>
+          <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
+            <span>今までも、これからも、より良い明日のために、</span>
+            <span>精度と質の高いデザインを追求し続けます。</span>
+          </div>
+        </div>
+      )
+    }
+  }
+  
   useEffect(()=>{
     if(!isMobile){
       console.log('PC');
@@ -313,7 +360,7 @@ export default function About() {
   return(
     <>
       <Cursor cursorTypes='👀' />
-      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='3000' ref={loading_ref}/>
+      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='1000' ref={loading_ref}/>
       <PageLayout>
         <section id={aboutCss.about}>
           <Navbar />
@@ -331,32 +378,7 @@ export default function About() {
 
           <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
             <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
-              <div className={aboutCss.about_paragragh_contents_sec_container}>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
-                  <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
-                  <span>毎日開いては閉じてのあのアプリも。</span>
-                  <span>ビジュアル的なもの、そうではないもの、</span>
-                  <span>私たちの行動や体験、あたりまえに繰り返している日常、</span>
-                  <span>実は全てがデザインされています。</span>
-                  
-
-
-                </div>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
-                  <span>だから私は信じている。</span>
-                  <span>物事をデザインするのによって私たちの生活をよくすること。</span>
-                </div>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
-                  <span>だから私は考えている。</span>
-                  <span>何かブラッシュアップできることがないか。</span>
-                  <span>何か新しいアイデアを生み出せるではないか。</span>
-                </div>
-                <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
-                  <span>今までも、これからも、より良い明日のために、</span>
-                  <span>精度と質の高いデザインを追求し続けます。</span>
-                </div>
-              </div>
-              
+              <TopParagraph />
             </Parallax>
           </div>
 
