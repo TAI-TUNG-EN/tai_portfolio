@@ -11,9 +11,12 @@ import BackTo from './BackTo';
 import projectKvCss from '../css/project_kv_layout.module.scss'
 import arrow from '../static/icons/arrow_up_right.svg'
 
-export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, bannerImgPosition, url, urlTitle, urlNeed}){
+
+
+export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, bannerImgPosition, url, urlTitle, urlNeed, comment}){
   console.log(kv_column_direction);
   var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
+  
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -73,8 +76,8 @@ export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, 
               </div>
             </div>
           </div>
-          
-          
+        
+          <div>{ comment }</div>
         </div>
         
         <div className={projectKvCss.banner_container}>

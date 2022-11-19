@@ -24,6 +24,17 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
     justify-content: flex-start;
     align-items: center;
 
+    .project_kv_comment_prop{
+      font-family: $FONT_JP;
+      font-weight: 400;
+      font-size: .85rem;
+      line-height: 2rem;
+      color: $COLOR_GRAY;
+      letter-spacing: .1rem;
+      margin-top: 2rem;
+
+    }
+
     .paragraph_1_container{
       width: 65%;
       margin: 2rem 0;

@@ -61,8 +61,18 @@ export default function SleepWell(){
               kv_column_direction="column"
               nameEN="SLEEP WELL"
               type="Application design (School project)" roles={["Direction, Project Management,", "Design"]} 
-              date="2018.10-2018.12" tool="Adobe XD" 
+              date="2018.10-2018.12" tool="Xmind, Adobe XD" 
               url="http://tuip2t5.weebly.com/" urlTitle="Project site"
+              comment={<div className={sleepCss.project_kv_comment_prop}>
+                <span style={{fontFamily: FONT_EN}}>※Project site</span>
+                は
+                <span style={{fontFamily: FONT_EN}}>weebly</span>
+                で作成したもので、
+                <span style={{fontFamily: FONT_EN}}>SSL</span>
+                を設置しておらず、閲覧できない恐れがあります。（
+                <span style={{fontFamily: FONT_EN}}>Safari</span>
+                にでご覧いただけます。）
+              </div>}
               bannerImg={banner}/>
             
             <div className={sleepCss.paragraph_1_container}
