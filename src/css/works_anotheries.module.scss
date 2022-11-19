@@ -13,14 +13,11 @@ $COLOR_PARA_DESCIPTION: #282D2F;
   justify-content: flex-end;
   background: $COLOR_BG;
   @include sm(){
-    padding-bottom: 3rem;
-  }
-
-  @include sm(){
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3rem;
   }
 
 
@@ -39,6 +36,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       justify-content: center;
       align-items: flex-start;
       @include sm(){
+        width: 85%;
+      }
+      @include md(){
         width: 85%;
       }
 
@@ -189,6 +189,10 @@ $COLOR_PARA_DESCIPTION: #282D2F;
                 font-size: 1rem;
                 line-height: 2rem;
               }
+              @include md(){
+                font-size: .85rem;
+                line-height: 2rem;
+              }
             }
           }
           .paragraph_2_img_container{
@@ -225,6 +229,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         @include sm(){
           padding: 3rem 2.5rem;
           width: 70%;
+        }
+        @include md(){
+          width: 60%;
         }
 
         .postscript_paragraph_container{

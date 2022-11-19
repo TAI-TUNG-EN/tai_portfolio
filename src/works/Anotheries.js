@@ -47,8 +47,18 @@ export default function Anotheries() {
     }, []);
     const isMobile = width <= 768;
     const isPad = (width > 768) && (width <= 992);
-    if(!isMobile){width_worksBackToAnchor = '50%';}
-    else{width_worksBackToAnchor = '80%'}
+    
+    var paragraphTwoDescriptionMargin = '2.5rem';
+    if(isMobile){
+        width_worksBackToAnchor = '80%'
+        paragraphTwoDescriptionMargin = '0';
+    } else if(isPad){
+        width_worksBackToAnchor = '75%'
+        paragraphTwoDescriptionMargin = '1rem';
+    } else{
+        width_worksBackToAnchor = '50%'
+        paragraphTwoDescriptionMargin = '3rem'
+    }
 
 
     window.addEventListener('load', AOS.refresh);
@@ -171,7 +181,7 @@ export default function Anotheries() {
                                     data-aos-once="false">
                                     <div className={anotheriesCss.paragraph_2_text_container}>
                                         <div className={anotheriesCss.paragraph_2_title}>さりげない遊び心</div>
-                                        <div className={anotheriesCss.paragraph_2_description} style={{marginBottom: '2.5rem'}}>
+                                        <div className={anotheriesCss.paragraph_2_description} style={{marginBottom: paragraphTwoDescriptionMargin}}>
                                         旅の楽しさ・ワクワク感が伝わるため、写真の動きにこだわってデザインする他、お問い合わせフォームの写真はサイトに未公開のものにして、お問い合わせ完了ページでユーザーにプレゼントするのも私たちささやかな遊び心です。
                                         </div>
                                     </div>
