@@ -420,7 +420,7 @@ export default function About() {
           <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
             <div className={aboutCss.about_special_contents_prop_container}>
               <div className={aboutCss.about_special_contents_title}>Special content - #hashtags of me</div>
-              <a href="https://yihanyozikua.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
+              <a href="https://tai-tung-en.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
                 <img src={specialContentsImg} className={aboutCss.special_contents_img_prop}></img>
               </a>
             </div>
