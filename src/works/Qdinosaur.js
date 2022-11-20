@@ -82,7 +82,7 @@ export default function Qdinosaur(){
               url="https://store.line.me/stickershop/product/14468519" 
               urlTitle="Sticker page"
               bannerImg={banner}
-              bannerSize="20vh"/>
+              />
           
             <div className={dinasourCss.paragraph_1_container}
               data-aos="fade-zoom-in"
