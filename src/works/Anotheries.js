@@ -21,6 +21,10 @@ import anotheries_3 from '../static/img/works/anotheries/anotheries_contact_form
 import anotheries_photo_1 from '../static/img/works/anotheries/anotheries_02.png'
 import anotheries_photo_2 from '../static/img/works/anotheries/anotheries_03.png'
 import anotheries_photo_3 from '../static/img/works/anotheries/anotheries_04.png'
+import show_page_1 from '../static/img/works/anotheries/show_page_1.png'
+import show_page_2 from '../static/img/works/anotheries/show_page_2.png'
+import show_page_3 from '../static/img/works/anotheries/show_page_3.png'
+import show_page_4 from '../static/img/works/anotheries/show_page_4.png'
 
 export default function Anotheries() {
     const FONT_EN = "'Outfit', sans-serif";
@@ -114,10 +118,6 @@ export default function Anotheries() {
                             </div>
                         </div>
 
-                        
-
-
-
                         <div className={anotheriesCss.middleImg}
                             data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
@@ -193,7 +193,26 @@ export default function Anotheries() {
                             </div>
                         </div>
                         
-                        
+                        <div className={anotheriesCss.paragraph_1_container}
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-offset="0"
+                            data-aos-duration="300"
+                            data-aos-once="false">
+                            <div className={anotheriesCss.paragraph_1_title}>更新しやすさを重視したテンプレートづくり</div>
+                            <div className={anotheriesCss.paragraph_1_description_container}>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>今後の更新しやすさを考慮し、下層デザインはいくつかのパターンを作成し、テンプレート化しました。追加する際には写真とテキストのボリュームによって、適正なテンプレートを選んで投稿するだけです。</div>
+                            </div>
+                        </div>
+
+                        <div className={anotheriesCss.show_page_container}>
+                            <div className={anotheriesCss.show_page_contents_container}>
+                                <img src={show_page_1} className={anotheriesCss.show_page_prop}></img>
+                                <img src={show_page_2} className={anotheriesCss.show_page_prop}></img>
+                                <img src={show_page_3} className={anotheriesCss.show_page_prop}></img>
+                                <img src={show_page_4} className={anotheriesCss.show_page_prop}></img>
+                            </div>
+                        </div>
 
                         <div className={anotheriesCss.postscript_container}
                             data-aos="fade-zoom-in"
