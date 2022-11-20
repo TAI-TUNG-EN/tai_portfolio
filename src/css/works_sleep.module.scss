@@ -32,6 +32,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       color: $COLOR_GRAY;
       letter-spacing: .1rem;
       margin-top: 2rem;
+      @include md(){
+        font-size: 1rem;
+        line-height: 1.8rem;
+      }
+      @include lg(){
+        font-size: .85rem;
+        line-height: 1.5rem;
+      }
 
     }
 
@@ -64,6 +72,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           line-height: 2rem;
           @include sm(){
             font-size: 1rem;
+          }
+          @include md(){
+            font-size: 1rem;
+            line-height: 1.8rem;
+          }
+          @include lg(){
+            font-size: .85rem;
+            line-height: 2rem;
           }
 
         }
@@ -265,6 +281,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
                   font-size: 1rem;
                   line-height: 2rem;
                 }
+                @include md(){
+                  font-size: 1rem;
+                  line-height: 1.8rem;
+                }
+                @include lg(){
+                  font-size: .85rem;
+                  line-height: 1.8rem;
+                }
   
               }
             }
@@ -355,6 +379,13 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             @include sm(){
               font-size: 1rem;
             }
+            @include md(){
+              font-size: 1rem;
+              line-height: 1.8rem;
+            }
+            @include lg(){
+              font-size: .75rem;
+            }
 
           }
           .postscript_paragraph_prop{
@@ -366,6 +397,15 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             @include sm(){
               font-size: 1rem;
               line-height: 2rem;
+            }
+            @include md(){
+              font-size: 1rem;
+              line-height: 1.8rem;
+              
+            }
+            @include lg(){
+              font-size: .75rem;
+              line-height: 1.5rem;
             }
 
 

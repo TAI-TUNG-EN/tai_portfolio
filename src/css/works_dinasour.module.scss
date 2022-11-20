@@ -198,6 +198,9 @@ $COLOR_PARA: #282D2F;
         @include md(){
           width: 60%;
         }
+        @include lg(){
+          width: 40%;
+        }
 
         .postscript_paragraph_container{
           display: flex;
@@ -212,6 +215,13 @@ $COLOR_PARA: #282D2F;
             @include sm(){
               font-size: 1rem;
             }
+            @include md(){
+              font-size: 1rem;
+              line-height: 1.8rem;
+            }
+            @include lg(){
+              font-size: .75rem;
+            }
 
           }
           .postscript_paragraph_prop{
@@ -223,6 +233,15 @@ $COLOR_PARA: #282D2F;
             @include sm(){
               font-size: 1rem;
               line-height: 2rem;
+            }
+            @include md(){
+              font-size: 1rem;
+              line-height: 1.8rem;
+              
+            }
+            @include lg(){
+              font-size: .75rem;
+              line-height: 1.5rem;
             }
 
 
