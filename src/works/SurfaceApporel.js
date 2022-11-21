@@ -168,7 +168,7 @@ export default function SurfaceApporel(){
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={surfaceCss.present_by_text_prop}>
-                  <span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION</span>は大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部は学生が携わるのが特徴で、大阪をはじめ、海外を含めて15都市での開催実績があります。<span style={{fontFamily: FONT_EN}}>15</span>都市での開催実績があります。
+                  <span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION</span>は大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部は学生が携わるのが特徴で、大阪をはじめ、海外を含めて<span style={{fontFamily: FONT_EN}}>15</span>都市での開催実績があります。
                 </div>
               </div>
             </div>

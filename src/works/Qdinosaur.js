@@ -116,7 +116,7 @@ export default function Qdinosaur(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <div className={dinasourCss.paragraph_1_title} style={{fontFamily: FONT_EN}}>可愛さだけではなく、実用性も高いスタンプへ</div>
+              <div className={dinasourCss.paragraph_1_title}>可愛さだけではなく、実用性も高いスタンプへ</div>
               <div className={dinasourCss.paragraph_1_description_container}>
                 <div className={dinasourCss.paragraph_1_description_prop}>「恐恐」に、二つの取り組みをしました。</div>
                 <div className={dinasourCss.paragraph_1_description_prop}>◆現行スタンプの<span style={{fontFamily: FONT_EN}}>Case study</span>を行ったり、スタンプを求める会話のシーンとタイミングを中心に周りの人にヒアリングしたり、ユーザーのニーズに応えるスタンプを作成しました。</div>

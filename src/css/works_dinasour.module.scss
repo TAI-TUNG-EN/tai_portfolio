@@ -165,6 +165,15 @@ $COLOR_PARA: #282D2F;
             font-size: 1rem;
             color: $COLOR_PARA;
             line-height: 2rem;
+            @include sm(){
+              @include sm_content_font;
+            }
+            @include md(){
+              @include md_content_font;
+            }
+            @include lg(){
+              @include lg_content_font;
+            }
             
             &:nth-child(1){
               font-size: 1rem;

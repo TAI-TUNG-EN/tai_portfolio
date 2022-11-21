@@ -168,12 +168,12 @@ export default function EverythinsIsGonnaBeAlright(){
                 </div>
                 <div className={everythingCss.postscript_paragraph_container}>
                   <div className={everythingCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2020</span>年<span style={{fontFamily: FONT_EN}}>3</span>月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細くおうち生活を過ごしていました。そんな時に、大学の友人から「聞いてほしい曲がある」と、この曲が送られてきました。</div>
-                  <div className={everythingCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「ここに悲しみがない」、歌詞に心に刺さる言葉ばかり。より多くの人に聞いてほしいと思い、この曲に合う動画を作って、SNSでシェアしようと、友人に提案しました。<span style={{fontFamily: FONT_EN}}>SNS</span>でシェアしようと、友達に提案した。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「ここに悲しみがない」、歌詞に心に刺さる言葉ばかり。より多くの人に聞いてほしいと思い、この曲に合う動画を作って、<span style={{fontFamily: FONT_EN}}>SNS</span>でシェアしようと、友達に提案した。</div>
                   <div className={everythingCss.postscript_paragraph_prop}>中国語では「新年新希望」（新年に新しい希望が与える）という言葉があり、この曲を聞いてくれる人にこれからの日々に希望と期待を感じてもらいたくて、公開は大晦日に合わせました。</div>
                 </div>
                 <br></br>
                 <div className={everythingCss.postscript_paragraph_container}>
-                  <div className={everythingCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2</span>年後の今でも私はよくこの曲を聞いています。しかし、動画を見返してみると、一つ反省点がありました。ループ動画とはいえ、4分ほどの尺で全く同じ画面が続いて、少し単調だと感じます。「あなたを支える人がずっとそばにいます」のコンセプトに合わせて、時間の流れを感じられる背景や色味の変化を加えたらいいと思います。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2</span>年後の今でも私はよくこの曲を聞いています。しかし、動画を見返してみると、一つ反省点がありました。ループ動画とはいえ、<span style={{fontFamily: FONT_EN}}>4</span>分ほどの尺で全く同じ画面が続いて、少し単調だと感じます。「あなたを支える人がずっとそばにいます」のコンセプトに合わせて、時間の流れを感じられる背景や色味の変化を加えたらいいと思います。</div>
                 </div>
               </div>
 

@@ -146,7 +146,7 @@ export default function SleepWell(){
                 <div className={sleepCss.paragraph_1_description_prop}>◆寝つきが悪い</div>
                 <div className={sleepCss.paragraph_1_description_prop}>睡眠日記で気持ちを整理したり、ホワイトノイズの曲で心をリラックスしたり、眠りにつきやすい状態になることを手伝う機能を充実します。</div>
                 <div className={sleepCss.paragraph_1_description_prop}>◆寝る時間が足りない</div>
-                <div className={sleepCss.paragraph_1_description_prop}>睡眠時間を把握やすいため、毎日の睡眠状況を記録し、睡眠時間は6時間未満だとリマインドの通知が来るようにします。</div>
+                <div className={sleepCss.paragraph_1_description_prop}>睡眠時間を把握やすいため、毎日の睡眠状況を記録し、睡眠時間は<span style={{fontFamily: FONT_EN}}>6</span>時間未満だとリマインドの通知が来るようにします。</div>
                 <div className={sleepCss.paragraph_1_description_prop}>◆良い睡眠習慣をつけたい</div>
                 <div className={sleepCss.paragraph_1_description_prop}>睡眠状況を可視化する以外、朝活任務の機能で任務を設定し、達成したらインセンティブとしてテーマの購入で使えるポイントを配布することで、早寝早起きの動機づけを高めます。</div>
               </div>
@@ -262,7 +262,7 @@ export default function SleepWell(){
                 <div className={sleepCss.postscript_paragraph_container}>
                   <div className={sleepCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>」は授業の課題で制作した作品ですが、<span style={{fontFamily: FONT_EN}}>Case study</span>をはじめ、<span style={{fontFamily: FONT_EN}}>Functional map、UI flow、Flow chat</span>で情報アーキテクチャを整理し、ワイヤーフレームとモックアップを通してデザインを作り、最後はプロトタイプを使用し、ターゲットユーザーにテストを実施しました。</div>
                   <div className={sleepCss.postscript_paragraph_prop}>こうして一連のデザインプロセスをしっかり行い、試行錯誤しながら制作することが私にとってとても貴重な経験であり、サービスデザインの深さと面白さを感じるきっかけになりました。</div>
-                  <div className={sleepCss.postscript_paragraph_prop}>健康と睡眠に意識を向けるつもりなのに、課題や趣味、つい他のことを優先して、睡眠の質が二の次になってしまいます。私たちが抱えた悩みをもとに、同世代の方の共通課題を洗い出し、それをテーマにして、サービスを作りました。<span style={{fontFamily: FONT_EN}}>SLEEP WELL</span>」を作りました。</div>
+                  <div className={sleepCss.postscript_paragraph_prop}>健康と睡眠に意識を向けるつもりなのに、課題や趣味、つい他のことを優先して、睡眠の質が二の次になってしまいます。私たちが抱えた悩みをもとに、同世代の方の共通課題を洗い出し、それをテーマにして、サービスを作りました。</div>
                 </div>                
 
               </div>
