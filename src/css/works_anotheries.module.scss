@@ -174,12 +174,17 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
           .paragraph_2_text_container{
             width: 100%;
-            // height: 20vh;
             margin-bottom: 2.5rem;
             @include sm(){
               width: 90%;
               margin-bottom: 1.5rem;
               height: unset;
+            }
+            @include md(){
+              height: 25vh;
+            }
+            @include lg(){
+              height: 30vh;
             }
 
             .paragraph_2_title{
@@ -196,16 +201,14 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               font-size: .75rem;
               color: $COLOR_BLACK;
               line-height: 1.5rem;
-              margin-bottom: 2rem;
+              // margin-bottom: 2rem;
               @include sm(){
                 @include sm_content_font;
               }
               @include md(){
-                height: 15vh;
                 @include md_content_font;
               }
               @include lg(){
-                height: 15vh;
                 @include lg_content_font;
               }
             }
