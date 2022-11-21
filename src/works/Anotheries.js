@@ -92,15 +92,16 @@ export default function Anotheries() {
                             <div className={anotheriesCss.paragraph_1_title}>思い出からもう一つの旅へ</div>
                             <div className={anotheriesCss.paragraph_1_description_container}>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>
-                                    <span style={{fontFamily: FONT_EN}}>Anotheries</span>
-                                    は
-                                    <span style={{fontFamily: FONT_EN}}>Another</span>
-                                    と
-                                    <span style={{fontFamily: FONT_EN}}>memories</span>
-                                    の意味に合わせた造語です。一つ一つ旅の思い出を集め、「思い出からもう一つの旅へ」をコンセプトに。</div>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>写真と言葉を通して私たちが旅先で見たもの・感じたことを共有し、共感を持ってもらい、人々と繋ぎたいと思います。</div>
+                                    <span style={{fontFamily: FONT_EN}}>Anotheries</span>は<span style={{fontFamily: FONT_EN}}>Another</span>と<span style={{fontFamily: FONT_EN}}>memories</span>
+                                    の意味に合わせた造語です。一つ一つ旅の思い出を集め、次の旅のきっかけになります。
+                                </div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>「思い出からもう一つの旅へ」をコンセプトにしました。</div>
+                                <br></br>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>元々旅行が好きな私たちは、よく自分のSNSで旅行の情報と写真をシェアします。そして少しつづ周りの人から「この間シェアしたところに行きました」、「行く前に書いてあった経験談をチェックしてよかった」などの声をもらえるようになって、私たちの旅行の思い出が、他の人と繋いでいることにシンプルに嬉しく思いました。もっと多くの人の役に立ちたい、しかし、SNSだとシェアの仕方と届ける人に限りがあるので、サイト制作することになりました。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>写真と言葉を通して、私たちが旅先で見たもの、感じたことを共有し、共感を持ってもらい、人々と繋ぎたいと思います。</div>
                             </div>
                         </div>
+
 
                         <div className={anotheriesCss.paragraph_1_container}
                             data-aos="fade-zoom-in"
@@ -112,11 +113,16 @@ export default function Anotheries() {
                                 旅行サイトほど情報満載ではないけど、<span style={{fontFamily: FONT_EN}}>SNS</span>投稿より伝えたいことがある
                             </div>
                             <div className={anotheriesCss.paragraph_1_description_container}>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>綺麗な景色、美味しいご飯、友達との楽しい時間、旅行に求めるものは人それぞれ。</div>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>大事なのは、気持ちを共有すること。</div>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>なので、旅行サイトみたい、アクセスからモデルコースまで詳しく紹介するつもりはないです。でも、自分のSNSのようなただの感想シェアにもなりたくありません。インターネットで載せていない､実際に訪れた私たちだけ知っていること、試して良かったと思う遊び方など、旅をより一層楽しめるように、その経験談をシェアし、ユーザーにとって有意義の情報を提供したいと思います。<span style={{fontFamily: FONT_EN}}>SNS</span>のようなただの感想シェアにもなりたくありません。インターネットで載せていない､実際に訪れた私たちだけ知っていること、試して良かったと思う遊び方など、旅をより一層楽しめるように、その経験談からユーザーにとって有意義の情報を提供したいと思います。</div>
+                                
+                                <div className={anotheriesCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>Anotheries</span>を制作する上での課題が二つあります。一つは、現行の旅行サイトと違う視点で旅行先を紹介すること。もう一つは、人の共感を得ること。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>インターネットに旅行紹介のコンテンツは既にたくさんあるので、そうみたいにアクセスからモデルコースまで詳しく紹介したくないです。でも、自分の<span style={{fontFamily: FONT_EN}}>SNS</span>のようなただの感想シェアになるのも、少し物足りなさが感じます。加え、旅行に求めるものは人それぞれあって、綺麗な景色、美味しいご飯、友達との楽しい時間、いざ出してみるとキリがないので、人の共感を得ることはそもそも難しいことではあります。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>そこで私たちが考えていたのは、インターネットで載せていない､実際に訪れた私たちだけ知っていること、試して良かったと思う遊び方などを文章にして、エッセイを読む感覚で紹介するという解決策です。実のエピソードと気持ちを共有することで共感してもらい、文章に工夫しながら、旅をより一層楽しめるように、経験談を通して、ユーザーにとって有意義の情報を提供することを心掛けしています。</div>
                             </div>
                         </div>
+
+
+
+
 
                         <div className={anotheriesCss.middleImg}
                             data-aos="fade-zoom-in"
@@ -139,6 +145,7 @@ export default function Anotheries() {
                                 <div className={anotheriesCss.paragraph_1_description_prop}>サイトに掲載する写真は全て私たち自ら撮影したものになります。リアルさを伝えつつ、ちゃんとした綺麗な写真を撮ることを心掛けして、主体と周りのバランスを意識しながら、ストーリー性のある構図を考えたり、その場で感じた光や空気感をできるたげ残せるようにレタッチの力加減を調整したり、一枚一枚に私たちのこだわりが詰まっています。</div>
                             </div>
                         </div>
+                        
 
                         <div className={anotheriesCss.photo_container}
                             data-aos="fade-zoom-in"
@@ -166,13 +173,18 @@ export default function Anotheries() {
                                     <div className={anotheriesCss.paragraph_2_text_container}>
                                         <div className={anotheriesCss.paragraph_2_title}>写真を際立たせる余白感</div>
                                         <div className={anotheriesCss.paragraph_2_description}>
-                                        写真がメインになるサイトなので、カラフルで見せる一方、ごちゃつきにならないように、サイズ感、余白の調整に気をつけています。彩りの写真を際立たせながら、旅の余裕感を感じてもらいたくて、背景色を薄くして、余白も多めに取っています。</div>
+                                            写真がメインになるサイトなので、カラフルで見せる一方、ごちゃつきにならないように、サイズ感、余白の調整に気をつけています。
+                                        </div>
+                                        <div className={anotheriesCss.paragraph_2_description}>
+                                            彩りの写真を際立たせながら、旅の余裕感を感じてもらいたくて、背景色を薄くして、余白も多めに取っています。
+                                        </div>
                                     </div>
                                     <div className={anotheriesCss.paragraph_2_img_container}>
                                         <img src={ anotheries_2 } className={anotheriesCss.paragraph_2_img_prop}></img>
                                     </div>
                                 </div>
 
+                                
                                 <div className={anotheriesCss.paragraph_2_each_container}
                                     data-aos="fade-zoom-in"
                                     data-aos-easing="ease-in-back"
@@ -182,7 +194,7 @@ export default function Anotheries() {
                                     <div className={anotheriesCss.paragraph_2_text_container}>
                                         <div className={anotheriesCss.paragraph_2_title}>さりげない遊び心</div>
                                         <div className={anotheriesCss.paragraph_2_description}>
-                                        旅の楽しさ・ワクワク感が伝わるため、写真の動きにこだわってデザインする他、お問い合わせフォームの写真はサイトに未公開のものにして、お問い合わせ完了ページでユーザーにプレゼントするのも私たちささやかな遊び心です。
+                                        旅の楽しさとワクワク感が伝わるため、写真の動きにこだわってデザインする他、お問い合わせフォームの写真はサイトに未公開のものにして、お問い合わせ完了ページでユーザーにプレゼントするのも私たちささやかな遊び心です。
                                         </div>
                                     </div>
                                     <div className={anotheriesCss.paragraph_2_img_container}>
@@ -201,9 +213,10 @@ export default function Anotheries() {
                             data-aos-once="false">
                             <div className={anotheriesCss.paragraph_1_title}>更新しやすさを重視したテンプレートづくり</div>
                             <div className={anotheriesCss.paragraph_1_description_container}>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>今後の更新しやすさを考慮し、下層デザインはいくつかのパターンを作成し、テンプレート化しました。追加する際には写真とテキストのボリュームによって、適正なテンプレートを選んで投稿するだけです。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>しっかりこのサイトを育てていきたいと思い、公開後も定期的に更新する予定です。更新しやすさを考慮し、下層デザインはいくつかのパターンを作成し、テンプレート化しました。今後追加する際には写真とテキストのボリュームによって、適正なテンプレートを選んで投稿するだけなので簡単です。</div>
                             </div>
                         </div>
+                        
 
                         <div className={anotheriesCss.show_page_container}>
                             <div className={anotheriesCss.show_page_contents_container}>
