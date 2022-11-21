@@ -116,7 +116,7 @@ export default function SurfaceApporel(){
             </div>
 
             <div className={surfaceCss.show_project_container}>
-              <div className={surfaceCss.show_project_contents_container} style={{width:'55%'}}
+              <div className={surfaceCss.show_project_contents_container}
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-offset="0"

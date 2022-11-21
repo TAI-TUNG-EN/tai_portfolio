@@ -169,11 +169,20 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       align-items: center;
 
       .show_project_contents_container{
-        width: 75%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include sm(){
+          width: 90%;
+        }
+        @include md(){
+          width: 55%;
+        }
+        @include lg(){
+          width: 55%;
+        }
 
         .show_project_row{
           width: 100%;
