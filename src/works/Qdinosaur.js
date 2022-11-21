@@ -82,6 +82,7 @@ export default function Qdinosaur(){
               url="https://store.line.me/stickershop/product/14468519" 
               urlTitle="Sticker page"
               bannerImg={banner}
+              bannerHeight='22vh'
               />
           
             <div className={dinasourCss.paragraph_1_container}
