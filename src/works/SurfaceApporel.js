@@ -19,7 +19,7 @@ import surface_2 from '../static/img/works/surfAce_apparel/surface_02.png'
 import surface_3 from '../static/img/works/surfAce_apparel/surface_03.png'
 import surface_4 from '../static/img/works/surfAce_apparel/surface_04.png'
 import surface_7 from '../static/img/works/surfAce_apparel/surface_05.png'
-import surface_video_1 from '../static/img/videos/surface_stage.mp4'
+import surface_video_1 from '../static/img/videos/stage.mp4'
 import surface_video_2 from '../static/img/videos/main_comp.mp4'
 import { images } from '../images.ts'
 
@@ -139,13 +139,13 @@ export default function SurfaceApporel(){
                 <div className={surfaceCss.video_container}>
                   <div className={surfaceCss.title_prop}>Full animation</div>
                   <video controls className={surfaceCss.animation_prop}>
-                    <source src={surface_video_1} type="video/mp4"/>
+                    <source src={surface_video_2} type="video/mp4"/>
                   </video>
                 </div>
                 <div className={surfaceCss.video_container}>
                   <div className={surfaceCss.title_prop}>SurfAce Apparel stage</div>
                   <video controls className={surfaceCss.animation_prop}>
-                    <source src={surface_video_2} type="video/mp4"/>
+                    <source src={surface_video_1} type="video/mp4"/>
                   </video>
                 </div>
               </div>
