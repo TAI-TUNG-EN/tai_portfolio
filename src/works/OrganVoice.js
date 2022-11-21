@@ -83,12 +83,9 @@ export default function OrganVoice(){
                 data-aos-offset="0"
                 data-aos-duration="300"
                 data-aos-once="false">
-
-
-
                 <div className={organCss.paragraph_1_description_prop}>「臓器の夜間問診」は政治大学のデザインサークル「<span style={{fontFamily: FONT_EN}}>ITLAB</span>」の年次展示会で展示した作品です。</div>
                 <div className={organCss.paragraph_1_description_prop}>
-                大学生はよく徹夜や断食ダイエットなどの悪い生活習慣で体調が崩されたりします。「若いから大丈夫！」と言い張って、生活習慣を見直そうとしない人が自分達を含め、周りもたくさんいます。しかし、どんな丈夫な体にも限界があり、耐えられない日もいつか来ること、同世代の大学生に意識してほしいと思い、この作品を作りました。
+                大学生はよく徹夜や断食ダイエットなどの悪い生活習慣で体調が崩されたりします。「若いから大丈夫！」と言い張って、生活習慣を見直そうとしない人が自分達を含め、周りにもたくさんいます。しかし、どんな丈夫な体にも限界があり、耐えられない日もいつか来ること、同世代の大学生に意識してほしいと思い、この作品を作りました。
                 </div>
               </div>
               
@@ -110,9 +107,13 @@ export default function OrganVoice(){
 
                 <div className={organCss.paragraph_1_description_prop}>病みを抱えている臓器たちは人間が眠りにつく間に夜間の問診に行き、本音を吐き出すというイメージをしました。</div>
                 <div className={organCss.paragraph_1_description_prop}>
-                徹夜で一番ダメージが与えられる肝臓をはじめ、肺、胃、脳、心臓、五つの臓器はそれぞれの悩みがあり、私たちに伝えたいことがあります。その本音をユーモアでちょっとした皮肉さのあるポエムで表現し、写真と相まって、印象的な作品を展示しました。
+                見る人がより自分の生活に結びつけるように、写真は各臓器と関連する暮らしのシーンを切り取ってみました。そして、カラフルなイラストを際立つため、レタッチで色味を薄めにしました。黄色のタイトルでポップさを意識しつつ、線を細くするのと手書きで表現することで上品さを演出してみました。
                 </div>
               </div>
+              
+
+
+
 
               <div className={organCss.middleImg}
                 data-aos="fade-zoom-in"
@@ -168,7 +169,7 @@ export default function OrganVoice(){
                 </div>
                 <div className={organCss.photo_description_container}>
                   <img src={organ_8} alt="everything is gonna be alright" className={organCss.photo_prop}></img>
-                  <div className={organCss.description_prop}>「夜間問診」なのでクリニックの雰囲気をより感じていただくため、作品の紹介をクリニックの玄関によく見かける札にして、作品のコンセプトと説明とともに、注射器の開け方、廃棄方法も掲載します。</div>
+                  <div className={organCss.description_prop}>「夜間問診」なのでクリニックの雰囲気をより感じていただくため、作品の紹介はクリニックの玄関でよく見かける札にして、コンセプトと説明とともに、注射器の開け方、廃棄方法も掲載します。</div>
                 </div>
               </div>
 
@@ -190,8 +191,8 @@ export default function OrganVoice(){
                     data-aos-duration="300"
                     data-aos-once="false">
                     <div className={organCss.postscript_paragraph_prop}>ちょうど大学<span style={{fontFamily: FONT_EN}}>2</span>年生の頃、インタネットで「爆肝」という言葉が流行っていました。</div>
-                    <div className={organCss.postscript_paragraph_prop}>日本語で訳したら、寝る間も惜しんで、身体を休めずに頑張ったら肝臓が爆発してしまうということ。その時は、徹夜＝夢中になることに頑張っている証で、ポジティブな行為として捉えます。</div>
-                    <div className={organCss.postscript_paragraph_prop}>何かに夢中になること、本来はとても素敵なことなのに、笑いながら「昨日爆肝したね」を言う同級生を見て、なんか悲しく感じました。身体を壊したら、元の子もないのに。</div>
+                    <div className={organCss.postscript_paragraph_prop}>日本語で訳したら、寝る間も惜しんで、身体を休めずに頑張ったら肝臓が爆発してしまうということ。その時は、徹夜＝夢中になることに頑張っている証で、ポジティブな行為として見られます。</div>
+                    <div className={organCss.postscript_paragraph_prop}>何かに夢中になること、本来であればとても素敵なことなのに、笑いながら「昨日爆肝したね」を言う同級生を見て、なんか悲しく感じました。身体を壊したら、元の子もないのに。</div>
                   </div>
                   <br></br>
                   <div className={organCss.postscript_paragraph_container}
@@ -200,11 +201,11 @@ export default function OrganVoice(){
                     data-aos-offset="0"
                     data-aos-duration="300"
                     data-aos-once="false">
-                    <div className={organCss.postscript_paragraph_prop}>この作品を通して気づいてほしい、</div>
+                    <div className={organCss.postscript_paragraph_prop}>この作品を通して気づいてほしいの、</div>
                     <div className={organCss.postscript_paragraph_prop}>あなたの身体が伝えたい、大事なこと。</div>
                   </div>
                 </div>
-
+                
                 <div className={organCss.especially_thanks_container}
                   data-aos="fade-zoom-in"
                   data-aos-easing="ease-in-back"
