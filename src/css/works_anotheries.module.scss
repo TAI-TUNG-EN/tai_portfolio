@@ -64,12 +64,14 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           line-height: 2rem;
           @include sm(){
             font-size: 1rem;
+            @include sm_content_font;
           }
           @include md(){
             font-size: 1rem;
+            @include md_content_font;
           }
           @include lg(){
-            font-size: .85rem;
+            @include lg_content_font;
           }
 
         }
@@ -195,16 +197,13 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               line-height: 1.5rem;
               margin-bottom: 1rem;
               @include sm(){
-                font-size: 1rem;
-                line-height: 2rem;
+                @include sm_content_font;
               }
               @include md(){
-                font-size: 1rem;
-                line-height: 2rem;
+                @include md_content_font;
               }
               @include lg(){
-                font-size: .75rem;
-                line-height: 1.5rem;
+                @include lg_content_font;
               }
             }
           }
@@ -286,14 +285,13 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             color: $COLOR_BLACK;
             margin: 1rem 0;
             @include sm(){
-              font-size: 1rem;
+              @include sm_content_font;
             }
             @include md(){
-              font-size: 1rem;
-              line-height: 1.8rem;
+              @include md_content_font;
             }
             @include lg(){
-              font-size: .75rem;
+              @include lg_content_font;
             }
 
           }
@@ -304,17 +302,13 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             color: $COLOR_BLACK;
             line-height: 1.5rem;
             @include sm(){
-              font-size: 1rem;
-              line-height: 2rem;
+              @include sm_content_font;
             }
             @include md(){
-              font-size: 1rem;
-              line-height: 1.8rem;
-              
+              @include md_content_font;
             }
             @include lg(){
-              font-size: .75rem;
-              line-height: 1.5rem;
+              @include lg_content_font;
             }
           }
         }

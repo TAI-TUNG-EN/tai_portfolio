@@ -54,16 +54,13 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           color: $COLOR_BLACK;
           line-height: 2rem;
           @include sm(){
-            font-size: 1rem;
-            line-height: 2rem;
+            @include sm_content_font;
           }
           @include md(){
-            font-size: 1rem;
-            line-height: 1.8rem;
+            @include md_content_font;
           }
           @include lg(){
-            font-size: .85rem;
-            line-height: 2rem;
+            @include lg_content_font;
           }
 
         }
@@ -144,16 +141,13 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
               color: $COLOR_BLACK;
               line-height: 1.5rem;
               @include sm(){
-                font-size: 1rem;
-                line-height: 2rem;
+                @include sm_content_font;
               }
               @include md(){
-                font-size: 1rem;
-                line-height: 1.8rem;
+                @include md_content_font;
               }
               @include lg(){
-                font-size: .8rem;
-                line-height: 1.5rem;
+                @include lg_content_font;
               }
 
             }
@@ -172,17 +166,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             color: $COLOR_BLACK;
             line-height: 1.7rem;
             @include sm(){
-              font-size: 1rem;
-              line-height: 2rem;
+              @include sm_content_font;
             }
-              @include md(){
-                font-size: 1rem;
-                line-height: 1.8rem;
-              }
-              @include lg(){
-                font-size: .8rem;
-                line-height: 1.5rem;
-              }
+            @include md(){
+              @include md_content_font;
+            }
+            @include lg(){
+              @include lg_content_font;
+            }
           }
         }
       }
@@ -230,14 +221,13 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             color: $COLOR_BLACK;
             margin: 1rem 0;
             @include sm(){
-              font-size: 1rem;
+              @include sm_content_font;
             }
             @include md(){
-              font-size: 1rem;
-              line-height: 1.8rem;
+              @include md_content_font;
             }
             @include lg(){
-              font-size: .75rem;
+              @include lg_content_font;
             }
 
           }
@@ -248,15 +238,13 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             color: $COLOR_BLACK;
             line-height: 1.5rem;
             @include sm(){
-              font-size: 1rem;
-              line-height: 2rem;
+              @include sm_content_font;
             }
             @include md(){
-              font-size: 1rem;
-              line-height: 1.8rem;
+              @include md_content_font;
             }
             @include lg(){
-              font-size: .75rem;
+              @include lg_content_font;
             }
 
 
