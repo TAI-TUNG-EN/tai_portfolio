@@ -79,7 +79,7 @@ export default function Anotheries() {
                             nameEN="Anotheries"
                             type="Website (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2022.08-now" 
                             tool="Xmind, Figma, Lightroom, Photoshop" 
-                            url="https://yihanyozikua.github.io/untitled/" urlTitle="Website"
+                            url="https://yihanyozikua.github.io/anotheries/" urlTitle="Website"
                             bannerImg={banner} bannerImgPosition="center 90%"/>
 
                         <div className={anotheriesCss.paragraph_1_container}
