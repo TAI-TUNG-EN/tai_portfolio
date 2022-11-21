@@ -145,7 +145,7 @@ export default function SurfaceApporel(){
                 <div className={surfaceCss.video_container}>
                   <div className={surfaceCss.title_prop}>SurfAce Apparel stage</div>
                   <video controls className={surfaceCss.animation_prop}>
-                    <source src={surface_video_1} type="video/mp4"/>
+                    <source src={surface_video_2} type="video/mp4"/>
                   </video>
                 </div>
               </div>
