@@ -92,6 +92,10 @@ export default function Qdinosaur(){
               data-aos-once="false">
               <div className={dinasourCss.paragraph_1_title} style={{fontFamily: FONT_EN}}>Q dinosaur makes chat room a cozy place</div>
               <div className={dinasourCss.paragraph_1_description_container}>
+                <div className={dinasourCss.paragraph_1_description_prop}>「人に褒めてもらった時」、「ご飯を誘いたい時」、「何かをお願いする時」、表情が見えない文字のやりとりだけで、少し物足りない感じがします。</div>
+                <div className={dinasourCss.paragraph_1_description_prop}>そういう時、一つスタンプをつけることで、会話の雰囲気や相手を受けた印象が大きく変わる場合もあります。</div>
+                <div className={dinasourCss.paragraph_1_description_prop}>もっと日常的に使いやすいスタンプがほしいという願いは、今回スタンプ制作のきっかけになりました。</div>
+                <br></br>
                 <div className={dinasourCss.paragraph_1_description_prop}>「恐恐」は台湾語でちょっと天然バカで愛おしいと思われる人と言います。</div>
                 <div className={dinasourCss.paragraph_1_description_prop}>「出来の悪い子ほど可愛い」という言葉のように､「恐恐」は豊かな表情と天然さのあるポーズで癒しの存在になり、メッセージにスパイスを加える役割を果たします。</div>
               </div>
@@ -106,6 +110,19 @@ export default function Qdinosaur(){
               <img src={dinasour_1} alt="dinasours" className={dinasourCss.all_dinasours_prop}></img>
             </div>
 
+            <div className={dinasourCss.paragraph_1_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <div className={dinasourCss.paragraph_1_title} style={{fontFamily: FONT_EN}}>可愛さだけではなく、実用性も高いスタンプへ</div>
+              <div className={dinasourCss.paragraph_1_description_container}>
+                <div className={dinasourCss.paragraph_1_description_prop}>「恐恐」に、二つの取り組みをしました。</div>
+                <div className={dinasourCss.paragraph_1_description_prop}>◆現行スタンプの<span style={{fontFamily: FONT_EN}}>Case study</span>を行ったり、スタンプを求める会話のシーンとタイミングを中心に周りの人にヒアリングしたり、ユーザーのニーズに応えるスタンプを作成しました。</div>
+                <div className={dinasourCss.paragraph_1_description_prop}>◆外国人の方にも使いやすいように、あえて文字を加えずに、表情と身振りだけで気持ちを伝えることを心掛けていました。</div>
+              </div>
+            </div>
 
             <div className={dinasourCss.design_intro_container}
               data-aos="fade-zoom-in"
@@ -131,7 +148,6 @@ export default function Qdinosaur(){
               </div>
             </div>
 
-
             <div className={dinasourCss.design_intro_container}
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
@@ -141,7 +157,7 @@ export default function Qdinosaur(){
               <div className={dinasourCss.design_intro_contents_container}>
                 <div className={dinasourCss.design_intro_description_container}>
                   <div className={dinasourCss.design_intro_description_title}>おすすめポイントは？</div>
-                  <div className={dinasourCss.design_intro_description_prop}>可愛いだけではなく実用性も高いところがポイントです。</div>
+                  <div className={dinasourCss.design_intro_description_prop}>意外と困っている会話シーンも対応することがポイントです。</div>
                   <div className={dinasourCss.design_intro_description_prop}>日常会話はもちろん､雰囲気を和ませたい時や気持ちをもっと表したい時に使えるスタンプも用意したので､どんな場面でも大活躍できて、長く使えるスタンプになります。</div>
                 </div>
                 <div className={dinasourCss.design_intro_img_container}>
@@ -166,19 +182,22 @@ export default function Qdinosaur(){
                   <div className={dinasourCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={dinasourCss.postscript_paragraph_container}>
-                  <div className={dinasourCss.postscript_paragraph_prop}>元々口下手な私は、表情が見えない文字のやりとりがとても苦手で、「ちゃんと伝わっているのか」と、メッセージを送る度心配しています。そんな時に私を助けてくれてのはスタンプでした。表情豊かなスタンプをつけることで、より私の口調や表情が伝わるような気がします。</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>元々口下手な私は、表情が見えない文字のやりとりがとても苦手で、「ちゃんと伝わっているのか」と、メッセージを送る度に心配しています。そんな時、いつも私を助けてくれるのはスタンプでした。表情豊かなスタンプをつけることで、より私の口調や表情が伝わるような気がします。</div>
                 </div>
                 <br></br>
                 <div className={dinasourCss.postscript_paragraph_container}>
-                  <div className={dinasourCss.postscript_paragraph_prop}>「こういう時、この表情のスタンプを使いたい！」</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>「こういう時、この表情のスタンプがほしい！」</div>
                   <div className={dinasourCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>32</span>個スタンプの中にどうしても使わないのがあるのでもったいない...」</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>もっと日常的で、無駄のないスタンプを作りたくて、自分的に使いやすそうなものをはじめ、</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>周りの人にスタンプをつけたい会話やタイミングを聞きまくり、「恐恐」を描きました。</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>外国人の友達も使えるように、あえて文字を加えずに、表情と身振りだけで気持ちを伝えることを心掛けていました。 </div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>もっと日常的で、無駄のないスタンプを作りたくて、自分的に使いやすそうなものをはじめ、周りの人にスタンプをつけたい会話やタイミングをヒアリングし、「恐恐」を描きました。</div>
+                </div>
+                <br></br>
+                <div className={dinasourCss.postscript_paragraph_container}>
+                  <div className={dinasourCss.postscript_paragraph_prop}>自分のスタンプを作って、リリースすることは、意外と大変でした。口座情報と審査資料の準備、各スタンプのキーワード設定など、手配しないといけないことがたくさんあります。</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>でも、実際に公開した後、「可愛い」や「使いやすい」などの声をもらった時、本当に嬉しくて、作ってよかったとやりがいを感じました。</div>
                 </div>
               </div>  
             </div>
-          
+            
             <WorksBackToAnchor 
               prevUrl="/works/anotheries"
               nextUrl="/works/sleep_well"
