@@ -20,6 +20,8 @@ import sleep_3 from '../static/img/works/sleep_well/sleep_well_02_1.png'
 import sleep_4 from '../static/img/works/sleep_well/sleep_well_02_2.png'
 import sleep_5 from '../static/img/works/sleep_well/sleep_well_03_1.png'
 import sleep_6 from '../static/img/works/sleep_well/sleep_well_03_2.png'
+import color_1 from '../static/img/works/sleep_well/color_1.png'
+import color_2 from '../static/img/works/sleep_well/color_2.png'
 import { images } from '../images.ts'
 
 export default function SleepWell(){
@@ -217,11 +219,16 @@ export default function SleepWell(){
               data-aos-easing="ease-in-back"
               data-aos-offset="0"
               data-aos-duration="300"
-              data-aos-once="false">
+              data-aos-once="false"
+              style={{marginTop: '0'}}>
               <div className={sleepCss.paragraph_1_title}>使用シーンに配慮した色味</div>
               <div className={sleepCss.paragraph_1_description_container}>
                 <div className={sleepCss.paragraph_1_description_prop}>ユーザーが寝る前にお部屋で睡眠アプリを開く使用シーンを想定し、ベッドライトで照らした少し暗めの空間でも目の負担をかけないように、暗めの紫をメインカラーとして使用しました。</div>
                 <div className={sleepCss.paragraph_1_description_prop}>紫は冷静、落ち着く、リラックスのイメージがあり、良い睡眠に繋がる効果があると考えられます。</div>
+              </div>
+              <div className={sleepCss.color_container}>
+                <img src={color_1} className={sleepCss.color_prop}></img>
+                <img src={color_2} className={sleepCss.color_prop}></img>
               </div>
             </div>
             
