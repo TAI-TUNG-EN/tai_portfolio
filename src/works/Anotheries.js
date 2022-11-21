@@ -181,7 +181,7 @@ export default function Anotheries() {
                                     data-aos-once="false">
                                     <div className={anotheriesCss.paragraph_2_text_container}>
                                         <div className={anotheriesCss.paragraph_2_title}>さりげない遊び心</div>
-                                        <div className={anotheriesCss.paragraph_2_description} style={{marginBottom: paragraphTwoDescriptionMargin}}>
+                                        <div className={anotheriesCss.paragraph_2_description}>
                                         旅の楽しさ・ワクワク感が伝わるため、写真の動きにこだわってデザインする他、お問い合わせフォームの写真はサイトに未公開のものにして、お問い合わせ完了ページでユーザーにプレゼントするのも私たちささやかな遊び心です。
                                         </div>
                                     </div>
