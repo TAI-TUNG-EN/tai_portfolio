@@ -241,12 +241,13 @@ export default function Anotheries() {
                                     <div className={anotheriesCss.postscript_paragraph_prop}>どこに行っても、カメラを持っている私たちがいる。</div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>せっかくたくさん調べて行ってきた旅だから、せっかくたくさんの写真を撮っていた旅だから。</div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>
-                                    なんか面白いことができないかなと、思わず手を動かしてみたら、今の<span style={{fontFamily: FONT_EN}}>Anotheries</span>が生まれました。
+                                    どうやって私たちが好きなことを人の役に立つことにするのか、考えながら手を動かしてみたら、今の<span style={{fontFamily: FONT_EN}}>Anotheries</span>が生まれました。
                                     </div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>ここで紹介したのは、人々が憧れる絶景ではない、でも、心を揺さぶる景色。</div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>私たちの旅先との出会い、かけがえのない思い出はあなたにとって、素敵な旅のきっかけになりますように。</div>
                                 </div>
                             </div>
+
                         <div className={anotheriesCss.especially_thanks_container}
                             data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
