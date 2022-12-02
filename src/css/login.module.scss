@@ -19,7 +19,11 @@
     border-color: transparent;
     background-color: rgba(128, 128, 128, 0.247);
     padding: .5rem 1.5rem;
-    cursor: pointer;
+    cursor: not-allowed;
+    &:hover{
+      background-color: $COLOR_GRAY;
+      color: white;
+    }
   }
 
   width: 100vw;
@@ -35,6 +39,11 @@
   
     .login_field_container{
       margin: .7rem 0;
+    }
+    .warning_prop{
+      color: red;
+      font-size: 1.2rem;
+      margin: 1rem 0;
     }
   }
 }
