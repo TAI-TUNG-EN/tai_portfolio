@@ -14,8 +14,8 @@ import aboutCss from './css/about.module.scss'
 import loadingCss from './css/loading.module.scss'
 import specialContentsImg from './static/img/special_contents.png'
 import { images } from './images.ts'
-// import avatarImg from './static/img/about_avatar.svg'
-import avatarImg from './static/img/about_avatar-min.png'
+import avatarImg from './static/img/about_avatar.jpg'
+// import avatarImg from './static/img/about_avatar-min.png'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -171,7 +171,7 @@ export default function About() {
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
             <span>だから私は考えている。</span>
-            <span>何かブラッシュアップできることがないか。何か新しいアイデアを生み出せるではないか。今までも、これからも、より良い明日のために、精度と質の高いデザインを追求し続けます。</span>
+            <span>何かブラッシュアップできることがないか。何か新しいアイデアを生み出せるではないか。今までも、これからも、もっとよくなる明日のために、クオリティの高いデザインを追求し続けます。</span>
           </div>
         </div>
       )
@@ -195,8 +195,8 @@ export default function About() {
             <span>何か新しいアイデアを生み出せるではないか。</span>
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
-            <span>今までも、これからも、より良い明日のために、</span>
-            <span>精度と質の高いデザインを追求し続けます。</span>
+            <span>今までも、これからも、もっとよくなる明日のために、</span>
+            <span>クオリティの高いデザインを追求し続けます。</span>
           </div>
         </div>
       )
