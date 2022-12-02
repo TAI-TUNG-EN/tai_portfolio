@@ -383,29 +383,50 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           width: 85%;
         }
       }
-      .about_special_contents_white_box_sec_container{
-        width: 60%;
-        height: 15rem;
-        background-color: white;
-        box-shadow:-10px 10px 50px -20px rgb(176, 176, 176);
-        transition: all .2s ease-in-out;
-        overflow: hidden;
-        @include sm(){
-          width: 88vw;
-          height: 15rem;
-        }
-        .special_contents_img_prop{
-          width: 100%;
-          height: 100%;
+      .about_special_contents_img_container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .about_special_contents_img_prop{
           object-fit: cover;
-          transition: all .3s ease-in !important;
-          &:hover{
-            transition: all .3s ease-in !important;
-            opacity: .5;
-            transform: scale(1.05);
+          width: 14rem;
+          height: 10rem;
+          box-shadow:-10px 10px 50px -25px gray;
+        }
+        .about_special_contents_img_middle_container{
+          position: relative;
+          z-index: 1;
+        }
+        .about_special_contents_img_upper_container{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          z-index: 3;
+          margin-top: 5rem;
+          .about_special_contents_upper_img_contents_container_prop{
+            &:nth-child(1){
+              transform: rotate(-6deg);
+              margin-right: 6rem;
+            }
+            &:nth-child(2){
+              transform: rotate(6deg);
+              margin-left: 6rem;
+            }
+            .about_special_contents_upper_img_prop{
+              @extend .about_special_contents_img_prop;
+              
+              
+            }
           }
+          
         }
       }
+      
     }
   }
 
@@ -424,7 +445,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       height: 35vh;
     }
     @include lg(){
-      height: 30vh;
+      height: 15vh;
     }
 
     .about_learn_me_by_hashtags_button_prop_container{

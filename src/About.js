@@ -16,6 +16,9 @@ import specialContentsImg from './static/img/special_contents.png'
 import { images } from './images.ts'
 import avatarImg from './static/img/about_avatar.jpg'
 // import avatarImg from './static/img/about_avatar-min.png'
+import hashImg_6 from './static/img/hashtags/hashtag_6.png'
+import hashImg_9 from './static/img/hashtags/hashtag_9.png'
+import hashImg_13 from './static/img/hashtags/hashtag_13.png'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -432,7 +435,6 @@ export default function About() {
                     <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
                   </div>
                 </div>
-                
               </div>
             </Parallax>
           </div>
@@ -440,9 +442,40 @@ export default function About() {
           <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
             <div className={aboutCss.about_special_contents_prop_container}>
               <div className={aboutCss.about_special_contents_title}>Special content</div>
-              <a href="https://tai-tung-en.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
-                <img src={specialContentsImg} className={aboutCss.special_contents_img_prop}></img>
-              </a>
+              <div className={aboutCss.about_special_contents_img_container}>
+                <div className={aboutCss.about_special_contents_img_middle_container}>
+                  <img src={ hashImg_6 } className={aboutCss.about_special_contents_img_prop}
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="0"
+                    data-aos-offset="100"
+                    data-aos-duration="1000"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom"></img>
+                </div>
+                <div className={aboutCss.about_special_contents_img_upper_container}>
+                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
+                    <img src={ hashImg_9 } className={aboutCss.about_special_contents_upper_img_prop}
+                      data-aos="fade-up-left"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="300"
+                      data-aos-offset="100"
+                      data-aos-duration="1000"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"></img>
+                  </div>
+                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
+                    <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
+                      data-aos="fade-up-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="600"
+                      data-aos-offset="100"
+                      data-aos-duration="1000"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"></img>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
