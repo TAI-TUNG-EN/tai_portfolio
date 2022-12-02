@@ -132,11 +132,14 @@ export default function About() {
   const view_works_button_ref = useRef(null);
   const view_works_button_text_1_ref = useRef(null);
   const view_works_button_text_2_ref = useRef(null);
+  const learn_me_by_hashtag_text_ref = useRef(null);
+  const learn_me_by_hashtag_button_ref = useRef(null);
   const loading_ref = useRef(null);
 
   const self_intro_ref = useRef(null);
   const special_contents_ref = useRef(null);
   const view_works_ref = useRef(null);
+  const learn_me_by_hashtag_ref = useRef(null);
   let isFirstScrollDown = true;
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -240,10 +243,13 @@ export default function About() {
     const view_works_button_bg = view_works_button_ref.current
     const view_works_button_text_1 = view_works_button_text_1_ref.current
     const view_works_button_text_2 = view_works_button_text_2_ref.current
+    const learn_me_by_hashtag_text = learn_me_by_hashtag_text_ref.current
+    const learn_me_by_hashtag_button_bg = learn_me_by_hashtag_button_ref.current
 
     const self_intro = self_intro_ref.current
     const special_contents = special_contents_ref.current
     const view_works = view_works_ref.current
+    const learn_me_by_hashtag = learn_me_by_hashtag_ref.current
 
     // ========== view my works button animation =========
     document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseover', ()=>{
@@ -259,6 +265,20 @@ export default function About() {
       view_works_button_text_1.style.color = '#282D2F';
       view_works_button_text_2.style.color = '#282D2F';
       view_works_button_bg.style.transition = 'all .4s ease-in-out'
+    })
+
+    // ========== learn me by hashtags =========
+    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener('mouseover', ()=>{
+      learn_me_by_hashtag_button_bg.style.width = '12.3rem';
+      learn_me_by_hashtag_button_bg.style.height = '2.3rem';
+      learn_me_by_hashtag_text.style.color = 'white';
+      learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
+    })
+    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener('mouseleave', ()=>{
+      learn_me_by_hashtag_button_bg.style.width = '0rem';
+      learn_me_by_hashtag_button_bg.style.height = '0rem';
+      learn_me_by_hashtag_text.style.color = '#282D2F';
+      learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
     })
 
     // ========== paragraph scroll to animation ==========
@@ -419,13 +439,24 @@ export default function About() {
 
           <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
             <div className={aboutCss.about_special_contents_prop_container}>
-              <div className={aboutCss.about_special_contents_title}>Special content - #hashtags of me</div>
+              <div className={aboutCss.about_special_contents_title}>Special content</div>
               <a href="https://tai-tung-en.github.io/tai_portfolio_hashtags/" className={aboutCss.about_special_contents_white_box_sec_container}>
                 <img src={specialContentsImg} className={aboutCss.special_contents_img_prop}></img>
               </a>
             </div>
           </div>
 
+          <div className={aboutCss.about_learn_me_by_hashtags_button_container} ref={learn_me_by_hashtag_ref}>
+            <div className={aboutCss.about_learn_me_by_hashtags_button_prop_container}>
+              <a href='https://tai-tung-en.github.io/tai_portfolio_hashtags/' className={aboutCss.about_learn_me_by_hashtags_button_link}>
+                <div className={aboutCss.about_learn_me_by_hashtags_contents}>
+                  <div className={aboutCss.about_learn_me_by_hashtags_contents_prop} ref={learn_me_by_hashtag_text_ref}>Learn my by #hashtags</div>
+                </div>
+                <div className={aboutCss.about_learn_me_by_hashtags_button_hover_bg} ref={learn_me_by_hashtag_button_ref}> </div>
+              </a>
+            </div>
+          </div>
+          
           <div className={aboutCss.about_view_my_works_button_container} ref={view_works_ref}>
             <div className={aboutCss.about_view_my_works_button_prop_container}>
               <Link to="/works" className={aboutCss.about_view_my_works_button_link}>

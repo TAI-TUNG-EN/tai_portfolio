@@ -371,7 +371,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       }
       .about_special_contents_title{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         font-family: $FONT_EN;
         font-weight: 400;
         width: 60%;
@@ -409,11 +409,98 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     }
   }
 
+  // learn my by hashtags
+  .about_learn_me_by_hashtags_button_container{
+    // display: none !important;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end !important;
+    @include sm(){
+      height: 50vh;
+    }
+    @include md(){
+      height: 35vh;
+    }
+    @include lg(){
+      height: 30vh;
+    }
+
+    .about_learn_me_by_hashtags_button_prop_container{
+      width: 94%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      @include sm(){
+        width: 100%;
+        height: 50%;
+      }
+
+      .about_learn_me_by_hashtags_button_link{
+        width: 13rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100px;
+  
+        .about_learn_me_by_hashtags_contents{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 13rem;
+          height: 3rem;
+          background-color: white;
+          border-radius: 500px;
+          .about_learn_me_by_hashtags_hover_section{
+            position: absolute;
+            width: 13rem;
+            height: 13rem;
+            background-color: transparent;
+            
+          }
+    
+          .about_learn_me_by_hashtags_contents_prop{
+            color: black;
+            width: 10rem;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 2rem;
+            text-align: left;
+            z-index: 1;
+            @include sm(){
+              margin-left: 1.3rem;
+            }
+            &:nth-child(1){
+              font-size: .75rem;
+            }
+          }
+          .about_learn_me_by_hashtags_contents_prop_white{
+            position: absolute;
+            color: white;
+          }
+        }
+    
+        .about_learn_me_by_hashtags_button_hover_bg{
+          position: absolute;
+          background-color: $COLOR_VIEW_WORKS_BUTTON;
+          width: 0rem;
+          height: 0rem;
+          border-radius: 500px;
+        }
+      }
+    }
+  }
+
   // v
   .about_view_my_works_button_container{
     // display: none !important;
     width: 100vw;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
