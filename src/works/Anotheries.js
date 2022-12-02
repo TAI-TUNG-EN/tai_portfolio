@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import AOS from 'aos'
+// import Protect from 'react-app-protect'
+// import 'react-app-protect/dist/index.css'
 
 import PageLayout from '../components/PageLayout'
 import Cursor from '../Cursor';

@@ -13,6 +13,7 @@ import OrganVoice from './works/OrganVoice'
 import Qdinosaur from './works/Qdinosaur';
 import SleepWell from './works/SleepWell'
 import SurfaceApporel from './works/SurfaceApporel'
+import Login from './Login';
 
 const App = () => {
 
@@ -41,7 +42,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<><About /></>}></Route>
+        <Route path="/" element={<><Login /></>}></Route>
+        <Route path="/login" element={<><Login /></>}></Route>
         <Route path="/about" element={<><About /></>}></Route>
         <Route path="/works" element={<><Works /></>}></Route>
         <Route path="/works/anotheries" element={<><WorksAnotheries /></>}></Route>
@@ -50,7 +52,6 @@ const App = () => {
         <Route path="/works/organ_voice" element={<><OrganVoice /></>}></Route>
         <Route path="/works/surface_apparel" element={<><SurfaceApporel /></>}></Route>
         <Route path="/works/sleep_well" element={<><SleepWell /></>}></Route>
-        
       </Routes>
     </Router>
   );
