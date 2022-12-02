@@ -353,9 +353,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     width: 100vw;
     // height: 50vh;
     @include sm(){
-      height: 30vh;
+      height: 80vh;
       position: relative;
-      margin-top: 2rem;
+      margin-top: 7rem;
     }
     
     .about_special_contents_prop_container{
@@ -389,6 +389,23 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        @include sm(){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 3rem;
+        }
+        @include md(){
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;  
+        }
+        @include lg(){
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+
         .about_special_contents_img_prop{
           object-fit: cover;
           width: 14rem;
@@ -398,6 +415,16 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         .about_special_contents_img_middle_container{
           position: relative;
           z-index: 1;
+          @include sm(){
+            transform: rotate(-6deg);
+            margin-bottom: 3rem;
+          }
+          @include md(){
+
+          }
+          @include lg(){
+
+          }
         }
         .about_special_contents_img_upper_container{
           width: 100%;
@@ -408,19 +435,52 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           position: absolute;
           z-index: 3;
           margin-top: 5rem;
+          @include sm(){
+            flex-direction: column-reverse;
+            position: relative;
+          }
+          @include md(){
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 3;
+            margin-top: 5rem;
+          }
+          @include lg(){
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 3;
+            margin-top: 5rem;
+          }
           .about_special_contents_upper_img_contents_container_prop{
             &:nth-child(1){
               transform: rotate(-6deg);
-              margin-right: 6rem;
+              @include sm(){
+              }
+              @include md(){
+                margin-right: 6rem;
+              }
+              @include lg(){
+                margin-right: 6rem;
+              }
             }
             &:nth-child(2){
               transform: rotate(6deg);
+              @include sm(){
+                margin-bottom: 5rem;
+              }
+              @include md(){
               margin-left: 6rem;
+              }
+              @include lg(){
+              margin-left: 6rem;
+              }
             }
             .about_special_contents_upper_img_prop{
               @extend .about_special_contents_img_prop;
-              
-              
             }
           }
           
@@ -439,10 +499,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     justify-content: center;
     align-items: flex-end !important;
     @include sm(){
-      height: 50vh;
+      height: 30vh;
     }
     @include md(){
-      height: 35vh;
+      height: 15vh;
     }
     @include lg(){
       height: 15vh;
@@ -457,6 +517,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       @include sm(){
         width: 100%;
         height: 50%;
+      }
+      @include md(){
+
+      }
+      @include lg(){
+        
       }
 
       .about_learn_me_by_hashtags_button_link{
