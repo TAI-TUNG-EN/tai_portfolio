@@ -14,6 +14,9 @@ import Qdinosaur from './works/Qdinosaur';
 import SleepWell from './works/SleepWell'
 import SurfaceApporel from './works/SurfaceApporel'
 import Login from './Login';
+import Nishikage from './works/Nishikage';
+import JobHomes from './works/JobHomes';
+import MotenaSea from './works/MotenaSea';
 
 const App = () => {
 
@@ -46,12 +49,15 @@ const App = () => {
         <Route path="/login" element={<><Login /></>}></Route>
         <Route path="/about" element={<><About /></>}></Route>
         <Route path="/works" element={<><Works /></>}></Route>
+        <Route path="/works/nishikage" element={<><Nishikage /></>}></Route>
+        <Route path="/works/job_homes" element={<><JobHomes /></>}></Route>
+        <Route path="/works/motenaSea" element={<><MotenaSea /></>}></Route>
         <Route path="/works/anotheries" element={<><WorksAnotheries /></>}></Route>
         <Route path="/works/q_dinasour" element={<><Qdinosaur /></>}></Route>
+        <Route path="/works/sleep_well" element={<><SleepWell /></>}></Route>
         <Route path="/works/everything_is_gonna_be_alright" element={<><WorksEverythingIsGonnaBeAlright /></>}></Route>
         <Route path="/works/organ_voice" element={<><OrganVoice /></>}></Route>
         <Route path="/works/surface_apparel" element={<><SurfaceApporel /></>}></Route>
-        <Route path="/works/sleep_well" element={<><SleepWell /></>}></Route>
       </Routes>
     </Router>
   );

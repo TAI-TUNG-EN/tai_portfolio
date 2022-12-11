@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from '../firebase';
 
 import PageLayout from '../components/PageLayout'
 import Cursor from '../Cursor';
@@ -41,9 +44,9 @@ export default function Qdinosaur(){
   if(isMobile){
     width_worksBackToAnchor = '80%'
   } else if(isPad){
-    width_worksBackToAnchor = '75%'
+    width_worksBackToAnchor = 'calc(60% + 8rem)'
   } else{
-    width_worksBackToAnchor = '70%'
+    width_worksBackToAnchor = 'calc(60% + 8rem)'
   }
 
   useEffect(() => {
@@ -66,6 +69,15 @@ export default function Qdinosaur(){
     });
   }, []);
 
+  const navigate = useNavigate();
+  onAuthStateChanged(auth, (user) => {
+      if(user){
+      console.log("user log in: " + user.uid);
+      }
+      else{
+      navigate("/login");
+      }
+  })
   return(
     <>
       <Cursor cursorTypes='👀' />
@@ -82,7 +94,7 @@ export default function Qdinosaur(){
               url="https://store.line.me/stickershop/product/14468519" 
               urlTitle="Sticker page"
               bannerImg={banner}
-              bannerHeight='22vh'
+              // bannerHeight='22vh'
               />
           
             <div className={dinasourCss.paragraph_1_container}

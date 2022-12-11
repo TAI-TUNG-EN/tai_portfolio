@@ -13,6 +13,13 @@
     border-radius: 100px;
     padding: .7rem 1rem;
     box-shadow:-3px 4px 100px -11px grey;
+    color: $COLOR_BLACK;
+    transition: all .3s ease-in-out;
+    &:hover{
+      background-color: $COLOR_BLACK;
+      color: white;
+      transition: all .3s ease-in-out;
+    }
     @include sm(){
       box-shadow: -3px 4px 37px -10px grey;
       width: 1rem !important;
@@ -23,10 +30,19 @@
       margin: 0 .3rem;
     }
     .btn_prop{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       font-family: $FONT_EN;
       font-weight: 400;
       font-size: .75rem;
-      color: #282D2F;
+      .btn_arrow_prop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+      }
     }
   }
 }

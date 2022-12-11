@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
-// import Protect from 'react-app-protect'
-// import 'react-app-protect/dist/index.css'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from '../firebase';
 
 import PageLayout from '../components/PageLayout'
 import Cursor from '../Cursor';
@@ -31,7 +32,7 @@ import show_page_4 from '../static/img/works/anotheries/show_page_4.png'
 export default function Anotheries() {
     const FONT_EN = "'Outfit', sans-serif";
     const FONT_JP = "'BIZ UDGothic', sans-serif";
-    let width_worksBackToAnchor = '50%';
+    let width_worksBackToAnchor = 'calc(60% + 8rem)';
 
     useEffect(()=>{
         window.scrollTo({
@@ -62,11 +63,20 @@ export default function Anotheries() {
         width_worksBackToAnchor = '75%'
         paragraphTwoDescriptionMargin = '1rem';
     } else{
-        width_worksBackToAnchor = '50%'
+        width_worksBackToAnchor = 'calc(60% + 8rem)'
         paragraphTwoDescriptionMargin = '3rem'
     }
 
 
+    const navigate = useNavigate();
+    onAuthStateChanged(auth, (user) => {
+        if(user){
+        console.log("user log in: " + user.uid);
+        }
+        else{
+        navigate("/login");
+        }
+    })
     window.addEventListener('load', AOS.refresh);
     return (
         <>
@@ -265,7 +275,7 @@ export default function Anotheries() {
                         </div>
 
                         <WorksBackToAnchor 
-                            prevUrl="/works/surface_apparel"
+                            prevUrl="/works/motenaSea"
                             nextUrl="/works/q_dinasour"
                             containerWidth={width_worksBackToAnchor}/>
                     </div>

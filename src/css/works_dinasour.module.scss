@@ -20,6 +20,12 @@ $COLOR_PARA: #282D2F;
     align-items: center;
     padding-bottom: 3rem;
   }
+  @include md(){
+    padding-bottom: 10rem;
+  }
+  @include lg(){
+    padding-bottom: 12rem;
+  }
 
   .kv_container{
     width: 94%;
@@ -214,7 +220,7 @@ $COLOR_PARA: #282D2F;
           width: 60%;
         }
         @include lg(){
-          width: 40%;
+          width: 60%;
         }
 
         .postscript_paragraph_container{

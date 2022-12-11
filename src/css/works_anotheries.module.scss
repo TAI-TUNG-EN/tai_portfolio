@@ -22,6 +22,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
   @include md(){
     padding-bottom: 10rem;
   }
+  @include lg(){
+    padding-bottom: 12rem;
+  }
 
 
   .kv_container{
@@ -336,6 +339,9 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         width: calc(40% + 8rem);
         margin: 3.5rem 0;
         @include md(){
+          width: calc(60% + 8rem);
+        }
+        @include lg(){
           width: calc(60% + 8rem);
         }
 

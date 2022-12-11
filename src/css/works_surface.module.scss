@@ -6,7 +6,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
 #works_surface{
   width: 100vw;
-  padding-bottom: 15rem;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
@@ -16,6 +15,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
     justify-content: center;
     align-items: center;
     padding-bottom: 3rem;
+  }
+  @include md(){
+    padding-bottom: 10rem;
+  }
+  @include lg(){
+    padding-bottom: 12rem;
   }
   .kv_container{
     width: 94%;

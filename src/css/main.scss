@@ -4,6 +4,16 @@ $COLOR_GRAY: #858A8B;
 $FONT_EN: 'Outfit', sans-serif;
 $FONT_JP: 'BIZ UDGothic', sans-serif;
 $COLOR_FOOTER_HOVER: #858A8B;
+$FONT_40: 1.6rem;
+$FONT_30: 1.4rem;
+$FONT_24: 1.3rem;
+$FONT_20: 1.2rem;
+$FONT_18: 1.1rem;
+$FONT_16: 1rem;
+$FONT_15: .9rem;
+$FONT_14: .8rem;
+$FONT_13: .7rem;
+$LINE_HEIGHT_28: 1.7rem;
 
 html{
   font-size: calc(12px + 0.37vw);
@@ -40,8 +50,8 @@ html{
   line-height: 1.8rem;
 }
 @mixin lg_content_font{
-  font-size: .85rem;
-  line-height: 2rem;
+  font-size: $FONT_15;
+  line-height: $LINE_HEIGHT_28;
 }
 
 html, body{

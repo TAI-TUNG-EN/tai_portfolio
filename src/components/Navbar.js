@@ -23,7 +23,7 @@ const Navbar = ({wrapperComponent, ...props}) => {
       nav_works_ref.current.style.color = COLOR_NAV_BG;
       setTimeout(()=>{
         nav_bar_ref.current.style.transform = 'translateX(-3rem)';
-        nav_bar_ref.current.style.transition = 'all .4s cubic-bezier(0.71, 0.05, 0.19, 1)';
+        nav_bar_ref.current.style.transition = 'all .4s cubic-bezier(0.71, 0.05, 0.19, 1) 1.1s';
         nav_bar_ref.current.style.width = '6.5rem';
       }, 0);
       
@@ -33,7 +33,7 @@ const Navbar = ({wrapperComponent, ...props}) => {
       nav_about_ref.current.style.color = COLOR_NAV_BG;
       setTimeout(()=>{
         nav_bar_ref.current.style.transform = 'translateX(3.5rem)';
-        nav_bar_ref.current.style.transition = 'all .4s cubic-bezier(0.71, 0.05, 0.19, 1)';
+        nav_bar_ref.current.style.transition = 'all .4s cubic-bezier(0.71, 0.05, 0.19, 1) 1.5s';
         nav_bar_ref.current.style.width = '6.5rem';
       }, 5)
       

@@ -6,6 +6,7 @@ import { images } from '../images.ts'
 import backCss from '../css/back.module.scss'
 import PageLayout from './PageLayout';
 import arrow from '../static/icons/arrow_left.svg'
+import { HiArrowLongLeft } from "react-icons/hi2"
 
 export default function BackTo({buttonName, url}){
   const [width, setWidth] = useState(window.innerWidth);
@@ -30,7 +31,7 @@ export default function BackTo({buttonName, url}){
       // console.log(document.getElementsByClassName(`${backCss.btn_prop}`)[0]);
     }
     else{
-      document.getElementsByClassName(`${backCss.btn_prop}`)[0].style.display = 'unset';
+      document.getElementsByClassName(`${backCss.btn_prop}`)[0].style.display = 'flex';
       document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.width = '6rem';
       document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.height = 'unset';
     }
@@ -46,8 +47,11 @@ export default function BackTo({buttonName, url}){
       data-aos-duration="500"
       data-aos-once="false">
       <Link className={backCss.back_btn_contents_container} to={url}>
-        <img className={backCss.arrow_prop} src={arrow}></img>
-        <div className={backCss.btn_prop} ref={button_name_ref}>{ buttonName }</div>
+        {/* <img className={backCss.arrow_prop} src={arrow}></img> */}
+        <div className={backCss.btn_prop} ref={button_name_ref}>
+          <span className={backCss.btn_arrow_prop}><HiArrowLongLeft/>&ensp;</span>
+          <span>{ buttonName }</span>
+        </div>
       </Link>
     </div>
     

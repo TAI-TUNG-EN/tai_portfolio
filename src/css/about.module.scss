@@ -93,6 +93,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       height: 15vh;
     }
     @include lg(){
+      margin-top: 3rem;
       height: 30vh;
     }
 
@@ -105,9 +106,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       height: 100%;
       font-family: $FONT_JP;
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: $FONT_24;
       color: $COLOR_PARAGRAPH_TEXT;
-      line-height: 2.8rem;
+      line-height: 2.5rem;
       @include sm(){
         width: 80%;
         // margin-top: 50vh;
@@ -125,12 +126,152 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           // margin-left: 11rem;
           display: flex;
           flex-direction: column;
-          margin-bottom: .75rem;
+          margin-bottom: 1.5rem;
           text-align: justify;
         }
       }
 
       
+    }
+  }
+
+  .design_principle_container{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin: 3rem 0;
+
+    .design_principle_contents_container{
+      width: 94%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .design_principle_contents_shell{
+        width: calc(21.2rem + 35rem);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        @include sm(){
+
+        }
+        @include md(){
+          padding: 0 2rem;
+        }
+        @include lg(){
+          padding: 0 0rem;
+        }
+
+        .design_principle_title_container{
+          width: 50%;
+  
+          .design_principle_title_prop{
+            font-family: $FONT_EN;
+            font-weight: 500;
+            font-size: $FONT_20;
+            color: $COLOR_GRAY;
+            letter-spacing: 0.05em;
+  
+          }
+          .design_principle_title_underline{
+            width: 1rem;
+            border-top: 1px $COLOR_GRAY solid;
+            margin-top: .8rem;
+          }
+        }
+        .design_principle_lists_container{
+          width: 50%;
+  
+          .design_principle_lists_prop{
+            width: 100%;
+            font-family: $FONT_JP;
+            font-weight: 400;
+            font-size: $FONT_16;
+            color: $COLOR_BLACK;
+            letter-spacing: 0.03em;
+            line-height: 2.3rem;
+            display: flex;
+            flex-direction: row;
+            .index_prop{
+              width: 5%;
+              font-family: $FONT_EN;
+              text-align: justify;
+              margin-right: 1rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .design_approach_container{
+    width: 100vw;
+    margin-top: 5rem;
+    margin-bottom: 12rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .design_approach_contents_container{
+      width: 94%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .design_approach_contents_shell{
+        width: calc(21.2rem + 35rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @include sm(){
+
+        }
+        @include md(){
+          padding: 0 2rem;
+        }
+        @include lg(){
+          padding: 0 0rem;
+        }
+
+        .design_approach_title_container{
+          margin-bottom: 2.2rem;
+
+          .design_approach_title_prop{
+            font-family: $FONT_EN;
+            font-weight: 500;
+            font-size: $FONT_20;
+            color: $COLOR_GRAY;
+            letter-spacing: 0.05em;
+          }
+          .design_approach_title_underline{
+            width: 1rem;
+            border-top: 1px $COLOR_GRAY solid;
+            margin-top: .8rem;
+          }
+        }
+        .design_approach_description_container{
+          margin-bottom: 2.2rem;
+          .design_approach_description_prop{
+            font-family: $FONT_JP;
+            font-size: $FONT_15;
+            font-weight: 400;
+            color: $COLOR_DESCRIPTION;
+            line-height: 1.7rem;
+            text-align: justify;
+          }
+        }
+        .design_approach_img_container{
+          width: 100%;
+          
+          .design_approach_img_prop{
+            width: 100%;
+            object-fit: cover;
+            box-shadow:-10px 10px 50px -25px gray;
+          }
+        }
+      }
     }
   }
 
@@ -172,8 +313,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           display: flex;
           flex-direction: column;
         }
-        @include md(){
-        }
         .about_self_intro_img{
           // width: 50%;
           width: 21.2rem;
@@ -204,7 +343,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin-left: -1rem;
+            margin-left: -2rem;
             margin-bottom: 1.5rem;
             @include sm(){
               position: relative;
@@ -219,10 +358,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: .7rem;
+                font-size: $FONT_14;
                 color: $COLOR_CIRCLE_TEXT;
-                width: 18rem;
-                height: 18rem;
+                width: 21rem;
+                height: 21rem;
                 border: 1px $COLOR_CIRCLE_BORDER solid;
                 border-radius: 1000px;
                 background-color: transparent;
@@ -243,6 +382,18 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                     margin-left: -3rem;
                   }
                 }
+                @include sm(){
+                  width: 18rem;
+                  height: 18rem;
+                }
+                @include md(){
+                  width: 18rem;
+                  height: 18rem;
+                }
+                @include lg(){
+                  width: 21rem;
+                  height: 21rem;
+                }
               }
             }
   
@@ -253,19 +404,27 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             width: 100%;
             display: flex;
             flex-direction: column;
-            margin: 0 2.75rem;
-
+            margin-left: 2.75rem;
+            padding-right: 5rem;
             @include sm(){
               margin-left: 0;
               width: 100%;
               justify-content: center;
               align-items: center;
             }
+            @include md(){
+              width: unset;
+              padding-right: 2rem;
+            }
+            @include lg(){
+              width: 100%;
+              padding-right: 5rem;
+            }
     
             .about_self_intro_paragraph_name{
               // opacity: 0;
               width: 25.3rem;
-              font-size: 1.1rem;
+              font-size: $FONT_18;
               font-weight: 500;
               color: $COLOR_NAME;
               margin: 1rem 0;
@@ -274,29 +433,36 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               }
             }
             .about_self_intro_paragraph_description_container{
-              width: 25.3rem;
+              width: 28rem;
               display: flex;
               flex-direction: column;
-              font-size: .85rem;
+              font-size: $FONT_15;
               font-weight: 400;
               color: $COLOR_DESCRIPTION;
-              line-height: 2rem;
+              line-height: 1.8rem;
+              text-align: justify;
               @include sm(){
                 width: 85%;
                 text-align: justify;
+              }
+              @include md(){
+                width: 23rem;
+              }
+              @include lg(){
+                width: 28rem;
               }
               .about_self_intro_paragraph_description_prop{
                 font-size: 1rem;
                 // opacity: 0;
                 @include sm(){
-                  font-size: 1rem !important;
+                  font-size: $FONT_15 !important;
                   line-height: 2rem;
                 }
                 @include md(){
-                  font-size: 1rem;
+                  font-size: $FONT_15;
                 }
                 @include lg(){
-                  font-size: 1rem;
+                  font-size: $FONT_15;
                 }
               }
             }
@@ -326,12 +492,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               .about_experience_contents_prop{
                 font-size: .85rem;
                 color: $COLOR_EXPERIENCE_TEXT;
-                line-height: 1.8rem;
+                line-height: 1.5rem;
                 margin-left: 2.75rem;
                 opacity: 1;
                 transition: all 1s ease-in-out;
                 @include sm(){
-                  font-size: 1rem;
+                  font-size: $FONT_16;
                   line-height: 2rem;
                 }
               }
@@ -353,9 +519,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     width: 100vw;
     // height: 50vh;
     @include sm(){
-      height: 80vh;
       position: relative;
-      margin-top: 7rem;
+      margin-top: 1rem;
     }
     
     .about_special_contents_prop_container{
@@ -373,11 +538,11 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         display: flex;
         justify-content: center;
         font-family: $FONT_EN;
-        font-weight: 400;
+        font-weight: 500;
         width: 60%;
         color: $COLOR_SPECIAL_CONTENT_TITLE;
-        font-size: 1rem;
-        margin-bottom: .75rem;
+        font-size: $FONT_24;
+        margin-bottom: 1.5rem;
         margin-top: 1rem;
         @include sm(){
           width: 85%;
@@ -387,7 +552,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         @include sm(){
           flex-direction: column;
@@ -406,12 +571,42 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           align-items: center;
         }
 
+        .special_contents_bottom_words_prop{
+          margin-top: .7rem;
+          width: 22rem;
+          text-align: center;
+          font-family: $FONT_JP;
+          font-weight: 400;
+          font-size: $FONT_14;
+          color: $COLOR_GRAY;
+          @include sm(){
+
+          }
+          @include md(){
+            width: 17rem;
+          }
+          @include lg(){
+            width: 22rem;
+          }
+        }
         .about_special_contents_img_prop{
           object-fit: cover;
-          width: 14rem;
-          height: 10rem;
+          width: 22rem;
+          height: 16rem;
           box-shadow:-10px 10px 50px -25px gray;
+          @include sm(){
+
+          }
+          @include md(){
+            width: 17rem;
+            height: 11rem;
+          }
+          @include lg(){
+            width: 22rem;
+            height: 16rem;
+          }
         }
+        
         .about_special_contents_img_middle_container{
           position: relative;
           z-index: 1;
@@ -427,7 +622,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           }
         }
         .about_special_contents_img_upper_container{
-          width: 100%;
+          width: 94%;
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -436,10 +631,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           z-index: 3;
           margin-top: 5rem;
           @include sm(){
+            width: 100%;
             flex-direction: column-reverse;
             position: relative;
           }
           @include md(){
+            width: 94%;
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -448,6 +645,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             margin-top: 5rem;
           }
           @include lg(){
+            width: 94%;
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -464,7 +662,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
                 margin-right: 6rem;
               }
               @include lg(){
-                margin-right: 6rem;
+                margin-right: 10rem;
               }
             }
             &:nth-child(2){
@@ -476,7 +674,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               margin-left: 6rem;
               }
               @include lg(){
-              margin-left: 6rem;
+              margin-left: 10rem;
               }
             }
             .about_special_contents_upper_img_prop{
@@ -543,15 +741,15 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           width: 13rem;
           height: 3rem;
           background-color: white;
+          color: $COLOR_BLACK;
           border-radius: 500px;
-          .about_learn_me_by_hashtags_hover_section{
-            position: absolute;
-            width: 13rem;
-            height: 13rem;
-            background-color: transparent;
-            
+          transition: all .3s ease-in-out;
+          &:hover{
+            background-color: $COLOR_BLACK;
+            color: white;
+            transition: all .3s ease-in-out;
           }
-    
+
           .about_learn_me_by_hashtags_contents_prop{
             color: black;
             width: 10rem;

@@ -41,7 +41,7 @@ a{
   }
 
   .upper_section_container{
-    padding-top: 7.85rem;
+    // padding-top: 7.85rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,7 +62,7 @@ a{
     }
     @include lg(){
       flex-direction: row;
-      width: 65%;
+      width: 78%;
       padding-left: unset;
       justify-content: space-between;
       overflow-x: unset;
@@ -80,7 +80,7 @@ a{
         font-size: 4rem;
         font-family: $FONT_EN;
         font-weight: 300;
-        color: white;
+        color: #DBDFE0;
         // line-height: 3rem;
         // margin-bottom: 1.8rem;
         @include sm(){
@@ -115,8 +115,7 @@ a{
       }
 
       .upper_right_contents_prop_about{
-        font-size: 1.2rem;
-        color: white;
+        color: #DBDFE0;
         font-size: 1.1rem;
         margin-bottom: .6rem;
         transition: all .3s ease-in-out;
@@ -128,11 +127,11 @@ a{
           font-size: 1.3rem;
         }
         @include md(){
-          font-size: 1.1rem;
+          font-size: $FONT_30;
         }
       }
       .upper_right_contents_prop_hashtag{
-        color: white;
+        color: #DBDFE0;
         font-size: .7rem;
         margin-bottom: 1.5rem;
         transition: all .3s ease-in-out;
@@ -145,13 +144,13 @@ a{
           font-size: 1rem;
           margin-bottom: 4.5rem;
         }
-        @include md(){
-          font-size: .7rem;
+        @include lg(){
+          font-size: $FONT_16;
           margin-bottom: 1.5rem;
         }
       }
       .upper_right_contents_prop_works{
-        color: white;
+        color: #DBDFE0;
         font-size: 1.1rem;
         margin-bottom: 6rem;
         transition: all .3s ease-in-out;
@@ -163,13 +162,13 @@ a{
           font-size: 1.3rem;
         }
         @include md(){
-          font-size: 1.1rem;
+          font-size: $FONT_30;
         }
       }
       .upper_right_contents_prop_back_to_top{
-        color: white;
+        color: #DBDFE0;
         text-decoration: underline;
-        font-size: .7rem;
+        font-size: $FONT_16;
         transition: all .3s ease-in-out;
         @include hover_footer;
         // &:hover{
@@ -195,7 +194,8 @@ a{
   }
 
   .underline_prop{
-    margin: 3rem 0;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
     border-bottom: 1px $COLOR_UNDERLINE solid;
     width: 65%;
     @include sm(){
@@ -208,7 +208,7 @@ a{
       width: 80%;
     }
     @include lg(){
-      width: 65%;
+      width: 78%;
     }
   }
 
@@ -226,13 +226,13 @@ a{
       width: 80%;
       flex-direction: column-reverse;
     }
-    @include md(){
-      width: 65%;
+    @include lg(){
+      width: 78%;
       flex-direction: row;
     }
 
     .copyright_prop{
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       font-weight: 400;
       color: $COLOR_BOTTOM_TEXT;
       font-family: $FONT_EN;
@@ -254,6 +254,7 @@ a{
         width: 70%;
         bottom: unset;
         left: unset;
+        margin: 1rem 0;
       }
     }
     .bottom_right_container{

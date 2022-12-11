@@ -1,0 +1,356 @@
+@import './main.scss';
+$COLOR_BG_1:#FDFCFB 9.44%;
+$COLOR_BG_2:#E2DBC3 92.78%;
+$COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
+$COLOR_PARA_TITLE: #282D2F;
+$COLOR_PARA_DESCIPTION: #282D2F;
+
+#works_job_homes{
+  width: 100vw;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  background: $COLOR_BG;
+  @include sm(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  @include md(){
+    padding-bottom: 10rem;
+  }
+  @include lg(){
+    padding-bottom: 12rem;
+  }
+
+  .kv_container{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .paragraph_1_container{
+      width: 75%;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      @include sm(){
+        width: 85%;
+      }
+      @include md(){
+        width: 75%;
+      }
+
+      .paragraph_1_title{
+        font-family: $FONT_JP;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $COLOR_PARA_TITLE;
+        margin: 1.5rem 0;
+        line-height: 2.5rem;
+
+      }
+      .paragraph_1_description_container{
+
+        .paragraph_1_description_prop{
+          font-family: $FONT_JP;
+          font-weight: 400;
+          font-size: .85rem;
+          color: $COLOR_PARA_DESCIPTION;
+          line-height: 2rem;
+          @include sm(){
+            font-size: 1rem;
+            @include sm_content_font;
+          }
+          @include md(){
+            font-size: 1rem;
+            @include md_content_font;
+          }
+          @include lg(){
+            @include lg_content_font;
+          }
+
+        }
+      }
+    }
+
+    .middleImg{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+      @include sm(){
+        margin: 1rem 0;
+        height: 130%;
+      }
+      .all_dinasours_prop{
+        width: 75%;
+        object-fit: cover;
+        @include sm(){
+          width: 100%;
+          height: 37vh;
+        }
+      }
+      .img_description_prop{
+        margin-top: 1.5rem;
+        color: $COLOR_BLACK;
+        font-family: $FONT_JP;
+        font-weight: 400;
+        font-size: $FONT_15;
+      }
+    }
+
+    .show_design_draft_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+      @include sm(){
+        margin: 1rem 0;
+        height: 130%;
+      }
+      .show_design_draft_contents_container{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        @include sm(){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .show_design_draft_upper_img_prop{
+          object-fit: cover;
+          margin: 0 1rem;
+          &:nth-child(1){
+            width: 65%;
+            @include sm(){
+              width: 100%;
+            }
+          }
+          &:nth-child(2){
+            width: 20%;
+            @include sm(){
+              width: 100%;
+              margin-top: 2rem;
+            }
+          }
+        }
+        .show_design_draft_bottom_img_prop{
+          object-fit: cover;
+          width: 45%;
+          margin: 0 1rem;
+          @include sm(){
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .show_page_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+      .show_page_contents_container{
+        width: 94%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        @include sm(){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        @include md(){
+          width: 82%;
+        }
+        @include lg(){
+          width: 78%;
+        }
+
+        .show_page_prop{
+          width: 23%;
+          @include sm(){
+            width: 100%;
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+
+    .postscript_container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0;
+      @include sm(){
+        margin: 2rem 0;
+      }
+      
+      .postscript_contents_container{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #F2F2F2;
+        padding: 2.5rem 4rem;
+        box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+        @include sm(){
+          padding: 3rem 2.5rem;
+          width: 70%;
+        }
+        @include md(){
+          width: 60%;
+        }
+        @include lg(){
+          width: 55%;
+        }
+
+        .postscript_paragraph_container{
+          display: flex;
+          flex-direction: column;
+          
+          .postscript_paragraph_title_prop{
+            font-family: $FONT_JP;
+            font-weight: 700;
+            font-size: .75rem;
+            color: $COLOR_BLACK;
+            margin: 1rem 0;
+            @include sm(){
+              @include sm_content_font;
+            }
+            @include md(){
+              @include md_content_font;
+            }
+            @include lg(){
+              @include lg_content_font;
+            }
+
+          }
+          .postscript_paragraph_prop{
+            font-family: $FONT_JP;
+            font-weight: 400;
+            font-size: .75rem;
+            color: $COLOR_BLACK;
+            line-height: 1.5rem;
+            @include sm(){
+              @include sm_content_font;
+            }
+            @include md(){
+              @include md_content_font;
+            }
+            @include lg(){
+              @include lg_content_font;
+            }
+
+
+          }
+        }
+      }
+    }
+
+    .especially_thanks_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .especially_thanks_contents_container{
+        width: calc(40% + 8rem);
+        padding-bottom: 1.5rem;
+        border-bottom: 1px $COLOR_GRAY solid;
+        @include md(){
+          width: calc(60% + 8rem);
+        }
+        @include lg(){
+          width: calc(55% + 8rem);
+        }
+
+        .especially_thanks_title_prop{
+          color: $COLOR_BLACK;
+          font-family: $FONT_EN;
+          font-weight: 400;
+          font-size: 1rem;
+          margin-top: 2.3rem;
+          margin-bottom: 1rem;
+        }
+        .author_details_container{
+          margin: 1rem 0;
+          .especially_thanks_description_prop{
+            color: $COLOR_GRAY;
+            font-family: $FONT_JP;
+            font-weight: 400;
+            font-size: .8rem;
+            line-height: 1.3rem;
+            display: flex;
+
+            &:nth-child(1){
+              font-weight: 600;
+            }
+            &:nth-child(2){
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        
+      }
+    }
+
+    .shared_gallery_conatiner{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .shared_gallery_contents_conatiner{
+        width: calc(40% + 8rem);
+        padding-bottom: 1.5rem;
+        @include md(){
+          width: calc(60% + 8rem);
+        }
+        @include lg(){
+          width: calc(55% + 8rem);
+        }
+
+        .shared_gallery_title_prop{
+          color: $COLOR_BLACK;
+          font-family: $FONT_EN;
+          font-weight: 400;
+          font-size: 1rem;
+          margin: 2rem 0;
+          margin-top: 2.3rem;
+          margin-bottom: 1rem;
+        }
+        .website_details_container{
+          margin: 1rem 0;
+          .website_details_description_prop{
+            color: $COLOR_GRAY;
+            font-family: $FONT_EN;
+            font-weight: 400;
+            font-size: .8rem;
+            line-height: 1.2rem;
+            &:nth-child(1){
+              font-weight: 600;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

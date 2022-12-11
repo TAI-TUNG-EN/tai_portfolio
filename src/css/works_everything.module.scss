@@ -6,7 +6,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
 #works_everything{
   width: 100vw;
-  padding-bottom: 15rem;
   display: flex;
   justify-content: flex-end;
   background: $COLOR_BG;
@@ -16,6 +15,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
+  }
+  @include md(){
+    padding-bottom: 10rem;
+  }
+  @include lg(){
+    padding-bottom: 12rem;
   }
 
   .kv_container{
@@ -207,7 +212,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           width: 60%;
         }
         @include lg(){
-          width: 40%;
+          width: 60%;
         }
 
         .postscript_paragraph_container{

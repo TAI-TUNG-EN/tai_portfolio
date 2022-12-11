@@ -17,6 +17,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
     align-items: center;
     padding-bottom: 3rem;
   }
+  @include md(){
+    padding-bottom: 10rem;
+  }
+  @include lg(){
+    padding-bottom: 12rem;
+  }
   .kv_container{
     width: 94%;
     display: flex;

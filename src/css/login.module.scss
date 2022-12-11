@@ -1,29 +1,54 @@
 @import './main.scss';
 
 #login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../static/img/works/login_bg.png");
+  background-size: cover;
   
   label{
     margin-right: 1rem;
   }
-  input{
-    font-size: 1.2rem;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: rgba(128, 128, 128, 0.247);
-    color: $COLOR_BLACK;
-    padding: .5rem 1.5rem;
-  }
+  // input{
+  //   font-size: 1.2rem;
+  //   border-radius: 10px;
+  //   border-color: transparent;
+  //   background-color: rgba(128, 128, 128, 0.247);
+  //   color: $COLOR_BLACK;
+  //   padding: .5rem 1.5rem;
+  // }
   button{
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     border-color: transparent;
-    background-color: rgba(128, 128, 128, 0.247);
-    padding: .5rem 1.5rem;
+    background-color: white;
+    border-radius: 100px;
+    padding: .5rem .8rem;
     cursor: not-allowed;
+    margin-left: 9rem;
+    margin-top: 2rem;
+    font-family: $FONT_EN;
+    font-size: $FONT_16;
+    font-weight: 400;
+    color: $COLOR_BLACK;
     &:hover{
-      background-color: $COLOR_GRAY;
+      background-color: $COLOR_BLACK;
       color: white;
     }
+  }
+  .button_inside_prop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .img_prop{
+    margin-left: .5rem;
+    width: 15%;
   }
 
   width: 100vw;
@@ -36,9 +61,51 @@
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+    @include sm(){
+      width: 90%;
+    }
+    .login_title_prop{
+      font-family: $FONT_EN;
+      font-weight: 400;
+      font-size: $FONT_40;
+      letter-spacing: .1rem;
+    }
+    .login_description_container{
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+      .login_description_prop{
+        font-family: $FONT_JP;
+        font-size: $FONT_14;
+        font-weight: 400;
+        color: $COLOR_GRAY;
+        line-height: $FONT_24;
+      }
+    }
   
     .login_field_container{
       margin: .7rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .login_field_title_prop{
+        width: 8rem;
+        font-family: $FONT_EN;
+        font-size: $FONT_18;
+        font-weight: 400;
+        color: $COLOR_BLACK;
+      }
+      .input_field_prop{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: white;
+        border: 1px solid #3F729B;
+        border-radius: 10px;
+        font-size: $FONT_16;
+        width: 50%;
+        height: 2rem;
+      }
     }
     .warning_prop{
       color: red;

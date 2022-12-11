@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
+import { NavLink, useNavigate } from 'react-router-dom'
 import AOS from 'aos'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from './firebase';
 
 import PageLayout from './components/PageLayout'
 import Cursor from './Cursor';
@@ -18,7 +21,8 @@ import avatarImg from './static/img/about_avatar.jpg'
 // import avatarImg from './static/img/about_avatar-min.png'
 import hashImg_6 from './static/img/hashtags/hashtag_6.png'
 import hashImg_9 from './static/img/hashtags/hashtag_9.png'
-import hashImg_13 from './static/img/hashtags/hashtag_13.png'
+import hashImg_13 from './static/img/hashtags/hashtag_13.jpeg'
+import wireframe from './static/img/about_wireframe.png'
 
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
@@ -88,6 +92,8 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
+  const FONT_EN = "'Outfit', sans-serif";
+  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   // const [loading, setLoading] = useState(true)
   // useEffect(() => {
@@ -381,6 +387,15 @@ export default function About() {
     console.log('Finished loading');
   }
 
+  const navigate = useNavigate();
+  onAuthStateChanged(auth, (user) => {
+    if(user){
+      console.log("user log in: " + user.uid);
+    }
+    else{
+      navigate("/login");
+    }
+  })
   return(
     <>
       <Cursor cursorTypes='👀' />
@@ -404,6 +419,62 @@ export default function About() {
             <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
               <TopParagraph />
             </Parallax>
+          </div>
+          
+          <div className={aboutCss.design_principle_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="100"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
+            <div className={aboutCss.design_principle_contents_container}>
+              <div className={aboutCss.design_principle_contents_shell}>
+                <div className={aboutCss.design_principle_title_container}>
+                  <div className={aboutCss.design_principle_title_prop}>Design principle</div>
+                  <div className={aboutCss.design_principle_title_underline}></div>
+                </div>
+                <div className={aboutCss.design_principle_lists_container}>
+                  <div className={aboutCss.design_principle_lists_prop}>
+                    <span className={aboutCss.index_prop}>01</span>
+                    <span>疑いと検証を繰り返す。</span>
+                  </div>
+                  <div className={aboutCss.design_principle_lists_prop}>
+                    <span className={aboutCss.index_prop}>02</span>
+                    <span>試行錯誤を恐れずに踏み出す。</span>
+                  </div>
+                  <div className={aboutCss.design_principle_lists_prop}>
+                    <span className={aboutCss.index_prop}>03</span>
+                    <span>根拠に基づきデザインを起こす。</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={aboutCss.design_approach_container}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="100"
+            data-aos-offset="0"
+            data-aos-duration="300"
+            data-aos-once="false">
+            <div className={aboutCss.design_approach_contents_container}>
+              <div className={aboutCss.design_approach_contents_shell}>
+                <div className={aboutCss.design_approach_title_container}>
+                  <div className={aboutCss.design_approach_title_prop}>Approach</div>
+                  <div className={aboutCss.design_approach_title_underline}></div>
+                </div>
+                <div className={aboutCss.design_approach_description_container}>
+                  <div className={aboutCss.design_approach_description_prop}>
+                    デザインのあり方は多様で、色味や余白、ボタンの場所一つとっても100％の正解はありません。けれど、それぞれの理由はあるはずだと思います。これは誰に、何を見せて、どうなってもらうためのデザインなのか、自信を持って説明できるように、デザインを起こす前に課題と目的を再確認し、ターゲットと競合について調べます。その結果に基づきデザインの方向性を提案したり、ワイヤーフレームを通してイメージをすり合わせしたりしております。ロジックを重ねて、試行錯誤しながら、根拠のあるデザインを作る。これは、私がデザインする上で大切にしていること。
+                  </div>
+                </div>
+                <div className={aboutCss.design_approach_img_container}>
+                  <img src={ wireframe } className={aboutCss.design_approach_img_prop}></img>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
@@ -452,27 +523,51 @@ export default function About() {
                     data-aos-duration="1000"
                     data-aos-once="false"
                     data-aos-anchor-placement="top-bottom"></img>
+                  <div className={aboutCss.special_contents_bottom_words_prop}
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="0"
+                    data-aos-offset="10"
+                    data-aos-duration="700"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>カメラ女子</div>
                 </div>
                 <div className={aboutCss.about_special_contents_img_upper_container}>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
                     <img src={ hashImg_9 } className={aboutCss.about_special_contents_upper_img_prop}
                       data-aos="fade-up-left"
                       data-aos-easing="ease-in-out"
-                      data-aos-delay="600"
-                      data-aos-offset="10"
-                      data-aos-duration="1000"
-                      data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom"></img>
-                  </div>
-                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
-                    <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
-                      data-aos="fade-up-right"
-                      data-aos-easing="ease-in-out"
                       data-aos-delay="300"
                       data-aos-offset="10"
                       data-aos-duration="1000"
                       data-aos-once="false"
                       data-aos-anchor-placement="top-bottom"></img>
+                    <div className={aboutCss.special_contents_bottom_words_prop}
+                      data-aos="fade-up-left"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="300"
+                      data-aos-offset="10"
+                      data-aos-duration="700"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>ヨーグルト妖怪</div>
+                  </div>
+                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
+                    <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
+                      data-aos="fade-up-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="150"
+                      data-aos-offset="10"
+                      data-aos-duration="1000"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"></img>
+                    <div className={aboutCss.special_contents_bottom_words_prop}
+                      data-aos="fade-up-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="150"
+                      data-aos-offset="10"
+                      data-aos-duration="700"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>コピー本が好き</div>
                   </div>
                 </div>
               </div>
@@ -483,9 +578,8 @@ export default function About() {
             <div className={aboutCss.about_learn_me_by_hashtags_button_prop_container}>
               <a href='https://tai-tung-en.github.io/tai_portfolio_hashtags/' className={aboutCss.about_learn_me_by_hashtags_button_link}>
                 <div className={aboutCss.about_learn_me_by_hashtags_contents}>
-                  <div className={aboutCss.about_learn_me_by_hashtags_contents_prop} ref={learn_me_by_hashtag_text_ref}>Learn my by #hashtags</div>
+                  Learn me by #hashtags
                 </div>
-                <div className={aboutCss.about_learn_me_by_hashtags_button_hover_bg} ref={learn_me_by_hashtag_button_ref}> </div>
               </a>
             </div>
           </div>

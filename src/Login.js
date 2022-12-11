@@ -3,7 +3,8 @@ import {  signInWithEmailAndPassword   } from 'firebase/auth';
 import { auth } from './firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
 import loginCss from './css/login.module.scss'
-
+import arrow_right from './static/img/works/arrow_right.svg'
+import { HiArrowLongRight } from "react-icons/hi2"
 
 const Login = () => {
   var isDoubleCheckDisabled = 'not-allowed';
@@ -36,10 +37,14 @@ const Login = () => {
   return(
     <div id={loginCss.login}>
       <div className={loginCss.login_container}>                                            
-        <p> Welcome to Tai, Tung-En's Portfolio! </p>                       
+        <p className={loginCss.login_title_prop}> Hello, welcome to Tai, Tung-En’s portfolio. </p>                       
+        <div className={loginCss.login_description_container}>
+          <span className={loginCss.login_description_prop}>ポートフォリオをご覧いただきありがとうございます。</span>
+          <span className={loginCss.login_description_prop}>事前に提示されたメールアドレスとパスワードをご記入ください。</span>
+        </div>
         <form>                                              
           <div className={loginCss.login_field_container}>
-            <label htmlFor="email-address">
+            <label htmlFor="email-address" className={loginCss.login_field_title_prop}>
               Email address
             </label>
             <input
@@ -47,13 +52,13 @@ const Login = () => {
               name="email"
               type="email"                                    
               required                                                                                
-              placeholder="Email address"
               onChange={(e)=>setEmail(e.target.value)}
+              className={loginCss.input_field_prop}
             />
           </div>
 
           <div className={loginCss.login_field_container}>
-            <label htmlFor="password">
+            <label htmlFor="password" className={loginCss.login_field_title_prop}>
               Password
             </label>
             <input
@@ -61,18 +66,19 @@ const Login = () => {
               name="password"
               type="password"                                    
               required                                                                                
-              placeholder="Password"
+              // placeholder="Password"
               onChange={(e)=>setPassword(e.target.value)}
+              className={loginCss.input_field_prop}
             />
           </div>
                                 
           <div className={loginCss.warning_prop}>{ warning }</div>
           <div>
-            <button                                    
+            <button
               onClick={onLogin}                                        
               style={{cursor: isDoubleCheckDisabled}}
             >      
-              Login                                                                  
+              <span className={loginCss.button_inside_prop}>Get start 🧐&ensp;<HiArrowLongRight/> </span>
             </button>
           </div>                               
         </form>
