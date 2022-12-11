@@ -271,7 +271,7 @@ export default function JobHomes() {
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={jobHomesCss.shared_gallery_contents_conatiner}>
-                  <div className={jobHomesCss.shared_gallery_title_prop}>Be shared on the gallery site</div>
+                  <div className={jobHomesCss.shared_gallery_title_prop}>Thanks for sharing</div>
                   <div className={jobHomesCss.website_details_container}>
                     <a className={jobHomesCss.website_details_description_prop} href="https://responsive-jp.com/12271.html" target="_blank">RESPONSIVE WEB DESIGN JP</a>
                   </div>

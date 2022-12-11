@@ -292,6 +292,8 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         .author_details_container{
           margin: 1rem 0;
           .especially_thanks_description_prop{
+            display: flex;
+            flex-direction: row;
             color: $COLOR_GRAY;
             font-family: $FONT_JP;
             font-weight: 400;

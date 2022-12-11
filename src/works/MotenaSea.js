@@ -176,7 +176,7 @@ export default function MotenaSea() {
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={motenaSeaCss.shared_gallery_contents_conatiner}>
-                  <div className={motenaSeaCss.shared_gallery_title_prop}>Be shared on the gallery site</div>
+                  <div className={motenaSeaCss.shared_gallery_title_prop}>Thanks for sharing</div>
                   <div className={motenaSeaCss.website_details_container}>
                     <a className={motenaSeaCss.website_details_description_prop} href="https://webdesignclip.com/motena-sea/" target="_blank">Web Design Clip</a>
                   </div>
