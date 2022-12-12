@@ -325,6 +325,12 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             width: 18rem;
             height: 27.29rem;
           }
+          @include md(){
+            margin-left: 5rem;
+          }
+          @include lg(){
+            margin-left: 0;
+          }
         }
         .about_self_intro_right_section_container{
           // width: 50%;
