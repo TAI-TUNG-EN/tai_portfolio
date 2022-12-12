@@ -41,6 +41,20 @@ $COLOR_PARA: #282D2F;
       @include sm(){
         width: 85%;
       }
+      @include md(){
+        margin-top: 0;
+        margin-bottom: 3rem;
+        &:nth-child(2){
+          margin-top: 4rem;
+        }
+      }
+      @include lg(){
+        margin-top: 0;
+        margin-bottom: 3rem;
+        &:nth-child(2){
+          margin-top: 4rem;
+        }
+      }
 
       .paragraph_1_title{
         font-family: $FONT_JP;
@@ -78,7 +92,7 @@ $COLOR_PARA: #282D2F;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 3rem 0;
+      margin: 2rem 0;
 
       .all_dinasours_prop{
         width: 75%;
@@ -98,7 +112,8 @@ $COLOR_PARA: #282D2F;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 3rem 0;
+      margin-top: 0;
+      margin-bottom: 3rem;
       @include sm(){
         margin: 0 0;
       }
