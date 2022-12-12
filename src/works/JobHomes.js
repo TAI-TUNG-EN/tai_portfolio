@@ -243,18 +243,18 @@ export default function JobHomes() {
                 <div className={jobHomesCss.especially_thanks_contents_container}>
                   <div className={jobHomesCss.especially_thanks_title_prop}>Project credits</div>
                   <div className={jobHomesCss.author_details_container}>
-                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>Project organizer</div>
                     <a className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://www.willstyle.co.jp" target="_blank">ウィルスタイル株式会社</a>
                     <div className={jobHomesCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>デザイナーとして、トップと下層ページのデザインを担当させていただきました。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Account Director : Kousuke Sakaguchi</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Designer : Tai,tung-en</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Director : Mariko Nishizawa</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>Account Director : Kousuke Sakaguchi</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>Designer : Tai,tung-en</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>Director : Mariko Nishizawa</div>
                   </div>
                   <div className={jobHomesCss.author_details_container}>
-                    <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>Project organizer</div>
                     <a className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社KNOT様</a>
                     <div className={jobHomesCss.especially_thanks_description_prop}>今回の撮影には株式会社KNOT様（以下、「KNOT様」）にご協力いただきました。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>KNOT様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>

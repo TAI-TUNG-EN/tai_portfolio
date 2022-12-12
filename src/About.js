@@ -435,9 +435,9 @@ export default function About() {
                     <div className={aboutCss.about_self_intro_paragraph_name} ref={name_ref}>Tai, Tung-En</div>
                     <div className={aboutCss.about_self_intro_paragraph_description_container}>
                       <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
-                      <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる仕事をしたいと思い、<span style={{fontFamily: FONT_EN}}>Web</span>デザイナーとして制作会社へ入社。</span>
+                      <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる仕事をしたいと思い、Webデザイナーとして制作会社へ入社。</span>
                       <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
-                      <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野で<span style={{fontFamily: FONT_EN}}>Web</span>デザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
+                      <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
                     </div>
                   </div>
                   <div className={aboutCss.about_underline_div}></div>
@@ -499,7 +499,7 @@ export default function About() {
                 </div>
                 <div className={aboutCss.design_approach_description_container}>
                   <div className={aboutCss.design_approach_description_prop}>
-                    デザインのあり方は多様で、色味や余白、ボタンの場所一つとっても<span style={{fontFamily: FONT_EN}}>100%</span>の正解はありません。けれど、それぞれの理由はあるはずだと思います。これは誰に、何を見せて、どうなってもらうためのデザインなのか、自信を持って説明できるように、デザインを起こす前に課題と目的を再確認し、ターゲットと競合について調べます。その結果に基づきデザインの方向性を提案したり、ワイヤーフレームを通してイメージをすり合わせしたりしております。ロジックを重ねて、試行錯誤しながら、根拠のあるデザインを作る。これは、私がデザインする上で大切にしていること。
+                    デザインのあり方は多様で、色味や余白、ボタンの場所一つとっても100%の正解はありません。けれど、それぞれの理由はあるはずだと思います。これは誰に、何を見せて、どうなってもらうためのデザインなのか、自信を持って説明できるように、デザインを起こす前に課題と目的を再確認し、ターゲットと競合について調べます。その結果に基づきデザインの方向性を提案したり、ワイヤーフレームを通してイメージをすり合わせしたりしております。ロジックを重ねて、試行錯誤しながら、根拠のあるデザインを作る。これは、私がデザインする上で大切にしていること。
                   </div>
                 </div>
                 <div className={aboutCss.design_approach_img_container}>
@@ -531,7 +531,7 @@ export default function About() {
                     data-aos-offset="10"
                     data-aos-duration="700"
                     data-aos-once="false"
-                    data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>カメラ女子</div>
+                    data-aos-anchor-placement="top-bottom">#カメラ女子</div>
                 </div>
                 <div className={aboutCss.about_special_contents_img_upper_container}>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
@@ -550,7 +550,7 @@ export default function About() {
                       data-aos-offset="10"
                       data-aos-duration="700"
                       data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>ヨーグルト妖怪</div>
+                      data-aos-anchor-placement="top-bottom">#ヨーグルト妖怪</div>
                   </div>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
                     <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
@@ -568,7 +568,7 @@ export default function About() {
                       data-aos-offset="10"
                       data-aos-duration="700"
                       data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom"><span style={{fontFamily: FONT_EN}}>#</span>コピー本が好き</div>
+                      data-aos-anchor-placement="top-bottom">#コピー本が好き</div>
                   </div>
                 </div>
               </div>

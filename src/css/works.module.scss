@@ -36,7 +36,6 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
 
       .text_prop{
         text-align: center;
-        font-family: $FONT_JP;
         font-weight: 400;
         font-size: 1rem;
         color: white;
@@ -160,7 +159,6 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
 
         .project_name{
           text-align: center;
-          font-family: $FONT_EN;
           font-weight: 400;
           font-size: 1.2rem;
           color: $COLOR_PROJ_NAME;
@@ -200,7 +198,6 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
         .decription_contents_container{
           margin: 0.5rem 0;
           .description_title_prop{
-            font-family: $FONT_EN;
             font-weight: 600;
             font-size: .75rem;
             color: $COLOR_PROJ_DESCRIP;
@@ -209,7 +206,6 @@ $COLOR_PROJ_DESCRIP: #DBDFE0;
           }
           .description_contents_container{
             .description_contents_prop{
-              font-family: $FONT_EN;
               font-weight: 400;
               font-size: .75rem;
               color: $COLOR_PROJ_DESCRIP;

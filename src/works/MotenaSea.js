@@ -156,15 +156,15 @@ export default function MotenaSea() {
                 <div className={motenaSeaCss.especially_thanks_contents_container}>
                   <div className={motenaSeaCss.especially_thanks_title_prop}>Project credits</div>
                   <div className={motenaSeaCss.author_details_container}>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>Project organizer</div>
                     <a className={motenaSeaCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://www.willstyle.co.jp" target="_blank">ウィルスタイル株式会社</a>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>ディレクターとデザイナーとして、英語のキャッチコピーとコンセプト作り、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>
                     <div className={motenaSeaCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Account Director : Kousuke Sakaguchi</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Designer : Tai,tung-en</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Engineer : Mineo Okuda</div>
-                    <div className={motenaSeaCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Director : Tai,tung-en</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>Account Director : Kousuke Sakaguchi</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>Designer : Tai,tung-en</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>Engineer : Mineo Okuda</div>
+                    <div className={motenaSeaCss.especially_thanks_description_prop}>Director : Tai,tung-en</div>
                   </div>
                 </div>
               </div>

@@ -211,18 +211,18 @@ export default function Nishikage() {
                 <div className={nishikageCss.especially_thanks_contents_container}>
                   <div className={nishikageCss.especially_thanks_title_prop}>Project credits</div>
                   <div className={nishikageCss.author_details_container}>
-                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>Project organizer</div>
                     <a className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://www.willstyle.co.jp" target="_blank">ウィルスタイル株式会社</a>
                     <div className={nishikageCss.especially_thanks_description_prop}>本サイトは、ウィルスタイル株式会社に勤める時のプロジェクトです。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>デザイナーとして、トップと下層ページのデザイン、一部の写真撮影を担当させていただきました。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>プロジェクトメンバーは下記に掲載しております。</div>
-                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Account Director : Kousuke Sakaguchi</div>
-                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Designer : Tai,tung-en</div>
-                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
-                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Director : Yuki Ikezoe</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>Account Director : Kousuke Sakaguchi</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>Designer : Tai,tung-en</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>Director : Yuki Ikezoe</div>
                   </div>
                   <div className={nishikageCss.author_details_container}>
-                    <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Photography</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>Photography</div>
                     <a className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社KNOT様</a>
                     <div className={nishikageCss.especially_thanks_description_prop}>今回の撮影には株式会社KNOT様（以下、「KNOT様」）にご協力いただきました。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>KNOT様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
