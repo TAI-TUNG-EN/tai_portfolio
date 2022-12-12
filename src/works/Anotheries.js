@@ -87,7 +87,7 @@ export default function Anotheries() {
                         <ProjectKvLayout
                             kv_column_direction="column"
                             nameEN="Anotheries"
-                            type="Website (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2022.08-now" 
+                            type="Website (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2022.10-now" 
                             tool="Xmind, Figma, Lightroom, Photoshop" 
                             url="https://yihanyozikua.github.io/anotheries/" urlTitle="Website"
                             bannerImg={banner} bannerImgPosition="center 90%"/>
