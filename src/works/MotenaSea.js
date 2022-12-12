@@ -23,8 +23,6 @@ import motenaSeaVideo from '../static/img/works/motena_sea/demo02.mp4'
 
 
 export default function MotenaSea() {
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   useEffect(()=>{
     window.scrollTo({

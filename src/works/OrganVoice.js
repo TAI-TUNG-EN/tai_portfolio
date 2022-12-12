@@ -28,8 +28,6 @@ import organ_8 from '../static/img/works/organ_voice/organ_voice_08.jpg'
 import { images } from '../images.ts'
 
 export default function OrganVoice(){
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
   
   useEffect(()=>{
     window.scrollTo({

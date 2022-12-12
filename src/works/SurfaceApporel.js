@@ -27,8 +27,6 @@ import surface_video_2 from '../static/img/videos/main_comp.mp4'
 import { images } from '../images.ts'
 
 export default function SurfaceApporel(){
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
   
   useEffect(()=>{
     window.scrollTo({

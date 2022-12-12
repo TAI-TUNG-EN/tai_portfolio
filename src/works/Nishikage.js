@@ -23,8 +23,6 @@ import nishikage_4 from '../static/img/works/nishikage/nishikage_04.png'
 import nishikage_5 from '../static/img/works/nishikage/nishikage_05.png'
 
 export default function Nishikage() {
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   useEffect(()=>{
     window.scrollTo({

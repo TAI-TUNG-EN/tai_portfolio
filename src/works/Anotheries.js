@@ -30,8 +30,6 @@ import show_page_3 from '../static/img/works/anotheries/show_page_3.png'
 import show_page_4 from '../static/img/works/anotheries/show_page_4.png'
 
 export default function Anotheries() {
-    const FONT_EN = "'Outfit', sans-serif";
-    const FONT_JP = "'BIZ UDGothic', sans-serif";
     let width_worksBackToAnchor = 'calc(60% + 8rem)';
 
     useEffect(()=>{

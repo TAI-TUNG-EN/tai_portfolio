@@ -29,8 +29,6 @@ import job_homes_10 from '../static/img/works/job_homes/job_homes_10.png'
 
 
 export default function JobHomes() {
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   useEffect(()=>{
     window.scrollTo({

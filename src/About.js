@@ -92,8 +92,6 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   // const [loading, setLoading] = useState(true)
   // useEffect(() => {

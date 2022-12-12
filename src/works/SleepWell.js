@@ -28,8 +28,6 @@ import color_2 from '../static/img/works/sleep_well/color_2.png'
 import { images } from '../images.ts'
 
 export default function SleepWell(){
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
   
   useEffect(()=>{
     window.scrollTo({

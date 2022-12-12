@@ -25,8 +25,6 @@ import dinasour_4 from '../static/img/works/dinasour/dinosaur_02_1.png'
 import dinasour_5 from '../static/img/works/dinasour/dinosaur_02_2.png'
 
 export default function Qdinosaur(){
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
 
   const [width, setWidth] = useState(window.innerWidth);
   function handleWindowSizeChange() {

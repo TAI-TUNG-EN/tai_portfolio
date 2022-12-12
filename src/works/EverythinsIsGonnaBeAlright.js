@@ -22,8 +22,6 @@ import mv from '../static/img/videos/everything_igtv.mov'
 import { images } from '../images.ts'
 
 export default function EverythinsIsGonnaBeAlright(){
-  const FONT_EN = "'Outfit', sans-serif";
-  const FONT_JP = "'BIZ UDGothic', sans-serif";
   
   useEffect(()=>{
     window.scrollTo({
