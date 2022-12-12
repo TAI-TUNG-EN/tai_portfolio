@@ -61,6 +61,17 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       @include sm(){
         width: 85%;
       }
+      @include md(){
+        margin-top: 0;
+        margin-bottom: 3rem;
+        &:nth-child(2){
+          margin-top: 4rem;
+          margin-bottom: 2rem;
+        }
+      }
+      @include lg(){
+
+      }
 
       .paragraph_1_title{
         font-family: $FONT_JP;
@@ -113,6 +124,12 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       align-items: center;
       @include sm(){
         width: 80%;
+      }
+      @include md(){
+        margin-bottom: 2rem;
+      }
+      @include lg(){
+        margin-bottom: 2rem;
       }
 
       .reason_contents_container{
@@ -187,11 +204,19 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         align-items: center;
         flex-direction: column;
       }
+      @include md(){
+        margin-top: 0;
+        margin-bottom: -1rem;
+      }
+      @include lg(){
+        margin-top: 0;
+        margin-bottom: -1rem;
+      }
       .show_container{
         width: 100%;
         display: flex;
         flex-direction: row;
-        margin: 4rem 0;
+        margin-bottom: 3rem;
         @include sm(){
           justify-content: center;
           align-items: center;
@@ -330,10 +355,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 1.2rem;
+          font-size: $FONT_30;
           font-family: $FONT_EN;
           font-weight: 300;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
           
           @include sm(){
             margin-bottom: 2rem;
