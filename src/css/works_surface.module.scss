@@ -40,6 +40,13 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       @include sm(){
         width: 85%;
       }
+      @include md(){
+        margin-top: 0;
+        margin-bottom: 3rem;
+        &:nth-child(2){
+          margin-top: 4rem;
+        }
+      }
 
       .paragraph_1_title{
         font-family: $FONT_JP;
@@ -183,10 +190,11 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           width: 90%;
         }
         @include md(){
-          width: 55%;
+          width: 75%;
         }
         @include lg(){
-          width: 55%;
+          width: 75%;
+          margin-bottom: 1.5rem;
         }
 
         .show_project_row{
