@@ -190,7 +190,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       align-items: center;
       .especially_thanks_contents_container{
         width: calc(40% + 8rem);
-        padding-bottom: 1.5rem;
+        // padding-bottom: 1.5rem;
         border-bottom: 1px $COLOR_GRAY solid;
         @include md(){
           width: calc(60% + 8rem);
@@ -204,11 +204,11 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           font-family: $FONT_EN;
           font-weight: 400;
           font-size: 1rem;
-          margin-top: 2.3rem;
+          margin-top: 4rem;
           margin-bottom: 1rem;
         }
         .author_details_container{
-          margin: 1rem 0;
+          margin: 2rem 0;
           .especially_thanks_description_prop{
             color: $COLOR_GRAY;
             font-family: $FONT_JP;
@@ -251,7 +251,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           font-weight: 400;
           font-size: 1rem;
           margin: 2rem 0;
-          margin-top: 2.3rem;
+          margin-top: 2rem;
           margin-bottom: 1rem;
         }
         .website_details_container{

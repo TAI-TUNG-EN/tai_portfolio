@@ -253,7 +253,6 @@ export default function JobHomes() {
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Engineer : Taku Matsumura / Chiho Rokukawa</div>
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Director : Mariko Nishizawa</div>
                   </div>
-                  <br></br>
                   <div className={jobHomesCss.author_details_container}>
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
                     <a className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</a>
