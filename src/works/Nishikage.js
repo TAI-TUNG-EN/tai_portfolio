@@ -91,7 +91,7 @@ export default function Nishikage() {
               data-aos-once="false">
               <div className={nishikageCss.paragraph_1_title}>地域のかかりつけ医として</div>
               <div className={nishikageCss.paragraph_1_description_container}>
-                <div className={nishikageCss.paragraph_1_description_prop}>にしかげ内科クリニックは神戸市垂水区の内科、糖尿病、腎臓病の専門医で、「患者さんに納得していただける医療」をモットーに、地域に根ざした医療に取り組まれています。今回は分院として新しく開院した「にしかげクリニック アネックス」の<span style={{fontFamily: FONT_EN}}>Web</span>サイトを作成させていただきました。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>にしかげ内科クリニックは神戸市垂水区の内科、糖尿病、腎臓病の専門医で、「患者さんに納得していただける医療」をモットーに、地域に根ざした医療に取り組まれています。今回は分院として新しく開院した「にしかげクリニック アネックス」のWebサイトを作成させていただきました。</div>
                 <br></br>
                 <div className={nishikageCss.paragraph_1_description_prop}>看板に「糖尿病、腎透析」を書かれており、一見専門クリニックと思われますが、実際にヒアリングさせていただいたところ、診療設備の導入や個室の用意など、人工透析に力を入れるのはもちろんですが、もう一つの想いは、地域のかかりつけ医でありたいこと。</div>
                 <div className={nishikageCss.paragraph_1_description_prop}>「体に気になるところがあったらまずご相談を。」「電話やネットで予約しなくてもいいからまず来院してもらいたい。」</div>
@@ -117,7 +117,7 @@ export default function Nishikage() {
               data-aos-once="false">
               <div className={nishikageCss.paragraph_1_title}>患者さんに寄り添うデザイン</div>
               <div className={nishikageCss.paragraph_1_description_container}>
-                <div className={nishikageCss.paragraph_1_description_prop}>クリニックの<span style={{fontFamily: FONT_EN}}>Web</span>サイトをデザインする上で大切にしているのは、不安と疑問を感じさせてないこと。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>クリニックのWebサイトをデザインする上で大切にしているのは、不安と疑問を感じさせてないこと。</div>
                 <div className={nishikageCss.paragraph_1_description_prop}>コンテンツの配置はできるだけ分かりやすくし、全体的に柔らかい雰囲気が伝わるように、写真選びや色使い、サイトのあしらいに工夫しております。</div>
                 <br></br>
                 <div className={nishikageCss.paragraph_1_description_prop}>まず、今回は新しく開院されたこともあり、スタッフさんとクリニックの雰囲気を掴んでいただけるような写真をキービジュアルで使用することで、安心感、信頼感を演出。そして色は本院のにしかげ内科のテイストを踏まえ、ベースカラーが明るめの水色に。メインターゲットである近隣地域の患者さんはお年寄りの方が多くいらっしゃることで、アイコンを加えたり、フォントサイズも大きめに調整しました。また、より親和性を感じていただくため、ボタンのデザインは錠剤シートから薬を押し出すイメージをしており、ニューモーフィズムのデザインにしております。</div>
@@ -194,11 +194,11 @@ export default function Nishikage() {
                 <div className={nishikageCss.postscript_paragraph_container}>
                   <div className={nishikageCss.postscript_paragraph_prop}>私自身、子供の頃からよく病院のお世話になっている人です。</div>
                   <div className={nishikageCss.postscript_paragraph_prop}>行く前に口コミ調べたり、サイトを見たり、「ここに行って大丈夫かな」と不安になったり。大した病気ではなくても、体のことだから多少神経質になってしまうところもある。そういうシーンは日本に来てからも多く経験しました。</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>患者さんにとって、大事な判断材料になる<span style={{fontFamily: FONT_EN}}>Web</span>サイト。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>患者さんにとって、大事な判断材料になるWebサイト。</div>
                   <div className={nishikageCss.postscript_paragraph_prop}>不安することなく、知りたい情報を明確に掲載し、スムーズにたどり着けるように、</div>
                   <div className={nishikageCss.postscript_paragraph_prop}>行く前に写真でスタッフさんとクリニックの雰囲気を掴めますように、</div>
                   <div className={nishikageCss.postscript_paragraph_prop}>そういう思いを込めて、このサイトを制作いたしました。</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>サイト公開後、院長から「分かりやすかった」と満足している声をいただいた時、本当に心の底から嬉しいと思います。<span style={{fontFamily: FONT_EN}}>Web</span>サイトを通して、患者さんは安心してご来院いただけますよう、少しでも力添えできたら幸いです。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>サイト公開後、院長から「分かりやすかった」と満足している声をいただいた時、本当に心の底から嬉しいと思います。Webサイトを通して、患者さんは安心してご来院いただけますよう、少しでも力添えできたら幸いです。</div>
                 </div>
               </div>
 
@@ -223,9 +223,9 @@ export default function Nishikage() {
                   </div>
                   <div className={nishikageCss.author_details_container}>
                     <div className={nishikageCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Photography</div>
-                    <a className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</a>
-                    <div className={nishikageCss.especially_thanks_description_prop}>今回の撮影には株式会社KNOT様（以下、「<span style={{fontFamily: FONT_EN}}>KNOT</span>様」）にご協力いただきました。</div>
-                    <div className={nishikageCss.especially_thanks_description_prop}><span style={{fontFamily: FONT_EN}}>KNOT</span>様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
+                    <a className={nishikageCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社KNOT様</a>
+                    <div className={nishikageCss.especially_thanks_description_prop}>今回の撮影には株式会社KNOT様（以下、「KNOT様」）にご協力いただきました。</div>
+                    <div className={nishikageCss.especially_thanks_description_prop}>KNOT様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
                     <div className={nishikageCss.especially_thanks_description_prop}>ウィルスタイル株式会社のパートナー様として撮影をご担当いただきました。</div>
                   </div>
                 </div>

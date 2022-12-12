@@ -19,15 +19,14 @@ $LINE_HEIGHT_28: 1.7rem;
 @font-face {
   font-family: t1;
   src: local("BIZ UDGothic"), local(sans-serif);
-  // unicode-range: U+3040-30FF;
   unicode-range: U+3040-30FF, U+31F0-31FF;
 }
 
 // Font of English
 @font-face {
   font-family: t2;
-  src: local("Outfit"), local(sans-serif);
-  unicode-range: U+0021-007E;
+  src: url(../static/font/Outfit-VariableFont_wght.ttf) format('truetype');
+  unicode-range: U+00-024F;
 }
 
 // Font of Chinese
@@ -36,15 +35,15 @@ $LINE_HEIGHT_28: 1.7rem;
   src: local("BIZ UDGothic"), local(sans-serif);
   unicode-range: U+2E80-2FDF, U+3400-4DBF, U+4E00-9FFF;
 }
-
-
 html{
-  font-family: t1, t2, t3, $FONT_JP;
   font-size: calc(12px + 0.37vw);
   overflow: auto;
   &::-webkit-scrollbar {
     display: none;
   }
+}
+body{
+  font-family: t1, t2, t3, $FONT_JP;
 }
 
 @mixin sm(){
