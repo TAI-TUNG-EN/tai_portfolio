@@ -36,12 +36,15 @@
       align-items: center;
       font-family: $FONT_EN;
       font-weight: 400;
-      font-size: .75rem;
+      font-size: $FONT_16;
       .btn_arrow_prop{
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.2rem;
+      }
+      .btn_name_prop{
+        display: flex;
       }
     }
   }

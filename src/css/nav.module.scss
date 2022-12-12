@@ -29,6 +29,7 @@ nav{
   background-color: white;
   border-radius: 100px;
   font-family: $FONT_EN;
+  font-size: $FONT_16;
   z-index: 101;
   margin-left: 6vw;
   @include sm(){

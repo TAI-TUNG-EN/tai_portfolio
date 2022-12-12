@@ -230,7 +230,7 @@ export default function JobHomes() {
                   <div className={jobHomesCss.postscript_paragraph_prop}>このプロジェクトに参加した時に、私はまだコロナで日本に入国できず、台湾でテレワークをしていました。制作期間で直接お会いできないことに残念な気持ちがいっぱいですが、オンライン打ち合わせを通して、お客様にアイデアを提案したり、意見をすり合わせしたり、撮影をご担当くださったパートナー様と写真のイメージをご共有したりすること、私にとってはとても貴重な体験になりました。</div>
                   <div className={jobHomesCss.postscript_paragraph_prop}>日本に入国後、サイト公開後のごあいさつで初めて事務所にお伺いました。こだわりの内装と家具、デザインされた動線、お家づくりする上で大切にされているポイントがそのまま。</div>
                   <div className={jobHomesCss.postscript_paragraph_prop}>そして、スタッフの皆様に暖かく接していただき、「素敵なホームページをありがとう」と言っていただいた時、とても嬉しくて、仕事のやり甲斐を感じた瞬間でした。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>どうか読み手にとっても株式会社じょぶ様の家づくりのこだわり、お優しい人柄が伝わるWebサイトでありますように。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>どうか読み手にとっても株式会社じょぶ様の家づくりのこだわり、お優しい人柄が伝わる<span style={{fontFamily: FONT_EN}}>Web</span>サイトでありますように。</div>
                 </div>
               </div>
               

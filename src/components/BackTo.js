@@ -25,14 +25,14 @@ export default function BackTo({buttonName, url}){
   const button_name = button_name_ref.current
   useEffect(()=>{
     if(isMobile){
-      document.getElementsByClassName(`${backCss.btn_prop}`)[0].style.display = 'none';
+      document.getElementsByClassName(`${backCss.btn_name_prop}`)[0].style.display = 'none';
       document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.width = '1rem';
       document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.height = '1rem';
       // console.log(document.getElementsByClassName(`${backCss.btn_prop}`)[0]);
     }
     else{
       document.getElementsByClassName(`${backCss.btn_prop}`)[0].style.display = 'flex';
-      document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.width = '6rem';
+      document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.width = '7rem';
       document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.height = 'unset';
     }
   }, []);
@@ -49,8 +49,8 @@ export default function BackTo({buttonName, url}){
       <Link className={backCss.back_btn_contents_container} to={url}>
         {/* <img className={backCss.arrow_prop} src={arrow}></img> */}
         <div className={backCss.btn_prop} ref={button_name_ref}>
-          <span className={backCss.btn_arrow_prop}><HiArrowLongLeft/>&ensp;</span>
-          <span>{ buttonName }</span>
+          <span className={backCss.btn_arrow_prop}><HiArrowLongLeft/></span>
+          <span className={backCss.btn_name_prop}>&ensp;{ buttonName }</span>
         </div>
       </Link>
     </div>

@@ -76,7 +76,7 @@ export default function Footer(){
         </div>
         <div className={footerCss.upper_right_container}>
           <Link to="/about"><div className={footerCss.upper_right_contents_prop_about}>About</div></Link>
-          <a href="https://tai-tung-en.github.io/tai_portfolio_hashtags/"><div className={footerCss.upper_right_contents_prop_hashtag}>Special content-Learn me by #hashtags</div></a>
+          <div className={footerCss.upper_right_contents_prop_hashtag}><a href="https://tai-tung-en.github.io/tai_portfolio_hashtags/" className={footerCss.upper_right_contents_prop_hashtag}>Special content-Learn me by #hashtags</a></div>
           <Link to="/works"><div className={footerCss.upper_right_contents_prop_works}>Works</div></Link>
           <div className={footerCss.upper_right_contents_prop_back_to_top} onClick={scrollToTop}>Back to top</div>
         </div>
