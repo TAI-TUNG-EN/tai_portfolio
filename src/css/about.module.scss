@@ -140,12 +140,18 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     display: flex;
     justify-content: flex-end;
     margin: 3rem 0;
+    @include sm(){
+      justify-content: center;
+    }
 
     .design_principle_contents_container{
       width: 94%;
       display: flex;
       justify-content: center;
       align-items: center;
+      @include sm(){
+        width: 80%;
+      }
 
       .design_principle_contents_shell{
         width: calc(21.2rem + 35rem);
@@ -154,7 +160,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         justify-content: center;
         align-items: flex-start;
         @include sm(){
-
+          flex-direction: column;
+          width: 100%;
         }
         @include md(){
           padding: 0 2rem;
@@ -165,6 +172,15 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
 
         .design_principle_title_container{
           width: 50%;
+          @include sm(){
+            width: 80%;
+          }
+          @include md(){
+            width: 50%;
+          }
+          @include lg(){
+            width: 50%;
+          }
   
           .design_principle_title_prop{
             font-family: $FONT_EN;
@@ -182,6 +198,16 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         }
         .design_principle_lists_container{
           width: 50%;
+          @include sm(){
+            margin-top: 2.2rem;
+            width: 80%;
+          }
+          @include md(){
+            width: 50%;
+          }
+          @include lg(){
+            width: 50%;
+          }
   
           .design_principle_lists_prop{
             width: 100%;
@@ -212,12 +238,18 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
     margin-bottom: 12rem;
     display: flex;
     justify-content: flex-end;
+    @include sm(){
+      justify-content: center;
+    }
 
     .design_approach_contents_container{
       width: 94%;
       display: flex;
       justify-content: center;
       align-items: center;
+      @include sm(){
+        width: 80%;
+      }
 
       .design_approach_contents_shell{
         width: calc(21.2rem + 35rem);
@@ -226,7 +258,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         justify-content: center;
         align-items: flex-start;
         @include sm(){
-
+          width: unset;
         }
         @include md(){
           padding: 0 2rem;
