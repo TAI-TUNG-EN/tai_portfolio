@@ -57,7 +57,6 @@ $COLOR_PARA: #282D2F;
       }
 
       .paragraph_1_title{
-        font-family: $FONT_JP;
         font-weight: 300;
         font-size: 1.5rem;
         color: $COLOR_PARA_TITLE;
@@ -67,7 +66,6 @@ $COLOR_PARA: #282D2F;
       .paragraph_1_description_container{
 
         .paragraph_1_description_prop{
-          font-family: $FONT_JP;
           font-weight: 400;
           font-size: 1rem;
           color: $COLOR_PARA_DESCIPTION;
@@ -169,7 +167,6 @@ $COLOR_PARA: #282D2F;
             width: 50%;
           }
           .design_intro_description_title{
-            font-family: $FONT_JP;
             font-weight: 400;
             font-size: 1.2rem;
             color: $COLOR_PARA;
@@ -181,7 +178,6 @@ $COLOR_PARA: #282D2F;
           }
   
           .design_intro_description_prop{
-            font-family: $FONT_JP;
             font-weight: 400;
             font-size: 1rem;
             color: $COLOR_PARA;
@@ -243,7 +239,6 @@ $COLOR_PARA: #282D2F;
           flex-direction: column;
           
           .postscript_paragraph_title_prop{
-            font-family: $FONT_JP;
             font-weight: 700;
             font-size: .75rem;
             color: $COLOR_PARA;
@@ -260,7 +255,6 @@ $COLOR_PARA: #282D2F;
 
           }
           .postscript_paragraph_prop{
-            font-family: $FONT_JP;
             font-weight: 400;
             font-size: .75rem;
             color: $COLOR_PARA;

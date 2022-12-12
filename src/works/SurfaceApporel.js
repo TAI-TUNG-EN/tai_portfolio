@@ -92,8 +92,8 @@ export default function SurfaceApporel(){
               data-aos-once="false">
               <div className={surfaceCss.paragraph_1_title}>サーフィンをはじめ､マリンスポーツするための水着</div>
               <div className={surfaceCss.paragraph_1_description_container}>
-                <div className={surfaceCss.paragraph_1_description_prop}>この作品は、<span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION IN TAIWAN 2018</span>で登場したスポーツ水着ブランド<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>のために作られたランウェイ動画です。</div>
-                <div className={surfaceCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>は台湾とスイスのハーフの女の子が立ち上げたブランドで、<span style={{fontFamily: FONT_EN}}>Surf</span>（サーフィン）<span style={{fontFamily: FONT_EN}}> + Ace</span>という意味しています。全ての女の子がきれいな水着を着て、自信満々でサーフィンボードに立ててほしいという願いを込めて、機能と安全性を重視しつつ、シンプルのシルエットに鮮やかでカラフルな色味と相まって、海で写真映えする水着が作っておられています。</div>
+                <div className={surfaceCss.paragraph_1_description_prop}>この作品は、CAMPUS COLLECTION IN TAIWAN 2018で登場したスポーツ水着ブランドSurfAce Apparelのために作られたランウェイ動画です。</div>
+                <div className={surfaceCss.paragraph_1_description_prop}>SurfAce Apparelは台湾とスイスのハーフの女の子が立ち上げたブランドで、Surf（サーフィン） + Aceという意味しています。全ての女の子がきれいな水着を着て、自信満々でサーフィンボードに立ててほしいという願いを込めて、機能と安全性を重視しつつ、シンプルのシルエットに鮮やかでカラフルな色味と相まって、海で写真映えする水着が作っておられています。</div>
               </div>
             </div>
 
@@ -122,7 +122,7 @@ export default function SurfaceApporel(){
               <div className={surfaceCss.paragraph_1_title}>夏の風情が漂う動画に</div>
 
               <div className={surfaceCss.paragraph_1_description_container}>
-                <div className={surfaceCss.paragraph_1_description_prop}>動画ではカラフルな水着を引き立てるために､爽やかな白と水色をメインカラーとして使用しました。海、青い空、砂浜の要素を入れることで夏を連想させ、そこで<span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>の水着を着用しているモデルさんが登場し、背景の動画合わせたら、まるで夏の海辺が目の前に広がっているようなステージになりました。</div>
+                <div className={surfaceCss.paragraph_1_description_prop}>動画ではカラフルな水着を引き立てるために､爽やかな白と水色をメインカラーとして使用しました。海、青い空、砂浜の要素を入れることで夏を連想させ、そこでSurfAce Apparelの水着を着用しているモデルさんが登場し、背景の動画合わせたら、まるで夏の海辺が目の前に広がっているようなステージになりました。</div>
                 <div className={surfaceCss.paragraph_1_description_prop}>動きにはロゴのデザインに合わせて、手書きのエフェクトと流動性のある波のあしらいを加えました。後半では海で開催される夏の音楽祭をイメージし、オーディオウェブとネオンカラーを使用し、夏ならではの賑やかさを表現しています。</div>
               </div>
             </div>
@@ -180,7 +180,7 @@ export default function SurfaceApporel(){
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={surfaceCss.present_by_text_prop}>
-                  <span style={{fontFamily: FONT_EN}}>CAMPUS COLLECTION</span>は大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部は学生が携わるのが特徴で、大阪をはじめ、海外を含めて<span style={{fontFamily: FONT_EN}}>15</span>都市での開催実績があります。
+                  CAMPUS COLLECTIONは大阪が発祥で、ランウェイ、ダンスと音楽のパフォーマンス、コスメ展示などを含めたファションイベントです。出演者から運営スタッフまで全部は学生が携わるのが特徴で、大阪をはじめ、海外を含めて15都市での開催実績があります。
                 </div>
               </div>
             </div>
@@ -198,9 +198,7 @@ export default function SurfaceApporel(){
               </div>
               <div className={surfaceCss.postscript_paragraph_container}>
                 <div className={surfaceCss.postscript_paragraph_prop}>
-                  <span style={{fontFamily: FONT_EN}}>SurfAce Apparel</span>
-                  の動画を制作していた日々を思い返せば、
-                  <span style={{fontFamily: FONT_EN}}>After Effects</span>
+                  SurfAce Apparelの動画を制作していた日々を思い返せば、After Effects
                   で試行錯誤をしながら、秒刻みの手作業をする時間でした。ショーで登場されるモデルさんと服の雰囲気を確認し、音楽を聞き倒してリズムを把握します。如何に服、音楽、動画を調和し、このステージを映えさせるのかをひたすら考えていました。
                 </div>
                 <br></br>

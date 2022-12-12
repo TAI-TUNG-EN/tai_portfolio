@@ -103,7 +103,7 @@ export default function Qdinosaur(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <div className={dinasourCss.paragraph_1_title} style={{fontFamily: FONT_EN}}>Q dinosaur makes chat room a cozy place</div>
+              <div className={dinasourCss.paragraph_1_title}>Q dinosaur makes chat room a cozy place</div>
               <div className={dinasourCss.paragraph_1_description_container}>
                 <div className={dinasourCss.paragraph_1_description_prop}>「人に褒めてもらった時」、「ご飯を誘いたい時」、「何かをお願いする時」、表情が見えない文字のやりとりだけで、少し物足りない感じがします。</div>
                 <div className={dinasourCss.paragraph_1_description_prop}>そういう時、一つスタンプをつけることで、会話の雰囲気や相手を受けた印象が大きく変わる場合もあります。</div>
@@ -132,7 +132,7 @@ export default function Qdinosaur(){
               <div className={dinasourCss.paragraph_1_title}>可愛さだけではなく、実用性も高いスタンプへ</div>
               <div className={dinasourCss.paragraph_1_description_container}>
                 <div className={dinasourCss.paragraph_1_description_prop}>「恐恐」に、二つの取り組みをしました。</div>
-                <div className={dinasourCss.paragraph_1_description_prop}>◆現行スタンプの<span style={{fontFamily: FONT_EN}}>Case study</span>を行ったり、スタンプを求める会話のシーンとタイミングを中心に周りの人にヒアリングしたり、ユーザーのニーズに応えるスタンプを作成しました。</div>
+                <div className={dinasourCss.paragraph_1_description_prop}>◆現行スタンプのCase studyを行ったり、スタンプを求める会話のシーンとタイミングを中心に周りの人にヒアリングしたり、ユーザーのニーズに応えるスタンプを作成しました。</div>
                 <div className={dinasourCss.paragraph_1_description_prop}>◆外国人の方にも使いやすいように、あえて文字を加えずに、表情と身振りだけで気持ちを伝えることを心掛けていました。</div>
               </div>
             </div>
@@ -200,7 +200,7 @@ export default function Qdinosaur(){
                 <br></br>
                 <div className={dinasourCss.postscript_paragraph_container}>
                   <div className={dinasourCss.postscript_paragraph_prop}>「こういう時、この表情のスタンプがほしい！」</div>
-                  <div className={dinasourCss.postscript_paragraph_prop}>「<span style={{fontFamily: FONT_EN}}>32</span>個スタンプの中にどうしても使わないのがあるのでもったいない...」</div>
+                  <div className={dinasourCss.postscript_paragraph_prop}>「32個スタンプの中にどうしても使わないのがあるのでもったいない...」</div>
                   <div className={dinasourCss.postscript_paragraph_prop}>もっと日常的で、無駄のないスタンプを作りたくて、自分的に使いやすそうなものをはじめ、周りの人にスタンプをつけたい会話やタイミングをヒアリングし、「恐恐」を描きました。</div>
                 </div>
                 <br></br>

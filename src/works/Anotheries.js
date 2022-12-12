@@ -104,12 +104,11 @@ export default function Anotheries() {
                             <div className={anotheriesCss.paragraph_1_title}>思い出からもう一つの旅へ</div>
                             <div className={anotheriesCss.paragraph_1_description_container}>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>
-                                    <span style={{fontFamily: FONT_EN}}>Anotheries</span>は<span style={{fontFamily: FONT_EN}}>Another</span>と<span style={{fontFamily: FONT_EN}}>memories</span>
-                                    の意味に合わせた造語です。一つ一つ旅の思い出を集め、次の旅のきっかけになります。
+                                    AnotheriesはAnotherとmemoriesの意味に合わせた造語です。一つ一つ旅の思い出を集め、次の旅のきっかけになります。
                                 </div>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>「思い出からもう一つの旅へ」をコンセプトにしました。</div>
                                 <br></br>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>元々旅行が好きな私たちは、よく自分の<span style={{fontFamily: FONT_EN}}>SNS</span>で旅行の情報と写真をシェアします。そして少しつづ周りの人から「この間シェアしたところに行きました」、「行く前に書いてあった経験談をチェックしてよかった」などの声をもらえるようになって、私たちの旅行の思い出が、他の人と繋いでいることにシンプルに嬉しく思いました。もっと多くの人の役に立ちたい、しかし、<span style={{fontFamily: FONT_EN}}>SNS</span>だとシェアの仕方と届ける人に限りがあるので、サイト制作することになりました。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>元々旅行が好きな私たちは、よく自分のSNSで旅行の情報と写真をシェアします。そして少しつづ周りの人から「この間シェアしたところに行きました」、「行く前に書いてあった経験談をチェックしてよかった」などの声をもらえるようになって、私たちの旅行の思い出が、他の人と繋いでいることにシンプルに嬉しく思いました。もっと多くの人の役に立ちたい、しかし、SNSだとシェアの仕方と届ける人に限りがあるので、サイト制作することになりました。</div>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>写真と言葉を通して、私たちが旅先で見たもの、感じたことを共有し、共感を持ってもらい、人々と繋ぎたいと思います。</div>
                             </div>
                         </div>
@@ -122,12 +121,12 @@ export default function Anotheries() {
                             data-aos-duration="300"
                             data-aos-once="false">
                             <div className={anotheriesCss.paragraph_1_title}>
-                                旅行サイトほど情報満載ではないけど、<span style={{fontFamily: FONT_EN}}>SNS</span>投稿より伝えたいことがある
+                                旅行サイトほど情報満載ではないけど、SNS投稿より伝えたいことがある
                             </div>
                             <div className={anotheriesCss.paragraph_1_description_container}>
                                 
-                                <div className={anotheriesCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>Anotheries</span>を制作する上での課題が二つあります。一つは、現行の旅行サイトと違う視点で旅行先を紹介すること。もう一つは、人の共感を得ること。</div>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>インターネットに旅行紹介のコンテンツは既にたくさんあるので、そうみたいにアクセスからモデルコースまで詳しく紹介したくないです。でも、自分の<span style={{fontFamily: FONT_EN}}>SNS</span>のようなただの感想シェアになるのも、少し物足りなさが感じます。加え、旅行に求めるものは人それぞれあって、綺麗な景色、美味しいご飯、友達との楽しい時間、いざ出してみるとキリがないので、人の共感を得ることはそもそも難しいことではあります。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>Anotheriesを制作する上での課題が二つあります。一つは、現行の旅行サイトと違う視点で旅行先を紹介すること。もう一つは、人の共感を得ること。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>インターネットに旅行紹介のコンテンツは既にたくさんあるので、そうみたいにアクセスからモデルコースまで詳しく紹介したくないです。でも、自分のSNSのようなただの感想シェアになるのも、少し物足りなさが感じます。加え、旅行に求めるものは人それぞれあって、綺麗な景色、美味しいご飯、友達との楽しい時間、いざ出してみるとキリがないので、人の共感を得ることはそもそも難しいことではあります。</div>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>そこで私たちが考えていたのは、インターネットで載せていない､実際に訪れた私たちだけ知っていること、試して良かったと思う遊び方などを文章にして、エッセイを読む感覚で紹介するという解決策です。実のエピソードと気持ちを共有することで共感してもらい、文章に工夫しながら、旅をより一層楽しめるように、経験談を通して、ユーザーにとって有意義の情報を提供することを心掛けしています。</div>
                             </div>
                         </div>
@@ -253,7 +252,7 @@ export default function Anotheries() {
                                     <div className={anotheriesCss.postscript_paragraph_prop}>どこに行っても、カメラを持っている私たちがいる。</div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>せっかくたくさん調べて行ってきた旅だから、せっかくたくさんの写真を撮っていた旅だから。</div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>
-                                    どうやって私たちが好きなことを人の役に立つことにするのか、考えながら手を動かしてみたら、今の<span style={{fontFamily: FONT_EN}}>Anotheries</span>が生まれました。
+                                    どうやって私たちが好きなことを人の役に立つことにするのか、考えながら手を動かしてみたら、今のAnotheriesが生まれました。
                                     </div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>ここで紹介したのは、人々が憧れる絶景ではない、でも、心を揺さぶる景色。</div>
                                     <div className={anotheriesCss.postscript_paragraph_prop}>私たちの旅先との出会い、かけがえのない思い出はあなたにとって、素敵な旅のきっかけになりますように。</div>

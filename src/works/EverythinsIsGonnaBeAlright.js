@@ -94,14 +94,14 @@ export default function EverythinsIsGonnaBeAlright(){
                 data-aos-once="false">
 
                 <div className={everythingCss.paragraph_1_description_prop}>
-                  「<span style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</span>」は世の中の人に勇気と支えを与えたいという想いで、
+                  「Everything's gonna be alright.」は世の中の人に勇気と支えを与えたいという想いで、
                 </div>
                 <div className={everythingCss.paragraph_1_description_prop}>大学の友人が書き下ろした曲です。</div>
                 <br></br>
                 <div className={everythingCss.paragraph_1_description_prop}>私たちの頭上は晴れの日ばかりではありません。</div>
                 <div className={everythingCss.paragraph_1_description_prop}>生きている上で、追いつけない変化やどうしようもないことに心が折れた日々もたくさんあります。</div>
                 <br></br>
-                <div className={everythingCss.paragraph_1_description_prop}><span style={{fontFamily: FONT_EN}}>2020</span>年は多くな方にとって、人生のどん底を経験した大変な年だと思います。</div>
+                <div className={everythingCss.paragraph_1_description_prop}>2020年は多くな方にとって、人生のどん底を経験した大変な年だと思います。</div>
                 <div className={everythingCss.paragraph_1_description_prop}>たくさん悩んで、泣いて、失って。</div>
                 <div className={everythingCss.paragraph_1_description_prop}>心の孤独感でいつも支えてくれる人がいることすら忘れてしまいそう。</div>
                 <div className={everythingCss.paragraph_1_description_prop}>それでも、陰で私たちを支えてくれる人が実は常にそばにいます。</div>
@@ -110,7 +110,7 @@ export default function EverythinsIsGonnaBeAlright(){
                 <div className={everythingCss.paragraph_1_description_prop}>今日より明日、今年より来年。君がそばにいるから、少しだけでも良くなると信じたい。</div>
                 <div className={everythingCss.paragraph_1_description_prop}>これからの日々は、もっと素敵なのもでありますように。</div>
                 <div className={everythingCss.paragraph_1_description_prop}>新年の願いを込めて、この曲で伝えたい</div>
-                <div className={everythingCss.paragraph_1_description_prop}>「<span style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</span>」</div>
+                <div className={everythingCss.paragraph_1_description_prop}>「Everything's gonna be alright.」</div>
               </div>
 
               <div className={everythingCss.middleImg}
@@ -133,14 +133,14 @@ export default function EverythinsIsGonnaBeAlright(){
                   data-aos-once="false">
                   <div className={everythingCss.lyrics_container}>
                     <div className={everythingCss.lyrics_contents_container}>
-                      <div className={everythingCss.lyrics_contents_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
+                      <div className={everythingCss.lyrics_contents_prop} >Everything's gonna be alright.</div>
                       <div className={everythingCss.lyrics_contents_prop}>世界沒有你想的那麼壞</div>
-                      <div className={everythingCss.lyrics_contents_prop}>看著遠方的 <span style={{fontFamily: FONT_EN}}>neon light</span></div>
+                      <div className={everythingCss.lyrics_contents_prop}>看著遠方的neon light</div>
                       <div className={everythingCss.lyrics_contents_prop}>靠我的肩讓你依賴</div>
                       <div className={everythingCss.lyrics_contents_prop}>心裡的陰霾 不再存在</div>
                     </div>
                     <div className={everythingCss.lyrics_contents_container}>
-                      <div className={everythingCss.lyrics_contents_prop} style={{fontFamily: FONT_EN}}>Everything’s gonna be alright.</div>
+                      <div className={everythingCss.lyrics_contents_prop}>Everything's gonna be alright.</div>
                       <div className={everythingCss.lyrics_contents_prop}>世界はあなたが思うほど悪くない</div>
                       <div className={everythingCss.lyrics_contents_prop}>遠く光っているネオンラインを眺めて</div>
                       <div className={everythingCss.lyrics_contents_prop}>肩に寄りかかってもいいよ、頼りにしてもいい</div>
@@ -149,7 +149,7 @@ export default function EverythinsIsGonnaBeAlright(){
                   </div>
                   
                   <div className={everythingCss.paragraph_2_description_container}>
-                    <div className={everythingCss.paragraph_2_description_prop}>メインの視聴者が<span style={{fontFamily: FONT_EN}}>20</span>代のため、制作当時若者の間に注目を浴びていたループ動画を作成しました。</div>
+                    <div className={everythingCss.paragraph_2_description_prop}>メインの視聴者が20代のため、制作当時若者の間に注目を浴びていたループ動画を作成しました。</div>
                     <div className={everythingCss.paragraph_2_description_prop}>優しくて温かい雰囲気が伝わるよう、可愛いイラストと淡い色味を意識し、枠線も細くしました。</div>
                     <div className={everythingCss.paragraph_2_description_prop}>全体的に薄くなりすぎないように、テクスチャのあるシャドウで立体感を出してみました。</div>
                     <div className={everythingCss.paragraph_2_description_prop}>そして、インスタグラムで公開しようと考えていたので、動画のサイズをスクエアにしました。</div>
@@ -179,13 +179,13 @@ export default function EverythinsIsGonnaBeAlright(){
                   <div className={everythingCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={everythingCss.postscript_paragraph_container}>
-                  <div className={everythingCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2020</span>年<span style={{fontFamily: FONT_EN}}>3</span>月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細くおうち生活を過ごしていました。そんな時に、大学の友人から「聞いてほしい曲がある」と、この曲が送られてきました。</div>
-                  <div className={everythingCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「ここに悲しみがない」、歌詞に心に刺さる言葉ばかり。より多くの人に聞いてほしいと思い、この曲に合う動画を作って、<span style={{fontFamily: FONT_EN}}>SNS</span>でシェアしようと、友達に提案した。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}>2020年3月、新型コロナウイルスで私の世界が大きく変わりました。当時、私は京都に留学していて、一人で心細くおうち生活を過ごしていました。そんな時に、大学の友人から「聞いてほしい曲がある」と、この曲が送られてきました。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}>「世界はあなたが思うほど悪くない」「ここに悲しみがない」、歌詞に心に刺さる言葉ばかり。より多くの人に聞いてほしいと思い、この曲に合う動画を作って、SNSでシェアしようと、友達に提案した。</div>
                   <div className={everythingCss.postscript_paragraph_prop}>中国語では「新年新希望」（新年に新しい希望が与える）という言葉があり、この曲を聞いてくれる人にこれからの日々に希望と期待を感じてもらいたくて、公開は大晦日に合わせました。</div>
                 </div>
                 <br></br>
                 <div className={everythingCss.postscript_paragraph_container}>
-                  <div className={everythingCss.postscript_paragraph_prop}><span style={{fontFamily: FONT_EN}}>2</span>年後の今でも私はよくこの曲を聞いています。しかし、動画を見返してみると、一つ反省点がありました。ループ動画とはいえ、<span style={{fontFamily: FONT_EN}}>4</span>分ほどの尺で全く同じ画面が続いて、少し単調だと感じます。「あなたを支える人がずっとそばにいます」のコンセプトに合わせて、時間の流れを感じられる背景や色味の変化を加えたらいいと思います。</div>
+                  <div className={everythingCss.postscript_paragraph_prop}>2年後の今でも私はよくこの曲を聞いています。しかし、動画を見返してみると、一つ反省点がありました。ループ動画とはいえ、4分ほどの尺で全く同じ画面が続いて、少し単調だと感じます。「あなたを支える人がずっとそばにいます」のコンセプトに合わせて、時間の流れを感じられる背景や色味の変化を加えたらいいと思います。</div>
                 </div>
               </div>
 

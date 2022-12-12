@@ -62,7 +62,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       }
 
       .paragraph_1_title{
-        font-family: $FONT_JP;
         font-weight: 400;
         font-size: 1.5rem;
         color: $COLOR_PARA_TITLE;
@@ -73,7 +72,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       .paragraph_1_description_container{
 
         .paragraph_1_description_prop{
-          font-family: $FONT_JP;
           font-weight: 400;
           font-size: .85rem;
           color: $COLOR_PARA_DESCIPTION;
@@ -232,7 +230,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
             }
 
             .paragraph_2_title{
-              font-family: $FONT_JP;
               font-weight: 400;
               font-size: 1.2rem;
               color: $COLOR_BLACK;
@@ -240,7 +237,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               margin: 1.5rem 0;
             }
             .paragraph_2_description{
-              font-family: $FONT_JP;
               font-weight: 400;
               font-size: .75rem;
               color: $COLOR_BLACK;
@@ -346,7 +342,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           flex-direction: column;
           
           .postscript_paragraph_title_prop{
-            font-family: $FONT_JP;
             font-weight: 700;
             font-size: .75rem;
             color: $COLOR_BLACK;
@@ -363,7 +358,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
           }
           .postscript_paragraph_prop{
-            font-family: $FONT_JP;
             font-weight: 400;
             font-size: .75rem;
             color: $COLOR_BLACK;
@@ -400,14 +394,12 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;
-          font-family: $FONT_EN;
           font-weight: 400;
           font-size: 1rem;
           margin: 2rem 0;
         }
         .especially_thanks_description_prop{
           color: $COLOR_GRAY;
-          font-family: $FONT_EN;
           font-weight: 400;
           font-size: .7rem;
           line-height: 1.2rem;

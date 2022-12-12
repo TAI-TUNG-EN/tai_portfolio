@@ -49,7 +49,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       }
 
       .paragraph_1_title{
-        font-family: $FONT_JP;
         font-weight: 400;
         font-size: 1.5rem;
         color: $COLOR_BLACK;
@@ -70,7 +69,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       .paragraph_1_description_container{
 
         .paragraph_1_description_prop{
-          font-family: $FONT_JP;
           font-weight: 400;
           font-size: .85rem;
           color: $COLOR_BLACK;
@@ -116,7 +114,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             justify-content: center;
             align-items: center;
             font-size: 1.2rem;
-            font-family: $FONT_EN;
             font-weight: 300;
           }
           .animation_prop{
@@ -156,7 +153,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
         .present_by_text_prop{
           color: $COLOR_BLACK;
-          font-family: $FONT_JP;
           font-weight: 400;
           font-size: .85rem;
           line-height: 2rem;
@@ -324,7 +320,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           flex-direction: column;
           
           .postscript_paragraph_title_prop{
-            font-family: $FONT_JP;
             font-weight: 700;
             font-size: .75rem;
             color: $COLOR_BLACK;
@@ -341,7 +336,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
           }
           .postscript_paragraph_prop{
-            font-family: $FONT_JP;
             font-weight: 400;
             font-size: .75rem;
             color: $COLOR_BLACK;
@@ -376,7 +370,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;
-          font-family: $FONT_EN;
           font-weight: 400;
           font-size: 1rem;
           margin: 2rem 0;
@@ -385,7 +378,6 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           margin: 1rem 0;
           .especially_thanks_description_prop{
             color: $COLOR_GRAY;
-            font-family: $FONT_EN;
             font-weight: 400;
             font-size: .7rem;
             line-height: 1.2rem;
