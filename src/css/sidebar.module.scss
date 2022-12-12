@@ -3,6 +3,28 @@ $SIDEBAR_BG_COLOR: white;
 $COLOR_SIDEBAR_TEXT: black;
 
 #sidebar{
+  @include sm(){
+    position: relative;
+    background-color: transparent;
+    left: 5vw;
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  @include md(){
+    width: 6vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $SIDEBAR_BG_COLOR;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 99;
+  }
   @include lg(){
     width: 6vw;
     height: 100vh;
@@ -15,28 +37,6 @@ $COLOR_SIDEBAR_TEXT: black;
     align-items: center;
     justify-content: flex-end;
     z-index: 99;
-  }
-  @include md(){
-    width: 6vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $SIDEBAR_BG_COLOR;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    z-index: 99;
-  }
-  @include sm(){
-    position: relative;
-    background-color: transparent;
-    left: 5vw;
-    margin-top: -1rem;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
   }
   
 
