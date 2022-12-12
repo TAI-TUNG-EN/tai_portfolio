@@ -95,11 +95,14 @@ export default function JobHomes() {
               data-aos-once="false">
               <div className={jobHomesCss.paragraph_1_title}>暮らすための家づくり</div>
               <div className={jobHomesCss.paragraph_1_description_container}>
-                <div className={jobHomesCss.paragraph_1_description_prop}>株式会社じょぶは大阪に事務所を構えておられる工務店です。土地探しからアフターケアまで、一貫したサービスを展開しており、こだわりの素材・設計・施工をご提案されるのは特徴です。顧客層と重要視されているポイントの変化と伴い、内容の見直しをはじめ、サイトのイメージのブラッシュアップも必要とされ、今回サイトリニューアルのご依頼をいただきました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>株式会社じょぶは大阪に事務所を構えておられる工務店です。土地探しからアフターケアまで、一貫したサービスを展開しており、こだわりの素材・設計・施工をご提案されるのは特徴です。今回は顧客層と重要視されているポイントの変化と伴い、内容の見直し、サイトイメージのブラッシュアップも必要とされ、サイトリニューアルのご依頼をいただきました。</div>
                 <br></br>
-                <div className={jobHomesCss.paragraph_1_description_prop}>現行サイトの情報整理をはじめ、固定ページの分け方とタイトル名の変更、更新ページのカテゴリ選定に手がけております。ビジュアル的には、顧客層に合わせて、スタイリッシュで落ち着きのあるテイストに。また、お家を建てるだけではなく、建ててからその後の暮らしも大切にされていることで、生活のシーンを想像させるような写真をご提案いたしました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>現行サイトの情報整理をはじめ、固定ページの分け方とタイトル名の変更、更新ページのカテゴリ選定を手がけております。ビジュアル的には、顧客層に合わせて、スタイリッシュで落ち着きのあるテイストに。また、お家を建てるだけではなく、建ててからその後の暮らしも大切にされていることで、生活のシーンを想像させるような写真をご提案いたしました。</div>
               </div>
             </div>
+            
+
+
 
             <div className={jobHomesCss.middleImg}
               data-aos="fade-zoom-in"
@@ -129,11 +132,14 @@ export default function JobHomes() {
               data-aos-once="false">
               <div className={jobHomesCss.paragraph_1_title}>ひとつひとつのパーツで「らしさ」を伝える</div>
               <div className={jobHomesCss.paragraph_1_description_container}>
-                <div className={jobHomesCss.paragraph_1_description_prop}>今回のサイトリニューアルでは、サイトコンセプトを固める上でお打ち合わせを重ねさせていただきました。その中で、「ナチュラルで高性能」「建築家設計の実績」「土地探しからサポート」「暮らすための家づくり」といったキーワードが挙げられ、家づくりのこだわりがとても伝わってきました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>今回のサイトリニューアルでは、コンセプトを固める上でお打ち合わせを重ねさせていただきました。その中で、「ナチュラルで高性能」「建築家設計の実績」「土地探しからサポート」「暮らすための家づくり」といったキーワードが挙げられ、家づくりへのこだわりがとても伝わってきました。</div>
                 <br></br>
-                <div className={jobHomesCss.paragraph_1_description_prop}>そんな想いを応えるサイトになるよう、暮らしを感じさせる写真選びから、施工事例をページ上段で大きくアピール、家づくりの流れを掲載するなど、コンテンツの流れと見せ方を工夫しております。デザイン面では、顧客層に合わせて少し高級感を出せるために、余白感を意識して、レイアウトをシンプルにしたり、フォントとアイコンはスタイリッシュなものを使用したりしております。配色ではベースカラーのライトグレーに差し色のブルー。これは、施工事例で青空の見える開放感のあるお家が多く建てられたことからイメージしています。どの部分を切り取っても、株式会社じょぶの「らしさ」に溢れたサイトが出来上がりました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>そんな想いを応えるサイトになるよう、暮らしを感じさせる写真選びから、施工事例をページ上段で大きくアピールし、家づくりの流れを掲載するなど、コンテンツの流れと見せ方を工夫しております。デザイン面では、顧客層に合わせて少し高級感を出せるために、余白感を意識し、レイアウトをシンプルにしたり、フォントとアイコンはスタイリッシュなものを使用したりしております。配色ではベースカラーのライトグレーに差し色のブルー。これは、施工事例で青空の見える開放感のあるお家が多く建てられたことからイメージしています。どの部分を切り取っても、株式会社じょぶの「らしさ」に溢れたサイトが出来上がりました。</div>
               </div>
             </div>
+            
+
+
 
             <div className={jobHomesCss.show_design_draft_container}>
               <div className={jobHomesCss.show_design_draft_contents_container}>
@@ -165,11 +171,13 @@ export default function JobHomes() {
               data-aos-once="false">
               <div className={jobHomesCss.paragraph_1_title}>サイトから「人」を感じられる</div>
               <div className={jobHomesCss.paragraph_1_description_container}>
-                <div className={jobHomesCss.paragraph_1_description_prop}>株式会社じょぶのもう一つの強みは、「女性建築士による奥様目線の家づくり」です。使い勝手の良い家事動線や子育てしやすい間取りを実現、株式会社じょぶのスタッフだからこそできること。また、技術面以外、優しいお人柄もよく称賛されたようで、今回のサイトリニューアルにあたって、「人」をアピールしたいというご要望がありました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>株式会社じょぶのもう一つの強みは、「女性建築士による奥様目線の家づくり」です。使い勝手の良い家事動線や子育てしやすい間取りの実現、株式会社じょぶのスタッフだからこそできること。また、技術面以外、優しいお人柄もよく称賛されたようで、今回のサイトリニューアルにあたって、「人」をアピールすることもポイントになります。</div>
                 <br></br>
-                <div className={jobHomesCss.paragraph_1_description_prop}>今後スタッフさんの入れ替わりを配慮し、お客様が気軽に更新することができるシステム（WordPress）を導入しております。スタッフさん家づくりに対する想いはもちろん、手がけた実績とブログも合わせてご紹介できるよう、該当記事と紐つける仕様になっております。また、お人柄を感じていただくため、コンテンツに暮らしのこだわりと趣味の追加することをご提案いたしました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>今後スタッフさんの入れ替わりを配慮し、お客様が気軽にページ更新できるシステム（WordPress）を導入しております。スタッフさんの家づくりに対する想いはもちろん、手がけた実績とブログも合わせてご紹介できるよう、該当記事と紐づける仕様になっております。また、お人柄を感じていただくため、コンテンツに暮らしのこだわりと趣味の追加をご提案いたしました。</div>
               </div>
             </div>
+            
+
 
             <div className={jobHomesCss.show_design_draft_container}>
               <div className={jobHomesCss.show_design_draft_contents_container}>
@@ -201,9 +209,10 @@ export default function JobHomes() {
               data-aos-once="false">
               <div className={jobHomesCss.paragraph_1_title}>目的別のお問い合わせフォーム</div>
               <div className={jobHomesCss.paragraph_1_description_container}>
-                <div className={jobHomesCss.paragraph_1_description_prop}>住宅のご依頼を検討されている方、情報収集したい方、お家を建てられた方、サイトに訪れた方々ニーズに沿って、それぞれお問い合わせフォームを用意いたしました。フォームは4つもありますので、サイト内でごちゃつきにならないように、一つのページにまとめております。より分かりやすくするため、手順は2ステップに分けて、お問い合わせ項目を選んだら該当フォームに遷移させ、内容をご記入いただく仕様になっております。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>住宅のご依頼を検討されている方、情報収集したい方、お家を建てられた方。サイトに訪れた方々のニーズに沿って、それぞれお問い合わせフォームを用意いたしました。フォームは4つもありますので、サイト内でごちゃつきにならないように、一つのページにまとめております。より分かりやすくするため、手順は2ステップに分けて、お問い合わせ項目を選んだら該当フォームに遷移させ、内容をご記入いただく仕様になっております。</div>
               </div>
             </div>
+            
 
             <div className={jobHomesCss.show_page_container}>
               <div className={jobHomesCss.show_page_contents_container}>
@@ -225,12 +234,16 @@ export default function JobHomes() {
                   <div className={jobHomesCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={jobHomesCss.postscript_paragraph_container}>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>このプロジェクトに参加した時に、私はまだコロナで日本に入国できず、台湾でテレワークをしていました。制作期間で直接お会いできないことに残念な気持ちがいっぱいですが、オンライン打ち合わせを通して、お客様にアイデアを提案したり、意見をすり合わせしたり、撮影をご担当くださったパートナー様と写真のイメージをご共有したりすること、私にとってはとても貴重な体験になりました。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>日本に入国後、サイト公開後のごあいさつで初めて事務所にお伺いました。こだわりの内装と家具、デザインされた動線、お家づくりする上で大切にされているポイントがそのまま。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>このプロジェクトに参加した時に、私はまだコロナで日本に入国できず、台湾でテレワークをしていました。制作期間で直接お客様とお会いできないことに残念な気持ちがいっぱいですが、オンラインお打ち合わせを通して、アイデアを提案したり、意見をすり合わせしたり、撮影をご担当くださったパートナー様と写真のイメージをご共有したりすること、私にとってはとても貴重な体験になりました。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>日本に入国後、サイト公開後のごあいさつで初めて事務所にお伺いしました。こだわりの内装と家具、デザインされた動線、家づくりをする上で大切にされているポイントがそのまま。</div>
                   <div className={jobHomesCss.postscript_paragraph_prop}>そして、スタッフの皆様に暖かく接していただき、「素敵なホームページをありがとう」と言っていただいた時、とても嬉しくて、仕事のやり甲斐を感じた瞬間でした。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>どうか読み手にとっても株式会社じょぶ様の家づくりのこだわり、お優しい人柄が伝わるWebサイトでありますように。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>どうか読み手に株式会社じょぶ様の家づくりへのこだわり、お優しい人柄が伝わるWebサイトでありますように。</div>
                 </div>
               </div>
+              
+
+
+
               
               <div className={jobHomesCss.especially_thanks_container}
                 data-aos="fade-zoom-in"

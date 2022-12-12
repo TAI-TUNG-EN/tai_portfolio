@@ -115,7 +115,7 @@ export default function Nishikage() {
               data-aos-once="false">
               <div className={nishikageCss.paragraph_1_title}>患者さんに寄り添うデザイン</div>
               <div className={nishikageCss.paragraph_1_description_container}>
-                <div className={nishikageCss.paragraph_1_description_prop}>クリニックのWebサイトをデザインする上で大切にしているのは、不安と疑問を感じさせてないこと。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>クリニックのWebサイトをデザインする上で大切にしているのは、不安と疑問を感じさせないこと。</div>
                 <div className={nishikageCss.paragraph_1_description_prop}>コンテンツの配置はできるだけ分かりやすくし、全体的に柔らかい雰囲気が伝わるように、写真選びや色使い、サイトのあしらいに工夫しております。</div>
                 <br></br>
                 <div className={nishikageCss.paragraph_1_description_prop}>まず、今回は新しく開院されたこともあり、スタッフさんとクリニックの雰囲気を掴んでいただけるような写真をキービジュアルで使用することで、安心感、信頼感を演出。そして色は本院のにしかげ内科のテイストを踏まえ、ベースカラーが明るめの水色に。メインターゲットである近隣地域の患者さんはお年寄りの方が多くいらっしゃることで、アイコンを加えたり、フォントサイズも大きめに調整しました。また、より親和性を感じていただくため、ボタンのデザインは錠剤シートから薬を押し出すイメージをしており、ニューモーフィズムのデザインにしております。</div>
@@ -150,13 +150,16 @@ export default function Nishikage() {
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <div className={nishikageCss.paragraph_1_title}>情報探しをスムーズになるタブ切り替え</div>
+              <div className={nishikageCss.paragraph_1_title}>情報探しをスムーズにするタブ切り替え</div>
               <div className={nishikageCss.paragraph_1_description_container}>
-                <div className={nishikageCss.paragraph_1_description_prop}>今回サイト制作の課題の一つは情報を整理すること。</div>
-                <div className={nishikageCss.paragraph_1_description_prop}>診療科目ごとの詳細内容や注意事項、医師のごあいさつと紹介、クリニックの診療時間とアクセス、クリニックのサイトにはたくさんの情報が溢れています。如何に情報を整理、分類することはデザインを起こす前にとても大切な工程です。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>今回サイト制作の課題の一つは情報整理。</div>
+                <div className={nishikageCss.paragraph_1_description_prop}>診療科目ごと、詳細内容や注意事項、医師のごあいさつ、クリニックの診療時間とアクセスなど、クリニックのサイトにはたくさんの情報が溢れています。如何に情報を整理し、分類することはデザインを起こす前に大切な工程です。</div>
                 <div className={nishikageCss.paragraph_1_description_prop}>本サイトでは「診療内容」と「医院案内」の大枠を作り、それぞれの詳細ページはタブ切り替えの仕様にしております。同じページでタブ切り替えをすることで、どんな情報があるのを一目瞭然で、前のベージに戻る手間も省け、知りたい情報にスムーズにたどり着けるようにしております。</div>
               </div>
             </div>
+            
+
+
 
             <div className={nishikageCss.show_design_draft_container}>
               <div className={nishikageCss.show_design_draft_contents_container}>
@@ -190,15 +193,18 @@ export default function Nishikage() {
                   <div className={nishikageCss.postscript_paragraph_title_prop}>制作の振り返り</div>
                 </div>
                 <div className={nishikageCss.postscript_paragraph_container}>
-                  <div className={nishikageCss.postscript_paragraph_prop}>私自身、子供の頃からよく病院のお世話になっている人です。</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>行く前に口コミ調べたり、サイトを見たり、「ここに行って大丈夫かな」と不安になったり。大した病気ではなくても、体のことだから多少神経質になってしまうところもある。そういうシーンは日本に来てからも多く経験しました。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>私自身、子供の頃からよく病院のお世話になっています。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>病院に行く前に口コミを調べたり、サイトを見たり、「ここに行って大丈夫かな」と不安になったり。大した病気ではなくても、体のことだから多少神経質になってしまうところもあります。そういうシーンは日本に来てからも多く経験しました。</div>
                   <div className={nishikageCss.postscript_paragraph_prop}>患者さんにとって、大事な判断材料になるWebサイト。</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>不安することなく、知りたい情報を明確に掲載し、スムーズにたどり着けるように、</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>行く前に写真でスタッフさんとクリニックの雰囲気を掴めますように、</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>そういう思いを込めて、このサイトを制作いたしました。</div>
-                  <div className={nishikageCss.postscript_paragraph_prop}>サイト公開後、院長から「分かりやすかった」と満足している声をいただいた時、本当に心の底から嬉しいと思います。Webサイトを通して、患者さんは安心してご来院いただけますよう、少しでも力添えできたら幸いです。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>不安することなく、知りたい情報を明確に掲載し、スムーズにたどり着けるように、行く前に写真でスタッフさんとクリニックの雰囲気を掴めますように、そういう願いを込めて、このサイトを制作いたしました。</div>
+                  <div className={nishikageCss.postscript_paragraph_prop}>サイト公開後、院長から「分かりやすかった」と満足されている声をいただいた時、本当に心の底から嬉しいと思います。Webサイトを通して、患者さんは安心してご来院いただけますよう、少しでも力添えできたら幸いです。</div>
                 </div>
               </div>
+              
+
+
+
+
 
               <div className={nishikageCss.especially_thanks_container}
                 data-aos="fade-zoom-in"

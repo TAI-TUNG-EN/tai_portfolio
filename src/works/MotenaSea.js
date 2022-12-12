@@ -89,10 +89,12 @@ export default function MotenaSea() {
               data-aos-once="false">
               <div className={motenaSeaCss.paragraph_1_title}>未来のために</div>
               <div className={motenaSeaCss.paragraph_1_description_container}>
-                <div className={motenaSeaCss.paragraph_1_description_prop}>株式会社MOTENA-Seaは水素とバイオ燃料を利用した水素燃料電池船の活用から、パートナー企業と産官学連携のもと、新たなマリンビジネスの在り方を社会に提案していく会社です。事業にまつわるポイントは二つあります。一つは、水素を燃料として使用することで温室効果ガスの排出を大幅に削減し、環境に優しくてサステナビリティを実現すること。そしてもう一つは、従来の客船のイメージを超え、水素燃料電池船を通して新しい事業を提供し人々、社会を繋げていくこと。</div>
-                <div className={motenaSeaCss.paragraph_1_description_prop}>官公庁や地方企業・大学との提携も行われますので、事業と会社について紹介し、情報を発信することをメインの目的とし、新規サイト制作させていただく運びになりました。</div>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>株式会社MOTENA-Seaは水素とバイオ燃料を利用した水素燃料電池船の活用から、パートナー企業と産官学連携のもと、新たなマリンビジネスの在り方を社会に提案していく会社です。事業にまつわるポイントは二つあります。一つは、水素を燃料として使用することで温室効果ガスの排出を大幅に削減し、環境に優しくてサステナビリティを実現すること。そしてもう一つは、従来の客船のイメージを超え、水素燃料電池船を通して新しい事業を提供し、人々、社会を繋げていくこと。</div>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>官公庁や地方企業・大学との提携も行われますので、事業と会社について紹介し、情報を発信することをメインの目的として、新規サイトを制作させていただく運びになりました。</div>
               </div>
             </div>
+            
+
             
             <div className={motenaSeaCss.middleImg}
               data-aos="fade-zoom-in"
@@ -110,11 +112,20 @@ export default function MotenaSea() {
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <div className={motenaSeaCss.paragraph_1_title}>サイトを育てていくためのブログシステム</div>
+              <div className={motenaSeaCss.paragraph_1_title}>必要な情報をシンプルに</div>
               <div className={motenaSeaCss.paragraph_1_description_container}>
-                <div className={motenaSeaCss.paragraph_1_description_prop}>事業の展開と伴い、よく出張しにいかれることをお聞きして、現地でステークホルダーの方とのコミュニケーションや事業に興味を持っている方の声、出張先の出来事など、サイトで発信できるコンテンツもおありとのことなので、今回はお客様が気軽に更新することができるブログシステム（WordPress）を導入いたしました。サイト公開後はブログを活用くださっており、事業のきっかけと水素のご紹介をはじめ、現在取り組まれていることについてなどを投稿されています。</div>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>本サイト主な役割は、メインターゲットである官公庁や提携企業などのステークホルダーの方に、事業と会社について理解していただくこと。</div>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>スクロールするだけで、欲しい情報が手に入れるように。事業が展開されていく中、今後の営業活動にサイトをご活用いただくことも考慮し、情報が見せやすいシングルページをご提案いたしました。</div>
+                <br></br>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>そして、新しいビジネスと合わせて、今回のデザインコンセプトは「前に進む」こと。</div>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>これから事業展開がますます進んでいく願いを込めて、横スクロールのサイトで、ページのスクロールと共に船が前に進むデザインにしました。海がテーマの一貫したカラーと写真を使用し、背景にメイン事業となる水素燃料電池船の形をモチーフにした卵型の図案をあしらいとして加えております。ロゴのデザインと合わせて、華奢なフォントを使用し、タイトルのジャンプ率でメリハリをつけております。内容が硬めな分、お問い合わせページで、ボタンをホバーしたら文章が変わる遊び心を加えました。お客様のお人柄と合わせて少しラフな口調で、トップページのキャッチコピーに掛け合わせています。</div>
               </div>
             </div>
+            
+
+
+
+
 
             <div className={motenaSeaCss.middleImg}
               data-aos="fade-zoom-in"
@@ -128,6 +139,20 @@ export default function MotenaSea() {
               </video>
             </div>
 
+            <div className={motenaSeaCss.paragraph_1_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="100"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <div className={motenaSeaCss.paragraph_1_title}>サイトを育てていくためのブログシステム</div>
+              <div className={motenaSeaCss.paragraph_1_description_container}>
+                <div className={motenaSeaCss.paragraph_1_description_prop}>事業の展開と伴い、よく出張にいかれることをお聞きして、現地でステークホルダーの方とのコミュニケーションや事業に興味を持っている方の声、出張先の出来事など、サイトで発信できるコンテンツもおありとのことなので、今回はお客様が気軽に投稿できるブログシステム（WordPress）を導入いたしました。サイト公開後はブログを活用くださっており、事業のきっかけと水素のご紹介をはじめ、現在取り組まれていることについてなどを投稿されています。</div>
+              </div>
+            </div>
+            
+
             <div className={motenaSeaCss.postscript_container}>
               <div className={motenaSeaCss.postscript_contents_container}
                 data-aos="fade-zoom-in"
@@ -140,7 +165,7 @@ export default function MotenaSea() {
                 </div>
                 <div className={motenaSeaCss.postscript_paragraph_container}>
                   <div className={motenaSeaCss.postscript_paragraph_prop}>株式会社MOTENA-Sea様のサイトでは、自分がディレクションとデザイン両方担当させていただきました。契約まわりをはじめ、キャッチコピーとコンセプト作り､スケジュール管理など、まだまだ不慣れなことばかりでしたが、サイト制作の難しさと楽しさについて認識をより一層深めることができ、大変勉強させていただいたプロジェクトになりました。</div>
-                  <div className={motenaSeaCss.postscript_paragraph_prop}>新しい分野での新しいチャレンジ。お客様が語った事業に対する想い､海の未来へ大きな抱負に感銘を受け、私自身海が大好きこともあり､終始ワクワクな気持ちで制作させていただきました。</div>
+                  <div className={motenaSeaCss.postscript_paragraph_prop}>新しい分野での新しいチャレンジ。お客様が語った事業に対する想い､海の未来へ大きな抱負に感銘を受け、自分自身は海が大好きこともあり､終始ワクワクな気持ちでいました。</div>
                   <div className={motenaSeaCss.postscript_paragraph_prop}>短納期のプロジェクトではありますが、素材のご提供やデザインのご確認など、いつも迅速にご対応いただいたおかげて、無事に公開まで運ぶことができました。これからもサイトを通じて、株式会社MOTENA-Seaの事業と海運業界のご発展に少しお力添えできれば嬉しいです。</div>
                 </div>
               </div>
