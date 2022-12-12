@@ -611,7 +611,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           position: relative;
           z-index: 1;
           @include sm(){
-            transform: rotate(-6deg);
             margin-bottom: 3rem;
           }
           @include md(){
@@ -633,7 +632,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           @include sm(){
             width: 100%;
             flex-direction: column-reverse;
-            position: relative;
+            // position: absolute;
+            // top: 7rem;
           }
           @include md(){
             width: 94%;
@@ -657,6 +657,8 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             &:nth-child(1){
               transform: rotate(-6deg);
               @include sm(){
+                position: absolute;
+                z-index: 3;
               }
               @include md(){
                 margin-right: 6rem;
@@ -669,6 +671,9 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               transform: rotate(6deg);
               @include sm(){
                 margin-bottom: 5rem;
+                position: absolute;
+                top: -10rem;
+                z-index: 2;
               }
               @include md(){
               margin-left: 6rem;
