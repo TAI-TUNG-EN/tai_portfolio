@@ -108,7 +108,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         object-fit: cover;
         @include sm(){
           width: 100%;
-          height: 37vh;
+          height: 21vh;
         }
       }
       .img_description_prop{
@@ -172,6 +172,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           margin: 0 1rem;
           @include sm(){
             width: 100%;
+            margin-bottom: 1rem;
           }
         }
       }
