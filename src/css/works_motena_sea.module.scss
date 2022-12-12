@@ -44,6 +44,15 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       }
       @include md(){
         width: 75%;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+      }
+      @include lg(){
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+        &:nth-child(2){
+          margin-top: 4rem;
+        }
       }
 
       .paragraph_1_title{
@@ -91,6 +100,14 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         margin: 1rem 0;
         height: 130%;
       }
+      @include md(){
+        margin-top: 0;
+        margin-bottom: 3rem;
+      }
+      @include lg(){
+        margin-top: 0;
+        margin-bottom: 3rem;
+      }
       .all_dinasours_prop{
         width: 75%;
         object-fit: cover;
@@ -118,6 +135,14 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       margin: 5rem 0;
       @include sm(){
         margin: 2rem 0;
+      }
+      @include md(){
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+      }
+      @include lg(){
+        margin-top: 3rem;
+        margin-bottom: 5rem;
       }
       
       .postscript_contents_container{
