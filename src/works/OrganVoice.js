@@ -88,7 +88,7 @@ export default function OrganVoice(){
 
 
             <div className={organCss.paragraph_1_container}>
-              {/* <div className={organCss.paragraph_1_title}>大丈夫、あなたは一人じゃない。</div> */}
+              <div className={organCss.paragraph_1_title}>ユーモアの見せ方で身近な課題を意識</div>
               <div className={organCss.paragraph_1_description_container}
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
@@ -100,7 +100,7 @@ export default function OrganVoice(){
                 大学生はよく徹夜や断食ダイエットなどの悪い生活習慣で体調が崩されたりします。「若いから大丈夫！」と言い張って、生活習慣を見直そうとしない人が自分達を含め、周りにもたくさんいます。しかし、どんな丈夫な体にも限界があり、耐えられない日もいつか来ること、同世代の大学生に意識してほしいと思い、この作品を作りました。
                 </div>
               </div>
-              
+
               <div className={organCss.middleImg}
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
@@ -110,7 +110,7 @@ export default function OrganVoice(){
                 <img src={organ_1} alt="everything is gonna be alright" className={organCss.pieces_prop} style={{margin: '3rem 0'}}></img>
               </div>
 
-              <div className={organCss.paragraph_1_description_container} style={{marginBottom: '2rem'}}
+              <div className={organCss.paragraph_1_description_container} style={{marginBottom: '3rem'}}
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-offset="0"
@@ -118,15 +118,13 @@ export default function OrganVoice(){
                 data-aos-once="false">
 
                 <div className={organCss.paragraph_1_description_prop}>病みを抱えている臓器たちは人間が眠りにつく間に夜間の問診に行き、本音を吐き出すというイメージをしました。</div>
+                <div className={organCss.paragraph_1_description_prop}>徹夜で一番ダメージが与えられる肝臓をはじめ、肺、胃、脳、心臓、五つの臓器はそれぞれの悩みがあり、私たちに伝えたいことがあります。その本音をユーモアでちょっとした皮肉さのあるポエムで表現し、写真と相まって、印象的な作品を展示しました。</div>
+                <br></br>
                 <div className={organCss.paragraph_1_description_prop}>
                 見る人がより自分の生活に結びつけるように、写真は各臓器と関連する暮らしのシーンを切り取ってみました。そして、カラフルなイラストを際立つため、レタッチで色味を薄めにしました。黄色のタイトルでポップさを意識しつつ、線を細くするのと手書きで表現することで上品さを演出してみました。
                 </div>
               </div>
               
-
-
-
-
               <div className={organCss.middleImg}
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
