@@ -54,7 +54,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       }
 
       .paragraph_1_title{
-        font-family: $FONT_JP;
         font-weight: 400;
         font-size: 1.5rem;
         color: $COLOR_PARA_TITLE;
@@ -65,7 +64,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       .paragraph_1_description_container{
 
         .paragraph_1_description_prop{
-          font-family: $FONT_JP;
           font-weight: 400;
           font-size: .85rem;
           color: $COLOR_PARA_DESCIPTION;
@@ -116,7 +114,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       .img_description_prop{
         margin-top: 1.5rem;
         color: $COLOR_BLACK;
-        font-family: $FONT_JP;
         font-weight: 400;
         font-size: $FONT_15;
       }
@@ -269,7 +266,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           flex-direction: column;
           
           .postscript_paragraph_title_prop{
-            font-family: $FONT_JP;
             font-weight: 700;
             font-size: .75rem;
             color: $COLOR_BLACK;
@@ -286,7 +282,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
           }
           .postscript_paragraph_prop{
-            font-family: $FONT_JP;
             font-weight: 400;
             font-size: .75rem;
             color: $COLOR_BLACK;
@@ -325,7 +320,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
         .especially_thanks_title_prop{
           color: $COLOR_BLACK;
-          font-family: $FONT_EN;
           font-weight: 400;
           font-size: 1rem;
           margin-top: 4rem;
@@ -335,7 +329,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           margin: 2rem 0;
           .especially_thanks_description_prop{
             color: $COLOR_GRAY;
-            font-family: $FONT_JP;
             font-weight: 400;
             font-size: .8rem;
             line-height: 1.3rem;
@@ -371,7 +364,6 @@ $COLOR_PARA_DESCIPTION: #282D2F;
 
         .shared_gallery_title_prop{
           color: $COLOR_BLACK;
-          font-family: $FONT_EN;
           font-weight: 400;
           font-size: 1rem;
           margin: 2rem 0;
@@ -382,12 +374,11 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           margin: 1rem 0;
           .website_details_description_prop{
             color: $COLOR_GRAY;
-            font-family: $FONT_EN;
             font-weight: 400;
             font-size: .8rem;
             line-height: 1.2rem;
             &:nth-child(1){
-              font-weight: 600;
+              font-weight: 400;
               text-decoration: underline;
             }
           }

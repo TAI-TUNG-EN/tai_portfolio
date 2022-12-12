@@ -169,7 +169,7 @@ export default function JobHomes() {
               <div className={jobHomesCss.paragraph_1_description_container}>
                 <div className={jobHomesCss.paragraph_1_description_prop}>株式会社じょぶのもう一つの強みは、「女性建築士による奥様目線の家づくり」です。使い勝手の良い家事動線や子育てしやすい間取りを実現、株式会社じょぶのスタッフだからこそできること。また、技術面以外、優しいお人柄もよく称賛されたようで、今回のサイトリニューアルにあたって、「人」をアピールしたいというご要望がありました。</div>
                 <br></br>
-                <div className={jobHomesCss.paragraph_1_description_prop}>今後スタッフさんの入れ替わりを配慮し、お客様が気軽に更新することができるシステム（<span style={{fontFamily: FONT_EN}}>WordPress</span>）を導入しております。スタッフさん家づくりに対する想いはもちろん、手がけた実績とブログも合わせてご紹介できるよう、該当記事と紐つける仕様になっております。また、お人柄を感じていただくため、コンテンツに暮らしのこだわりと趣味の追加することをご提案いたしました。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>今後スタッフさんの入れ替わりを配慮し、お客様が気軽に更新することができるシステム（WordPress）を導入しております。スタッフさん家づくりに対する想いはもちろん、手がけた実績とブログも合わせてご紹介できるよう、該当記事と紐つける仕様になっております。また、お人柄を感じていただくため、コンテンツに暮らしのこだわりと趣味の追加することをご提案いたしました。</div>
               </div>
             </div>
 
@@ -203,7 +203,7 @@ export default function JobHomes() {
               data-aos-once="false">
               <div className={jobHomesCss.paragraph_1_title}>目的別のお問い合わせフォーム</div>
               <div className={jobHomesCss.paragraph_1_description_container}>
-                <div className={jobHomesCss.paragraph_1_description_prop}>住宅のご依頼を検討されている方、情報収集したい方、お家を建てられた方、サイトに訪れた方々ニーズに沿って、それぞれお問い合わせフォームを用意いたしました。フォームは<span style={{fontFamily: FONT_EN}}>4</span>つもありますので、サイト内でごちゃつきにならないように、一つのページにまとめております。より分かりやすくするため、手順は2ステップに分けて、お問い合わせ項目を選んだら該当フォームに遷移させ、内容をご記入いただく仕様になっております。</div>
+                <div className={jobHomesCss.paragraph_1_description_prop}>住宅のご依頼を検討されている方、情報収集したい方、お家を建てられた方、サイトに訪れた方々ニーズに沿って、それぞれお問い合わせフォームを用意いたしました。フォームは4つもありますので、サイト内でごちゃつきにならないように、一つのページにまとめております。より分かりやすくするため、手順は2ステップに分けて、お問い合わせ項目を選んだら該当フォームに遷移させ、内容をご記入いただく仕様になっております。</div>
               </div>
             </div>
 
@@ -230,7 +230,7 @@ export default function JobHomes() {
                   <div className={jobHomesCss.postscript_paragraph_prop}>このプロジェクトに参加した時に、私はまだコロナで日本に入国できず、台湾でテレワークをしていました。制作期間で直接お会いできないことに残念な気持ちがいっぱいですが、オンライン打ち合わせを通して、お客様にアイデアを提案したり、意見をすり合わせしたり、撮影をご担当くださったパートナー様と写真のイメージをご共有したりすること、私にとってはとても貴重な体験になりました。</div>
                   <div className={jobHomesCss.postscript_paragraph_prop}>日本に入国後、サイト公開後のごあいさつで初めて事務所にお伺いました。こだわりの内装と家具、デザインされた動線、お家づくりする上で大切にされているポイントがそのまま。</div>
                   <div className={jobHomesCss.postscript_paragraph_prop}>そして、スタッフの皆様に暖かく接していただき、「素敵なホームページをありがとう」と言っていただいた時、とても嬉しくて、仕事のやり甲斐を感じた瞬間でした。</div>
-                  <div className={jobHomesCss.postscript_paragraph_prop}>どうか読み手にとっても株式会社じょぶ様の家づくりのこだわり、お優しい人柄が伝わる<span style={{fontFamily: FONT_EN}}>Web</span>サイトでありますように。</div>
+                  <div className={jobHomesCss.postscript_paragraph_prop}>どうか読み手にとっても株式会社じょぶ様の家づくりのこだわり、お優しい人柄が伝わるWebサイトでありますように。</div>
                 </div>
               </div>
               
@@ -255,9 +255,9 @@ export default function JobHomes() {
                   </div>
                   <div className={jobHomesCss.author_details_container}>
                     <div className={jobHomesCss.especially_thanks_description_prop} style={{fontFamily: FONT_EN}}>Project organizer</div>
-                    <a className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様</a>
-                    <div className={jobHomesCss.especially_thanks_description_prop}>今回の撮影には株式会社<span style={{fontFamily: FONT_EN}}>KNOT</span>様（以下、「<span style={{fontFamily: FONT_EN}}>KNOT</span>様」）にご協力いただきました。</div>
-                    <div className={jobHomesCss.especially_thanks_description_prop}><span style={{fontFamily: FONT_EN}}>KNOT</span>様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
+                    <a className={jobHomesCss.especially_thanks_description_prop} style={{textDecoration: 'underline'}} href="https://knotphotography.jp/" target="_blank">株式会社KNOT様</a>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>今回の撮影には株式会社KNOT様（以下、「KNOT様」）にご協力いただきました。</div>
+                    <div className={jobHomesCss.especially_thanks_description_prop}>KNOT様は「一生の宝ものになる写真」をコンセプトに、姫路市のフォトスタジオを拠点としご活躍されております。</div>
                     <div className={jobHomesCss.especially_thanks_description_prop}>ウィルスタイル株式会社のパートナー様として撮影をご担当いただきました。</div>
                   </div>
                 </div>
