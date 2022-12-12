@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tai_portfolio/static/css/main.494050b6.css",
-    "main.js": "/tai_portfolio/static/js/main.526c7169.js",
+    "main.css": "/tai_portfolio/static/css/main.5b1efb48.css",
+    "main.js": "/tai_portfolio/static/js/main.51771868.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/everything_igtv.mov": "/tai_portfolio/static/media/everything_igtv.cbfa70016865fceb6013.mov",
     "static/media/motena_sea.png": "/tai_portfolio/static/media/motena_sea.e325baf53f6be64f0ae7.png",
@@ -71,6 +71,7 @@
     "static/media/everything_1_anim.png": "/tai_portfolio/static/media/everything_1_anim.14cc664ac36a1c87ded8.png",
     "static/media/dinosaur_01_1.png": "/tai_portfolio/static/media/dinosaur_01_1.cb61aa64b61a5b0d039b.png",
     "static/media/about_wireframe.png": "/tai_portfolio/static/media/about_wireframe.96a543dd88ddd9a5178c.png",
+    "static/media/Outfit-VariableFont_wght.ttf": "/tai_portfolio/static/media/Outfit-VariableFont_wght.bc779fb16a97a6842a72.ttf",
     "static/media/dinosaur_02_1.png": "/tai_portfolio/static/media/dinosaur_02_1.b8889448a0c1564d76f5.png",
     "static/media/dinosaur_01_2.png": "/tai_portfolio/static/media/dinosaur_01_2.61a4765ca40d3afb6005.png",
     "static/media/sleep_well_01_1.png": "/tai_portfolio/static/media/sleep_well_01_1.af8e48e225e3fa96ac8b.png",
@@ -88,12 +89,12 @@
     "static/media/arrow_up_right.svg": "/tai_portfolio/static/media/arrow_up_right.554b974330100dbaca9bf273829f16ec.svg",
     "static/media/arrow_right.svg": "/tai_portfolio/static/media/arrow_right.3687a61f714499d60826e72733e92fc9.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
-    "main.494050b6.css.map": "/tai_portfolio/static/css/main.494050b6.css.map",
-    "main.526c7169.js.map": "/tai_portfolio/static/js/main.526c7169.js.map",
+    "main.5b1efb48.css.map": "/tai_portfolio/static/css/main.5b1efb48.css.map",
+    "main.51771868.js.map": "/tai_portfolio/static/js/main.51771868.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.494050b6.css",
-    "static/js/main.526c7169.js"
+    "static/css/main.5b1efb48.css",
+    "static/js/main.51771868.js"
   ]
 }
