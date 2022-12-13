@@ -44,7 +44,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         margin-top: 0;
         margin-bottom: 3rem;
         &:nth-child(2){
-          margin-top: 4rem;
+          margin-top: 1rem;
         }
       }
 
@@ -53,6 +53,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         font-size: 1.5rem;
         color: $COLOR_BLACK;
         margin: 2rem 0;
+        @include lg(){
+          margin-top: 2rem;
+          margin-bottom: 1.2rem;
+        }
 
       }
       .paragraph_1_description_container{

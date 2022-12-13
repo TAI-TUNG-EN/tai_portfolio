@@ -57,7 +57,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         margin-top: 0;
         margin-bottom: 3rem;
         &:nth-child(2){
-          margin-top: 4rem;
+          margin-top: 0rem;
         }
       }
 
@@ -67,6 +67,16 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         color: $COLOR_PARA_TITLE;
         margin: 1.5rem 0;
         line-height: 2.5rem;
+        @include sm(){
+
+        }
+        @include md(){
+
+        }
+        @include lg(){
+          margin-top: 1rem;
+          margin-bottom: 1.2rem;
+        }
 
       }
       .paragraph_1_description_container{
@@ -233,7 +243,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               font-weight: 400;
               font-size: 1.2rem;
               color: $COLOR_BLACK;
-              line-height: 3rem;
+              line-height: 1.5rem;
               margin: 1.5rem 0;
             }
             .paragraph_2_description{
@@ -241,6 +251,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               font-size: .75rem;
               color: $COLOR_BLACK;
               line-height: 1.5rem;
+              text-align: justify;
               // margin-bottom: 2rem;
               @include sm(){
                 @include sm_content_font;

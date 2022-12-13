@@ -52,7 +52,7 @@ $COLOR_PARA: #282D2F;
         margin-top: 0;
         margin-bottom: 3rem;
         &:nth-child(2){
-          margin-top: 4rem;
+          margin-top: 0rem;
         }
       }
 
@@ -61,6 +61,16 @@ $COLOR_PARA: #282D2F;
         font-size: 1.5rem;
         color: $COLOR_PARA_TITLE;
         margin: 2rem 0;
+        @include sm(){
+
+        }
+        @include md(){
+
+        }
+        @include lg(){
+          margin-top: 3rem;
+          margin-bottom: 1.2rem;
+        }
 
       }
       .paragraph_1_description_container{

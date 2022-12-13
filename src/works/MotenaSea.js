@@ -78,6 +78,7 @@ export default function MotenaSea() {
               url="https://motena-sea.co.jp/" 
               urlTitle="Website"
               bannerImg={banner}
+              bannerImgPosition="center 95%"
               />
             
             <div className={motenaSeaCss.paragraph_1_container}
