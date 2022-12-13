@@ -434,7 +434,7 @@ export default function About() {
                     <div className={aboutCss.about_self_intro_paragraph_description_container}>
                       <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
                       <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる仕事をしたいと思い、Webデザイナーとして制作会社へ入社。</span>
-                      <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるようなデザインに励んでおります。</span>
+                      <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるクリエティブ制作に励んでおります。</span>
                       <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
                     </div>
                   </div>

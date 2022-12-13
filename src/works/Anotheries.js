@@ -106,7 +106,7 @@ export default function Anotheries() {
                                 </div>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>「思い出からもう一つの旅へ」をコンセプトにしました。</div>
                                 <br></br>
-                                <div className={anotheriesCss.paragraph_1_description_prop}>元々旅行が好きな私たちは、よく自分のSNSで旅行の情報と写真をシェアします。そして少しつづ周りの人から「この間シェアしたところに行きました」、「行く前に書いてあった経験談をチェックしてよかった」などの声をもらえるようになって、私たちの旅行の思い出が、他の人と繋いでいることにシンプルに嬉しく思いました。もっと多くの人の役に立ちたい、しかし、SNSだとシェアの仕方と届ける人に限りがあるので、サイト制作することになりました。</div>
+                                <div className={anotheriesCss.paragraph_1_description_prop}>元々旅行が好きな私たちは、よく自分のSNSで旅行の情報と写真をシェアします。そして少しずつ周りの人から「この間シェアしたところに行きました」、「行く前に書いてあった経験談をチェックしてよかった」などの声をもらえるようになって、私たちの旅行の思い出が、他の人と繋いでいることにシンプルに嬉しく思いました。もっと多くの人の役に立ちたい、しかし、SNSだとシェアの仕方と届ける人に限りがあるので、サイト制作することになりました。</div>
                                 <div className={anotheriesCss.paragraph_1_description_prop}>写真と言葉を通して、私たちが旅先で見たもの、感じたことを共有し、共感を持ってもらい、人々と繋ぎたいと思います。</div>
                             </div>
                         </div>

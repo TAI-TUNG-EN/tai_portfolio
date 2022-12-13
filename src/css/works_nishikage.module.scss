@@ -185,6 +185,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         background-color: #F2F2F2;
         padding: 2.5rem 4rem;
         box-shadow:-10px 10px 50px -25px rgb(105, 105, 105);
+        
         @include sm(){
           padding: 3rem 2.5rem;
           width: 70%;

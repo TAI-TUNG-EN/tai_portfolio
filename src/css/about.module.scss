@@ -104,7 +104,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       align-items: center;
       width: 88%;
       height: 100%;
-      font-family: $FONT_JP;
+      // font-family: $FONT_JP;
       font-weight: 400;
       font-size: $FONT_24;
       color: $COLOR_PARAGRAPH_TEXT;
@@ -183,7 +183,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           }
   
           .design_principle_title_prop{
-            font-family: $FONT_EN;
+            // font-family: $FONT_EN;
             font-weight: 500;
             font-size: $FONT_20;
             color: $COLOR_GRAY;
@@ -211,7 +211,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
   
           .design_principle_lists_prop{
             width: 100%;
-            font-family: $FONT_JP;
+            // font-family: $FONT_JP;
             font-weight: 400;
             font-size: $FONT_16;
             color: $COLOR_BLACK;
@@ -221,7 +221,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
             flex-direction: row;
             .index_prop{
               width: 5%;
-              font-family: $FONT_EN;
+              // font-family: $FONT_EN;
               text-align: justify;
               margin-right: 1rem;
               font-weight: 500;
@@ -271,7 +271,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           margin-bottom: 2.2rem;
 
           .design_approach_title_prop{
-            font-family: $FONT_EN;
+            // font-family: $FONT_EN;
             font-weight: 500;
             font-size: $FONT_20;
             color: $COLOR_GRAY;
@@ -286,7 +286,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         .design_approach_description_container{
           margin-bottom: 2.2rem;
           .design_approach_description_prop{
-            font-family: $FONT_JP;
+            // font-family: $FONT_JP;
             font-size: $FONT_15;
             font-weight: 400;
             color: $COLOR_DESCRIPTION;
@@ -575,7 +575,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
       .about_special_contents_title{
         display: flex;
         justify-content: center;
-        font-family: $FONT_EN;
+        // font-family: $FONT_EN;
         font-weight: 500;
         width: 60%;
         color: $COLOR_SPECIAL_CONTENT_TITLE;
@@ -613,7 +613,6 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
           margin-top: .7rem;
           width: 22rem;
           text-align: center;
-          font-family: $FONT_JP;
           font-weight: 400;
           font-size: $FONT_14;
           color: $COLOR_GRAY;
