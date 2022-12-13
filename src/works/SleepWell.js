@@ -77,7 +77,7 @@ export default function SleepWell(){
           <div className={sleepCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              nameEN="SLEEP WELL"
+              name="SLEEP WELL"
               type="Application design (School project)" roles={["Direction, Project Management,", "Design"]} 
               date="2019.05-2019.06" tool="Xmind, Adobe XD" 
               url="http://tuip2t5.weebly.com/" urlTitle="Project site"

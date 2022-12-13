@@ -86,8 +86,7 @@ export default function Qdinosaur(){
           <div className={dinasourCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column-reverse"
-              nameEN="Q dinosaur"
-              nameCN="恐恐龍"
+              name="Q dinosaur恐恐龍"
               type="Line sticker (Side project)" roles={["Design (illustration)"]} date="2020.10-2020.12" tool="Adobe illustratior" 
               url="https://store.line.me/stickershop/product/14468519" 
               urlTitle="Sticker page"

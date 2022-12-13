@@ -79,7 +79,7 @@ export default function JobHomes() {
           <div className={jobHomesCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column-reverse"
-              nameJP="株式会社じょぶ"
+              name="株式会社じょぶ"
               type="Website (Client project with willstyle)" roles={["Design"]} date="2022.05" tool="Adobe XD" 
               url="https://job-homes.com/" 
               urlTitle="Website"

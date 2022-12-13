@@ -77,7 +77,7 @@ export default function SurfaceApporel(){
           <div className={surfaceCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              nameEN="SurfAce Apparel"
+              name="SurfAce Apparel"
               type="Runway animation" roles={["Project Management, Design , Animation"]} date="2018.10-2018.12" tool="After Effects, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
               bannerImg={banner}
               urlNeed='false'/>

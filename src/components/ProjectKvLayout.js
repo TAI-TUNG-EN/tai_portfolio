@@ -13,7 +13,7 @@ import arrow from '../static/icons/arrow_up_right.svg'
 
 
 
-export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, bannerHeight, bannerImgPosition, url, urlTitle, urlNeed, comment}){
+export default function ProjectKvLayout ({ kv_column_direction, name, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, bannerHeight, bannerImgPosition, url, urlTitle, urlNeed, comment}){
   console.log(kv_column_direction);
   var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
   
@@ -45,9 +45,10 @@ export default function ProjectKvLayout ({ kv_column_direction, nameEN, nameCN, 
         data-aos-once="false">
         <div className={projectKvCss.info_container}>
           <div className={projectKvCss.project_name_prop}>
-            { nameEN }
+            { name }
+            {/* { nameEN }
             <span style={{fontFamily: FONT_JP}}>{ nameJP }</span>
-            <span style={{fontFamily: FONT_JP, fontSize: '1.5rem'}}>&nbsp;{ nameCN }</span>
+            <span style={{fontFamily: FONT_JP, fontSize: '1.5rem'}}>&nbsp;{ nameCN }</span> */}
           </div>
           <div className={projectKvCss.detailed_info_container}>
             <div className={projectKvCss.detailed_info_left_container}>

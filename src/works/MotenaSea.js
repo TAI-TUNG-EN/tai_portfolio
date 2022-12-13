@@ -73,7 +73,7 @@ export default function MotenaSea() {
           <div className={motenaSeaCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              nameJP="にしかげクリニック　アネックス"
+              name="株式会社MOTENA-Sea"
               type="Website (Client project with willstyle)" roles={["Design"]} date="2022.10" tool="Adobe XD, Lightroom, Photoshop" 
               url="https://motena-sea.co.jp/" 
               urlTitle="Website"

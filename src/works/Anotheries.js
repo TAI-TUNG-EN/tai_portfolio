@@ -86,7 +86,7 @@ export default function Anotheries() {
                     <div className={anotheriesCss.kv_container}>
                         <ProjectKvLayout
                             kv_column_direction="column"
-                            nameEN="Anotheries"
+                            name="Anotheries"
                             type="Website (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2022.10-now" 
                             tool="Xmind, Figma, Lightroom, Photoshop" 
                             url="https://yihanyozikua.github.io/anotheries/" urlTitle="Website"

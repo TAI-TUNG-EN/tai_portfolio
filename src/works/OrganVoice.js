@@ -78,7 +78,7 @@ export default function OrganVoice(){
           <div className={organCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column-reverse"
-              nameJP="臓器の夜間問診"
+              name="臓器の夜間問診"
               type="Exhibition (School project)" roles={["Direction, Project Management,", "Design, Photography "]} date="2018.10-2018.12" tool="Illustrator, Photoshop, Lightroom" 
               url="" urlTitle=""
               bannerImg={banner}

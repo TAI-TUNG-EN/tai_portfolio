@@ -72,7 +72,7 @@ export default function EverythinsIsGonnaBeAlright(){
           <div className={everythingCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              nameEN="Everything’s Gonna Be Alright"
+              name="Everything’s Gonna Be Alright"
               type="Music video" roles={["Design (illustration), Animation"]} date="2020.03-2020.12" tool="After Effects, Illustrator, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
               bannerImg={banner} bannerImgPosition="bottom"
               urlNeed='false'/>
