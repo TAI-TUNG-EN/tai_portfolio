@@ -32,8 +32,8 @@ export default function Hashtag1() {
   return(
     <>
       <HashtagTemplate 
-        title="シェアハウス5年目"
-        description={["共同生活と国際交流が得意。", "今まではアメリカ､中国､韓国､フランス､イギリス､フィンランド､メキシコ､リトアニア､日本出身の子とひとつ屋根の下に生活したことがあり、違う言語が飛び交う生活を楽しんでいます。"]}
+        title="ENFJ"
+        description={["心理テストなんて信じないのに、16Personalities性格診断テストだけは信じています。", "毎回毎回当てはまりすぎて逆に怖いくらい。", "直近のテスト結果は（主人公）です。", "ENFJは外向(E)、直観(N)、感情(F)、判断(J)を略しています。", "カリスマ性があり、エネルギッシュな野心家だそうです。", "今成長意欲MAXの私にぴったりな結果ではないでしょうか。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"

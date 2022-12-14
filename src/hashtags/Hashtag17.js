@@ -32,8 +32,8 @@ export default function Hashtag1() {
   return(
     <>
       <HashtagTemplate 
-        title="シェアハウス5年目"
-        description={["共同生活と国際交流が得意。", "今まではアメリカ､中国､韓国､フランス､イギリス､フィンランド､メキシコ､リトアニア､日本出身の子とひとつ屋根の下に生活したことがあり、違う言語が飛び交う生活を楽しんでいます。"]}
+        title="イベントマニア"
+        description={["春にはお花見、夏にはフェスや花火大会。", "秋には紅葉巡り、冬にはイルミネーションとクリスマス。", "季節ならではのイベントを全力で楽しめたいタイプです。", "山の日には絶対山登りをして、海の日には必ず海にいくというマイルールもあります。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"
