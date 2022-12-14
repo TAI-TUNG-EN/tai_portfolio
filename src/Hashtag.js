@@ -115,8 +115,8 @@ export default function Hashtags(){
               data-aos-once="false">
               <Block content=""/>
               <Block hashtag={hashtag_img_1} pageUrl="/hashtags/hashtag_1" hasImg={true}/>
-              <Block hashtag={hashtag_img_2} hasImg={true}/>
-              <Block hashtag={hashtag_img_3} hasImg={true}/>
+              <Block hashtag={hashtag_img_2} pageUrl="/hashtags/hashtag_2" hasImg={true}/>
+              <Block hashtag={hashtag_img_3} pageUrl="/hashtags/hashtag_3" hasImg={true}/>
             </div>
             <div className={hashtagCss.hashtags_contents_container}
               data-aos="fade-zoom-in"
@@ -124,8 +124,8 @@ export default function Hashtags(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <Block hashtag={hashtag_img_4} hasImg={true}/>
-              <Block hashtag={hashtag_img_5} hasImg={true}/>
+              <Block hashtag={hashtag_img_4} pageUrl="/hashtags/hashtag_4" hasImg={true}/>
+              <Block hashtag={hashtag_img_5} pageUrl="/hashtags/hashtag_5" hasImg={true}/>
               <Block content="How should we know a person without the education or work exprience?" contentPosition="flex-start"/>
               <Block content=""/>
             </div>
@@ -136,9 +136,9 @@ export default function Hashtags(){
               data-aos-duration="300"
               data-aos-once="false">
               <Block content="There are 20 hashtags about my personalities, hobbies, preference, and lovely daily life." contentPosition="flex-end"/>
-              <Block hashtag={hashtag_img_6} hasImg={true}/>
-              <Block hashtag={hashtag_img_7} hasImg={true}/>
-              <Block hashtag={hashtag_img_8} hasImg={true}/>
+              <Block hashtag={hashtag_img_6} pageUrl="/hashtags/hashtag_6" hasImg={true}/>
+              <Block hashtag={hashtag_img_7} pageUrl="/hashtags/hashtag_7" hasImg={true}/>
+              <Block hashtag={hashtag_img_8} pageUrl="/hashtags/hashtag_8" hasImg={true}/>
             </div>
             <div className={hashtagCss.hashtags_contents_container}
               data-aos="fade-zoom-in"
@@ -146,10 +146,10 @@ export default function Hashtags(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <Block hashtag={hashtag_img_9} hasImg={true}/>
-              <Block hashtag={hashtag_img_10} hasImg={true}/>
+              <Block hashtag={hashtag_img_9} pageUrl="/hashtags/hashtag_9" hasImg={true}/>
+              <Block hashtag={hashtag_img_10} pageUrl="/hashtags/hashtag_10" hasImg={true}/>
               <Block content=""/>
-              <Block hashtag={hashtag_img_11} hasImg={true}/>
+              <Block hashtag={hashtag_img_11} pageUrl="/hashtags/hashtag_11" hasImg={true}/>
             </div>
             <div className={hashtagCss.hashtags_contents_container}
               data-aos="fade-zoom-in"
@@ -157,10 +157,10 @@ export default function Hashtags(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <Block hashtag={hashtag_img_12} hasImg={true}/>
+              <Block hashtag={hashtag_img_12} pageUrl="/hashtags/hashtag_12" hasImg={true}/>
               <Block content=""/>
-              <Block hashtag={hashtag_img_13} hasImg={true}/>
-              <Block hashtag={hashtag_img_14} hasImg={true}/>
+              <Block hashtag={hashtag_img_13} pageUrl="/hashtags/hashtag_13" hasImg={true}/>
+              <Block hashtag={hashtag_img_14} pageUrl="/hashtags/hashtag_14" hasImg={true}/>
             </div>
             <div className={hashtagCss.hashtags_contents_container}
               data-aos="fade-zoom-in"
@@ -168,9 +168,9 @@ export default function Hashtags(){
               data-aos-offset="0"
               data-aos-duration="300"
               data-aos-once="false">
-              <Block hashtag={hashtag_img_15} hasImg={true}/>
-              <Block hashtag={hashtag_img_16} hasImg={true}/>
-              <Block hashtag={hashtag_img_17} hasImg={true}/>
+              <Block hashtag={hashtag_img_15} pageUrl="/hashtags/hashtag_15" hasImg={true}/>
+              <Block hashtag={hashtag_img_16} pageUrl="/hashtags/hashtag_16" hasImg={true}/>
+              <Block hashtag={hashtag_img_17} pageUrl="/hashtags/hashtag_17" hasImg={true}/>
               <Block content=""/>
             </div>
             <div className={hashtagCss.hashtags_contents_container}
@@ -180,9 +180,9 @@ export default function Hashtags(){
               data-aos-duration="300"
               data-aos-once="false">
               <Block content=""/>
-              <Block hashtag={hashtag_img_18} hasImg={true}/>
-              <Block hashtag={hashtag_img_19} hasImg={true}/>
-              <Block hashtag={hashtag_img_20} hasImg={true}/>
+              <Block hashtag={hashtag_img_18} pageUrl="/hashtags/hashtag_18" hasImg={true}/>
+              <Block hashtag={hashtag_img_19} pageUrl="/hashtags/hashtag_19" hasImg={true}/>
+              <Block hashtag={hashtag_img_20} pageUrl="/hashtags/hashtag_20" hasImg={true}/>
             </div>
           </div>
 
