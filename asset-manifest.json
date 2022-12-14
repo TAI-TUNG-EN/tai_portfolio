@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tai_portfolio/static/css/main.2a83fe68.css",
-    "main.js": "/tai_portfolio/static/js/main.bff6915e.js",
+    "main.js": "/tai_portfolio/static/js/main.15a69304.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/everything_igtv.mov": "/tai_portfolio/static/media/everything_igtv.cbfa70016865fceb6013.mov",
     "static/media/motena_sea.png": "/tai_portfolio/static/media/motena_sea.e325baf53f6be64f0ae7.png",
@@ -107,11 +107,11 @@
     "static/media/arrow_right.svg": "/tai_portfolio/static/media/arrow_right.3687a61f714499d60826e72733e92fc9.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
     "main.2a83fe68.css.map": "/tai_portfolio/static/css/main.2a83fe68.css.map",
-    "main.bff6915e.js.map": "/tai_portfolio/static/js/main.bff6915e.js.map",
+    "main.15a69304.js.map": "/tai_portfolio/static/js/main.15a69304.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a83fe68.css",
-    "static/js/main.bff6915e.js"
+    "static/js/main.15a69304.js"
   ]
 }
