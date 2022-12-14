@@ -17,6 +17,7 @@ import Login from './Login'
 import Nishikage from './works/Nishikage'
 import JobHomes from './works/JobHomes'
 import MotenaSea from './works/MotenaSea'
+import Hashtag1 from './hashtags/Hashtag1';
 
 const App = () => {
 
@@ -59,6 +60,7 @@ const App = () => {
         <Route path="/works/everything_is_gonna_be_alright" element={<><WorksEverythingIsGonnaBeAlright /></>}></Route>
         <Route path="/works/organ_voice" element={<><OrganVoice /></>}></Route>
         <Route path="/works/surface_apparel" element={<><SurfaceApporel /></>}></Route>
+        <Route path="/hashtags/hashtag_1" element={<><Hashtag1 /></>}></Route>
       </Routes>
     </Router>
   );

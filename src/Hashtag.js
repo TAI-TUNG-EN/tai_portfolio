@@ -35,12 +35,12 @@ import hashtag_img_18 from './static/img/hashtags/page/hashtag_18.png'
 import hashtag_img_19 from './static/img/hashtags/page/hashtag_19.png'
 import hashtag_img_20 from './static/img/hashtags/page/hashtag_20.png'
 
-const Block = ({hasImg, hashtag, content, contentPosition}) => {
+const Block = ({hasImg, hashtag, content, contentPosition, pageUrl}) => {
   if(hasImg){
     return(
-      <div className={hashtagCss.hashtag_index_container}>
+      <Link className={hashtagCss.hashtag_index_container} to={ pageUrl }>
         <img className={hashtagCss.hashtag_index_img_prop} src={hashtag}></img>
-      </div>
+      </Link>
     )
   } else {
     return(
@@ -102,7 +102,7 @@ export default function Hashtags(){
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1500'/>
       <PageLayout>
         <section id={hashtagCss.hashtags}>
-          <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" style={{top: '0'}} />
+          <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Hover" style={{top: '0'}} />
           <div className={hashtagCss.hashtags_container}>
             <div className={hashtagCss.back_to_container}>
               <BackTo buttonName="Back to about" url="/about" buttonSize="8rem"/>
@@ -114,7 +114,7 @@ export default function Hashtags(){
               data-aos-duration="300"
               data-aos-once="false">
               <Block content=""/>
-              <Block hashtag={hashtag_img_1} hasImg={true}/>
+              <Block hashtag={hashtag_img_1} pageUrl="/hashtags/hashtag_1" hasImg={true}/>
               <Block hashtag={hashtag_img_2} hasImg={true}/>
               <Block hashtag={hashtag_img_3} hasImg={true}/>
             </div>
