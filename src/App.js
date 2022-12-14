@@ -4,19 +4,19 @@ import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import AOS from 'aos';
 import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
-import Cursor from './Cursor';
 import About from './About'
 import Works from './Works'
+import Hashtags from './Hashtag'
 import WorksAnotheries from './works/Anotheries'
 import WorksEverythingIsGonnaBeAlright from './works/EverythinsIsGonnaBeAlright'
 import OrganVoice from './works/OrganVoice'
-import Qdinosaur from './works/Qdinosaur';
+import Qdinosaur from './works/Qdinosaur'
 import SleepWell from './works/SleepWell'
 import SurfaceApporel from './works/SurfaceApporel'
-import Login from './Login';
-import Nishikage from './works/Nishikage';
-import JobHomes from './works/JobHomes';
-import MotenaSea from './works/MotenaSea';
+import Login from './Login'
+import Nishikage from './works/Nishikage'
+import JobHomes from './works/JobHomes'
+import MotenaSea from './works/MotenaSea'
 
 const App = () => {
 
@@ -49,6 +49,7 @@ const App = () => {
         <Route path="/login" element={<><Login /></>}></Route>
         <Route path="/about" element={<><About /></>}></Route>
         <Route path="/works" element={<><Works /></>}></Route>
+        <Route path="/hashtags" element={<><Hashtags /></>}></Route>
         <Route path="/works/nishikage" element={<><Nishikage /></>}></Route>
         <Route path="/works/job_homes" element={<><JobHomes /></>}></Route>
         <Route path="/works/motenaSea" element={<><MotenaSea /></>}></Route>

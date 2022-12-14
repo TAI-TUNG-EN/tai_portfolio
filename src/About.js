@@ -575,11 +575,11 @@ export default function About() {
 
           <div className={aboutCss.about_learn_me_by_hashtags_button_container} ref={learn_me_by_hashtag_ref}>
             <div className={aboutCss.about_learn_me_by_hashtags_button_prop_container}>
-              <a href='https://tai-tung-en.github.io/tai_portfolio_hashtags/' className={aboutCss.about_learn_me_by_hashtags_button_link}>
+              <Link to="/hashtags" className={aboutCss.about_learn_me_by_hashtags_button_link}>
                 <div className={aboutCss.about_learn_me_by_hashtags_contents}>
                   Learn me by #️⃣hashtags
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           
