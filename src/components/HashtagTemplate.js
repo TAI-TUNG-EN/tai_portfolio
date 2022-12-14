@@ -24,10 +24,14 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
               <BackTo buttonName="Back to list" url="/hashtags" buttonSize="8rem"/>
             </div>
             <div className={hashtempCss.left_container}>
-              <div className={hashtempCss.title_prop}># { title }</div>
-              <div className={hashtempCss.description_prop}>{ description }</div>
-              <div className={hashtempCss.pad_conatainer}>
-                <HashtagPad />
+              <div className={hashtempCss.left_top_container}>
+                <div className={hashtempCss.title_prop}># { title }</div>
+                <div className={hashtempCss.description_prop}>{ description }</div>
+              </div>
+              <div className={hashtempCss.left_bottom_container}>
+                <div className={hashtempCss.pad_conatainer}>
+                  <HashtagPad />
+                </div>
               </div>
             </div>
 

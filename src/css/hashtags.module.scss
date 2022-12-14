@@ -7,11 +7,19 @@ $WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
   width: 100vw;
   background: $WORK_BG;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 12rem;
+  @include sm(){
+    justify-content: center;
+    align-items: center;
+  }
   
   .hashtags_container{
     width: 94%;
+    @include sm(){
+      width: 98%;
+    }
     .back_to_container{
       position: absolute;
       z-index: 10;
@@ -33,6 +41,11 @@ $WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
         justify-content: center;
         align-items: flex-end;
         overflow: hidden;
+        @include sm(){
+          width: 100%;
+          height: 100%;
+          margin: .3rem;
+        }
   
         .hashtag_index_img_prop{
           object-fit: cover;
