@@ -7,6 +7,7 @@ import hashtempCss from '../css/hashtag_template.module.scss'
 import PageLayout from '../components/PageLayout'
 import Cursor from '../Cursor';
 import Sidebar from '../components/Sidebar'
+import BackTo from '../components/BackTo';
 import Footer from '../Footer'
 import HashtagPad from './HashtagPad'
 
@@ -19,6 +20,9 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
         <section id={hashtempCss.hashtag_template}>
           <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="View" marginTopSetting="2rem"/>
           <div className={hashtempCss.hashtag_template_container}>
+            <div className={hashtempCss.back_to_container}>
+              <BackTo buttonName="Back to list" url="/hashtags" buttonSize="8rem"/>
+            </div>
             <div className={hashtempCss.left_container}>
               <div className={hashtempCss.title_prop}># { title }</div>
               <div className={hashtempCss.description_prop}>{ description }</div>

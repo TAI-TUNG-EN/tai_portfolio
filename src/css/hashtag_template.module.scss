@@ -17,6 +17,13 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
     width: 94%;
     display: flex;
     flex-direction: row;
+    .back_to_container{
+      position: absolute;
+      z-index: 10;
+      width: 20rem;
+      top: 6%;
+      left: 9%;
+    }
 
     .left_container{
       width: 30%;
@@ -29,12 +36,15 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         font-size: $FONT_20;
         color: #3F729B;
         font-weight: bold;
+        margin: 1rem 0;
       }
       .description_prop{
         width: 80%;
-        font-size: $FONT_16;
+        font-size: $FONT_15;
         color: $COLOR_BLACK;
         font-weight: normal;
+        line-height: 1.8rem;
+        margin: 1rem 0;
       }
       .pad_conatainer{
         width: 80%;
