@@ -5,6 +5,46 @@ $WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
 
 #hashtags{
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   background: $WORK_BG;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12rem;
+  // @include sm(){
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding-bottom: 3rem;
+  // }
+  // @include md(){
+  //   padding-bottom: 10rem;
+  // }
+  // @include lg(){
+  //   padding-bottom: 12rem;
+  // }
+  .hashtags_container{
+    width: 94%;
+    .hashtags_contents_container{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .hashtag_index_container{
+        width: calc(100vw * .94 * .25);
+        height: calc(100vw * .94 * .25 * .75);
+  
+        .hashtag_index_img_prop{
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .hashtag_index_content_prop{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
