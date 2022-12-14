@@ -10,7 +10,7 @@ import Sidebar from '../components/Sidebar'
 import Footer from '../Footer'
 import HashtagPad from './HashtagPad'
 
-const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, currentIndex }) => {
+const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, currentIndex, prevImgPosition, nextImgPosition }) => {
   var descriptionRender = description.map(item => <div>{item}</div>);
   return(
     <>
@@ -28,15 +28,9 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
             </div>
 
             <div className={hashtempCss.right_container}>
-              {/* <div className={hashtempCss.prev_img_container}> */}
-              <img src={ prevImg } className={hashtempCss.prev_next_img_prop}></img>
-              {/* </div> */}
-              {/* <div className={hashtempCss.main_img_container}> */}
-                <img src={ mainImg } className={hashtempCss.main_img_prop}></img>
-              {/* </div> */}
-              {/* <div className={hashtempCss.next_img_container}> */}
-              <img src={ nextImg } className={hashtempCss.prev_next_img_prop}></img>
-              {/* </div> */}
+              <img src={ prevImg } className={hashtempCss.prev_next_img_prop} style={{objectPosition: prevImgPosition}}></img>
+              <img src={ mainImg } className={hashtempCss.main_img_prop}></img>
+              <img src={ nextImg } className={hashtempCss.prev_next_img_prop} style={{objectPosition: nextImgPosition}}></img>
             </div>
 
           </div>
