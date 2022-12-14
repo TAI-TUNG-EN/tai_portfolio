@@ -31,6 +31,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 0 3rem;
       .title_prop{
         width: 80%;
         font-size: $FONT_20;
