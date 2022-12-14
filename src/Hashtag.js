@@ -9,6 +9,7 @@ import { auth } from './firebase';
 import PageLayout from './components/PageLayout'
 import Cursor from './Cursor';
 import Footer from './Footer'
+import BackTo from './components/BackTo';
 import Loading from './components/Loading';
 import Sidebar from './components/Sidebar'
 import hashtagCss from './css/hashtags.module.scss'
@@ -34,7 +35,7 @@ import hashtag_img_18 from './static/img/hashtags/page/hashtag_18.png'
 import hashtag_img_19 from './static/img/hashtags/page/hashtag_19.png'
 import hashtag_img_20 from './static/img/hashtags/page/hashtag_20.png'
 
-const Block = ({hasImg, hashtag, content}) => {
+const Block = ({hasImg, hashtag, content, contentPosition}) => {
   if(hasImg){
     return(
       <div className={hashtagCss.hashtag_index_container}>
@@ -43,7 +44,7 @@ const Block = ({hasImg, hashtag, content}) => {
     )
   } else {
     return(
-      <div className={hashtagCss.hashtag_index_container}>
+      <div className={hashtagCss.hashtag_index_container} style={{alignItems: contentPosition}}>
         <div className={hashtagCss.hashtag_index_content_prop}>{content}</div>
       </div>
     )
@@ -103,16 +104,90 @@ export default function Hashtags(){
         <section id={hashtagCss.hashtags}>
           <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👋" emoji_2_text="Hover" style={{top: '0'}} />
           <div className={hashtagCss.hashtags_container}>
-            <div className={hashtagCss.hashtags_contents_container}>
+            <div className={hashtagCss.back_to_container}>
+              <BackTo buttonName="Back to about" url="/about" buttonSize="8rem"/>
+            </div>
+            <div className={hashtagCss.hashtags_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
               <Block content=""/>
               <Block hashtag={hashtag_img_1} hasImg={true}/>
               <Block hashtag={hashtag_img_2} hasImg={true}/>
               <Block hashtag={hashtag_img_3} hasImg={true}/>
             </div>
+            <div className={hashtagCss.hashtags_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <Block hashtag={hashtag_img_4} hasImg={true}/>
+              <Block hashtag={hashtag_img_5} hasImg={true}/>
+              <Block content="How should we know a person without the education or work exprience?" contentPosition="flex-start"/>
+              <Block content=""/>
+            </div>
+            <div className={hashtagCss.hashtags_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <Block content="There are 20 hashtags about my personalities, hobbies, preference, and lovely daily life." contentPosition="flex-end"/>
+              <Block hashtag={hashtag_img_6} hasImg={true}/>
+              <Block hashtag={hashtag_img_7} hasImg={true}/>
+              <Block hashtag={hashtag_img_8} hasImg={true}/>
+            </div>
+            <div className={hashtagCss.hashtags_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <Block hashtag={hashtag_img_9} hasImg={true}/>
+              <Block hashtag={hashtag_img_10} hasImg={true}/>
+              <Block content=""/>
+              <Block hashtag={hashtag_img_11} hasImg={true}/>
+            </div>
+            <div className={hashtagCss.hashtags_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <Block hashtag={hashtag_img_12} hasImg={true}/>
+              <Block content=""/>
+              <Block hashtag={hashtag_img_13} hasImg={true}/>
+              <Block hashtag={hashtag_img_14} hasImg={true}/>
+            </div>
+            <div className={hashtagCss.hashtags_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <Block hashtag={hashtag_img_15} hasImg={true}/>
+              <Block hashtag={hashtag_img_16} hasImg={true}/>
+              <Block hashtag={hashtag_img_17} hasImg={true}/>
+              <Block content=""/>
+            </div>
+            <div className={hashtagCss.hashtags_contents_container}
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+              data-aos-duration="300"
+              data-aos-once="false">
+              <Block content=""/>
+              <Block hashtag={hashtag_img_18} hasImg={true}/>
+              <Block hashtag={hashtag_img_19} hasImg={true}/>
+              <Block hashtag={hashtag_img_20} hasImg={true}/>
+            </div>
           </div>
 
         </section>
-        {/* <Footer/> */}
+        <Footer/>
       </PageLayout>
     </>
     

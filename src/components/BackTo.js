@@ -8,7 +8,7 @@ import PageLayout from './PageLayout';
 import arrow from '../static/icons/arrow_left.svg'
 import { HiArrowLongLeft } from "react-icons/hi2"
 
-export default function BackTo({buttonName, url}){
+export default function BackTo({buttonName, url, buttonSize}){
   const [width, setWidth] = useState(window.innerWidth);
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -32,7 +32,7 @@ export default function BackTo({buttonName, url}){
     }
     else{
       document.getElementsByClassName(`${backCss.btn_prop}`)[0].style.display = 'flex';
-      document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.width = '7rem';
+      document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.width = buttonSize;
       document.getElementsByClassName(`${backCss.back_btn_contents_container}`)[0].style.height = 'unset';
     }
   }, []);

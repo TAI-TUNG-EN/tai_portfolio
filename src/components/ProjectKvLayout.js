@@ -35,7 +35,7 @@ export default function ProjectKvLayout ({ kv_column_direction, name, nameEN, na
 
   return(
     <div className={projectKvCss.project_kv}>
-      <BackTo buttonName="Back to list" url="/works" />
+      <BackTo buttonName="Back to list" url="/works" buttonSize="7rem"/>
       <div className={projectKvCss.kv_container} style={{flexDirection: kv_column_direction}}
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
