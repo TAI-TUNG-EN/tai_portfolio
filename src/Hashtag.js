@@ -6,6 +6,7 @@ import AOS from 'aos'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { auth } from './firebase';
 
+import { HiArrowLongLeft } from "react-icons/hi2"
 import PageLayout from './components/PageLayout'
 import Cursor from './Cursor';
 import Footer from './Footer'
@@ -99,10 +100,23 @@ export default function Hashtags(){
     if(isMobile){
       return(
         <>
-          <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Hover" style={{top: '0'}} />
+          {/* <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Hover" style={{top: '5rem'}} /> */}
+          <div className={hashtagCss.sidebar} >
+            <div className={hashtagCss.title_prop}>Explore this page</div>
+            <div className={hashtagCss.emoji_container}>
+              <div className={hashtagCss.emoji_prop}>⬇️</div>
+              <div className={hashtagCss.emoji_text_prop} style={{color: "#6B89A5"}}>Scroll</div>
+            </div>
+            <div className={hashtagCss.emoji_container} style={{marginBottom: "2rem"}}>
+              <div className={hashtagCss.emoji_prop}>🐭</div>
+              <div className={hashtagCss.emoji_text_prop} style={{color: "#945D00"}}>Click</div>
+            </div>
+          </div>
+
           <div className={hashtagCss.hashtags_container}>
             <div className={hashtagCss.back_to_container}>
-              <BackTo buttonName="Back to about" url="/about" buttonSize="8rem"/>
+              {/* <BackTo buttonName="Back to about" url="/about" buttonSize="8rem"/> */}
+              <Link to="/about" className={hashtagCss.back_to_about_prop}><HiArrowLongLeft/>Back to about</Link>
             </div>
             <div className={hashtagCss.hashtags_contents_container}
               data-aos="fade-zoom-in"
@@ -238,7 +252,7 @@ export default function Hashtags(){
     } else {
       return(
         <>
-          <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Hover" style={{top: '0'}} />
+          <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Click" style={{top: '0'}} />
           <div className={hashtagCss.hashtags_container}>
             <div className={hashtagCss.back_to_container}>
               <BackTo buttonName="Back to about" url="/about" buttonSize="8rem"/>

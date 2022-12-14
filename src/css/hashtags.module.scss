@@ -12,13 +12,41 @@ $WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
   padding-bottom: 12rem;
   @include sm(){
     justify-content: center;
-    // align-items: center;
+    align-items: center;
+    padding-bottom: 7rem;
   }
   @include md(){
     justify-content: flex-end;
+    align-items: flex-end;
   }
   @include lg(){
     justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .sidebar{
+    width: 50%;
+    position: absolute;
+    top: 5.5rem;
+    left: 1rem;
+
+    .title_prop{
+      color: $COLOR_GRAY;
+      margin-bottom: .3rem;
+    }
+    .emoji_container{
+      display: flex;
+      flex-direction: row;
+
+      .emoji_prop{
+        font-family: "Apple Color Emoji", "Segoe UI Emoji";
+        margin-bottom: .3rem;
+        margin-right: .3rem;
+      }
+      .emoji_text_prop{
+        margin-bottom: .3rem;
+      }
+    }
   }
   
   .hashtags_container{
@@ -32,6 +60,21 @@ $WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
       width: 20rem;
       top: 6%;
       left: 9%;
+      @include sm(){
+        top: 4%;
+        left: 7%;
+        width: unset;
+      }
+      .back_to_about_prop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: $COLOR_BLACK;
+        padding: .7rem 1.1rem;
+        border-radius: 100px;
+      }
     }
     .hashtags_contents_container{
       width: 100%;
