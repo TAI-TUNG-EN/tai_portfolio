@@ -116,7 +116,7 @@ export default function Hashtags(){
           <div className={hashtagCss.hashtags_container}>
             <div className={hashtagCss.back_to_container}>
               {/* <BackTo buttonName="Back to about" url="/about" buttonSize="8rem"/> */}
-              <Link to="/about" className={hashtagCss.back_to_about_prop}><HiArrowLongLeft/>Back to about</Link>
+              <Link to="/about" className={hashtagCss.back_to_about_prop}><HiArrowLongLeft/>&ensp;Back to about</Link>
             </div>
             <div className={hashtagCss.hashtags_contents_container}
               data-aos="fade-zoom-in"
