@@ -18,21 +18,43 @@ $LINE_HEIGHT_28: 1.7rem;
 // Font of Japanese
 @font-face {
   font-family: t1;
-  src: local("BIZ UDGothic"), local(sans-serif);
+  src: local("ZenKakuGothicNew"), local(sans-serif);
+  // src: 
+  //      url(../static/font/ZenKakuGothicNew-Light.ttf) format('truetype'),
+  //      url(../static/font/ZenKakuGothicNew-Medium.ttf) format('truetype'),
+  //      url(../static/font/ZenKakuGothicNew-Regular.ttf) format('truetype'),
+  //      url(../static/font/ZenKakuGothicNew-Bold.ttf) format('truetype'),
+  //      ;
   unicode-range: U+3040-30FF, U+31F0-31FF;
 }
 
 // Font of English
 @font-face {
   font-family: t2;
-  src: url(../static/font/Outfit-VariableFont_wght.ttf) format('truetype');
+  // src: local("Outfit"), local(sans-serif);
+  src: 
+      url(../static/font/Outfit-VariableFont_wght.ttf) format('truetype')
+      //  url(../static/font/Outfit-ExtraLight.ttf) format('truetype'),
+      //  url(../static/font/Outfit-Light.ttf) format('truetype'),
+      //  url(../static/font/Outfit-Thin.ttf) format('truetype'),
+      //  url(../static/font/Outfit-Medium.ttf) format('truetype'),
+      //  url(../static/font/Outfit-Regular.ttf) format('truetype'),
+      //  url(../static/font/Outfit-SemiBold.ttf) format('truetype'),
+      //  url(../static/font/Outfit-Bold.ttf) format('truetype'),
+       ;
   unicode-range: U+00-024F,U+0023;
 }
 
 // Font of Chinese
 @font-face {
   font-family: t3;
-  src: local("BIZ UDGothic"), local(sans-serif);
+  src: local("ZenKakuGothicNew"), local(sans-serif);
+  // src: 
+  //      url(../static/font/ZenKakuGothicNew-Light.ttf) format('truetype'),
+  //      url(../static/font/ZenKakuGothicNew-Medium.ttf) format('truetype'),
+  //      url(../static/font/ZenKakuGothicNew-Regular.ttf) format('truetype'),
+  //      url(../static/font/ZenKakuGothicNew-Bold.ttf) format('truetype'),
+  //      ;
   unicode-range: U+2E80-2FDF, U+3400-4DBF, U+4E00-9FFF;
 }
 html{

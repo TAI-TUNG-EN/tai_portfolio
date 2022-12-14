@@ -1,5 +1,63 @@
 @import './main.scss';
+$BG_COLOR_1: #FDFCFB;
+$BG_COLOR_2: #E2DBC3;
+$BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
 
 #hashtag_template{
+
   
+
+  width: 100vw;
+  height: 102vh;
+  background: $BG;
+  display: flex;
+  justify-content: flex-end;
+  // padding-bottom: 12rem;
+  .hashtag_template_container{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+
+    .left_container{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title_prop{
+        width: 80%;
+        font-size: $FONT_20;
+        color: #3F729B;
+        font-weight: bold;
+      }
+      .description_prop{
+        width: 80%;
+        font-size: $FONT_16;
+        color: $COLOR_BLACK;
+        font-weight: normal;
+      }
+      .pad_conatainer{
+        width: 80%;
+
+      }
+    }
+    .right_container{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .prev_next_img_prop{
+        width: 60%;
+        height: 15%;
+        object-fit: cover;
+      }
+      .main_img_prop{
+        width: 70%;
+        // height: calc(100vw * .94 * .7 * .7 * .75);
+        object-fit: cover;
+        margin: 1rem 0;
+      }
+    }
+  }
 }
