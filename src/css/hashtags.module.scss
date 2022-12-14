@@ -8,11 +8,17 @@ $WORK_BG: linear-gradient(135deg, $WORKS_BG_COLOR_1, $WORKS_BG_COLOR_2);
   background: $WORK_BG;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-end;
   padding-bottom: 12rem;
   @include sm(){
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+  }
+  @include md(){
+    justify-content: flex-end;
+  }
+  @include lg(){
+    justify-content: flex-end;
   }
   
   .hashtags_container{
