@@ -31,17 +31,7 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
   const SidebarHashtagTemplate = () => {
     if(isMobile){
       return(
-        <div className={hashtempCss.sidebar} >
-          <div className={hashtempCss.title_prop}>Explore this page</div>
-          <div className={hashtempCss.emoji_container}>
-            <div className={hashtempCss.emoji_prop}>⬇️</div>
-            <div className={hashtempCss.emoji_text_prop} style={{color: "#6B89A5"}}>Scroll</div>
-          </div>
-          <div className={hashtempCss.emoji_container} style={{marginBottom: "2rem"}}>
-            <div className={hashtempCss.emoji_prop}>🐭</div>
-            <div className={hashtempCss.emoji_text_prop} style={{color: "#945D00"}}>Click</div>
-          </div>
-        </div>
+        <></>
       )
     }else {
       return(
@@ -55,7 +45,7 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
     <>
       <Cursor cursorTypes='🐭' />
       <PageLayout>
-        {/* <SidebarHashtagTemplate/> */}
+        <SidebarHashtagTemplate/>
         <section id={hashtempCss.hashtag_template}>
           <div className={hashtempCss.hashtag_template_container}>
             <div className={hashtempCss.back_to_container}>
