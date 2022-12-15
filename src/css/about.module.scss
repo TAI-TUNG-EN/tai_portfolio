@@ -695,6 +695,7 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
               transform: rotate(-6deg);
               @include sm(){
                 position: absolute;
+                top: -6rem;
                 z-index: 3;
               }
               @include md(){

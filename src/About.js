@@ -536,7 +536,7 @@ export default function About() {
                     <img src={ hashImg_9 } className={aboutCss.about_special_contents_upper_img_prop}
                       data-aos="fade-up-left"
                       data-aos-easing="ease-in-out"
-                      data-aos-delay="300"
+                      data-aos-delay="1000"
                       data-aos-offset="10"
                       data-aos-duration="1000"
                       data-aos-once="false"
@@ -544,7 +544,7 @@ export default function About() {
                     <div className={aboutCss.special_contents_bottom_words_prop}
                       data-aos="fade-up-left"
                       data-aos-easing="ease-in-out"
-                      data-aos-delay="300"
+                      data-aos-delay="1000"
                       data-aos-offset="10"
                       data-aos-duration="700"
                       data-aos-once="false"
@@ -556,7 +556,7 @@ export default function About() {
                       data-aos-easing="ease-in-out"
                       data-aos-delay="150"
                       data-aos-offset="10"
-                      data-aos-duration="1000"
+                      data-aos-duration="2000"
                       data-aos-once="false"
                       data-aos-anchor-placement="top-bottom"></img>
                     <div className={aboutCss.special_contents_bottom_words_prop}
@@ -564,7 +564,7 @@ export default function About() {
                       data-aos-easing="ease-in-out"
                       data-aos-delay="150"
                       data-aos-offset="10"
-                      data-aos-duration="700"
+                      data-aos-duration="2000"
                       data-aos-once="false"
                       data-aos-anchor-placement="top-bottom">#コピー本が好き</div>
                   </div>

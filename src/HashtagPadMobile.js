@@ -8,6 +8,7 @@ import hashtagPadMobileCss from './css/hashtag_pad_mobile.module.scss'
 import PageLayout from './components/PageLayout'
 import BackTo from './components/BackTo';
 import HashtagPad from './components/HashtagPad'
+import { RxCross2 } from "react-icons/rx"
 
 const HashtagPadMobile = () => {
 
@@ -31,8 +32,8 @@ const HashtagPadMobile = () => {
       <>
         <PageLayout>
           <section id={hashtagPadMobileCss.hashtag_pad_mobile}>
-            <div>
-              <Link to={-1} className={hashtagPadMobileCss.close_window}></Link>
+            <div className={hashtagPadMobileCss.close_window_container}>
+              <Link to={-1} className={hashtagPadMobileCss.close_window}><RxCross2/></Link>
             </div>
             <HashtagPad  padSize="22%"/>
           </section>
