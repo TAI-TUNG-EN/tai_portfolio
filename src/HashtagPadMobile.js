@@ -35,7 +35,7 @@ const HashtagPadMobile = () => {
             <div className={hashtagPadMobileCss.close_window_container}>
               <Link to={-1} className={hashtagPadMobileCss.close_window}><RxCross2/></Link>
             </div>
-            <HashtagPad  padWidth="22%"/>
+            <HashtagPad padWidth="22%"/>
           </section>
         </PageLayout>
       </>

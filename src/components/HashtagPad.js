@@ -43,8 +43,22 @@ const Block = ({hasImg, hashtag, content, contentPosition, pageUrl, padWidth, pa
 
 const HashtagPad = ({currentIndex, padWidth}) => {
   console.log(currentIndex);
+  const [width, setWidth] = useState(window.innerWidth);
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
   useEffect(()=>{
-    document.getElementById(currentIndex).style.opacity = '1';
+    if(!isMobile){
+      document.getElementById(currentIndex).style.opacity = '1';
+    }
   }, []);
   
   return(
