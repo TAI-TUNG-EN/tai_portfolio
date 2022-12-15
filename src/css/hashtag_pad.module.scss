@@ -36,11 +36,14 @@
         }
         @include sm(){
           opacity: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .hashtag_index_img_prop{
           width: 100%;
-          height: 100%;
+          height: 9vh;
           object-fit: cover;
         }
         .hashtag_index_content_prop{

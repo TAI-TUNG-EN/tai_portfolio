@@ -62,7 +62,9 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
     width: 88%;
     top: 2rem;
     .index_entry_button_img_prop{
-
+      width: 13vw;
+      height: 13vw;
+      animation: fadeInTransformAnimation cubic-bezier(0.84, -0.21, 0.07, 1.43) .7s;
     }
   }
   .hashtag_template_container{
