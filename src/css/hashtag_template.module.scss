@@ -4,6 +4,16 @@ $BG_COLOR_2: #E2DBC3;
 $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
 
 
+@keyframes fadeInTransformAnimation {
+  0%{
+    opacity: 0;
+    transform: scale(.3);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 @keyframes fadeInAnimation {
   0% {
       opacity: 0;
@@ -12,12 +22,14 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
       opacity: 1;
   }
 }
-@keyframes fadeInAnimationForPrevNext {
+@keyframes fadeInAnimationPrev {
   0% {
     opacity: 0;
-}
+    height: 0%;
+  }
   100% {
-      opacity: .4;
+    opacity: .4;
+    height: 15%;
   }
 }
 
@@ -94,6 +106,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           color: #3F729B;
           font-weight: bold;
           margin: 1rem 0;
+          animation: fadeInAnimation ease-in-out .7s;
           @include sm(){
             width: 100%;
           }
@@ -105,6 +118,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           font-weight: normal;
           line-height: 1.8rem;
           margin: 1rem 0;
+          animation: fadeInAnimation ease-in-out .3s;
           @include sm(){
             width: 100%;
           }
@@ -139,6 +153,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         height: 15%;
         object-fit: cover;
         opacity: .4;
+          animation: fadeInAnimationPrev cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
         transition: all .3s ease-in-out;
         &:hover{
           opacity: .8;
@@ -158,7 +173,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         // height: calc(100vw * .94 * .7 * .7 * .75);
         object-fit: cover;
         margin: 1rem 0;
-        animation: fadeInAnimation ease-in-out 1s;
+        animation: fadeInTransformAnimation cubic-bezier(0.84, -0.21, 0.07, 1.43) 1.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
       }
