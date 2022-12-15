@@ -14,7 +14,7 @@ import HashtagPad from './HashtagPad'
 
 
 
-const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, currentIndex, prevImgPosition, nextImgPosition }) => {
+const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, currentIndex, prevImgPosition, nextImgPosition, prevImgUrl, nextImgUrl }) => {
 
   const [width, setWidth] = useState(window.innerWidth);
   function handleWindowSizeChange() {
@@ -75,9 +75,13 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
             </div>
 
             <div className={hashtempCss.right_container}>
-              <img src={ prevImg } className={hashtempCss.prev_next_img_prop} style={{objectPosition: prevImgPosition}}></img>
+              <Link to={prevImgUrl} className={hashtempCss.prev_next_img_prop}>
+                <img src={ prevImg } style={{objectPosition: prevImgPosition}} className={hashtempCss.link_img_prop}></img>
+              </Link>
               <img src={ mainImg } className={hashtempCss.main_img_prop}></img>
-              <img src={ nextImg } className={hashtempCss.prev_next_img_prop} style={{objectPosition: nextImgPosition}}></img>
+              <Link to={nextImgUrl} className={hashtempCss.prev_next_img_prop}>
+                <img src={ nextImg } style={{objectPosition: nextImgPosition}} className={hashtempCss.link_img_prop}></img>
+              </Link>
             </div>
 
           </div>
