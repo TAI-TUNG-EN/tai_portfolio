@@ -68,7 +68,7 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
               </div>
               <div className={hashtempCss.left_bottom_container}>
                 <div className={hashtempCss.pad_conatainer}>
-                  <HashtagPad currentIndex={currentIndex} padSize="10%"/>
+                  <HashtagPad currentIndex={currentIndex} padWidth="13%"/>
                 </div>
               </div>
             </div>

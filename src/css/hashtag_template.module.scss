@@ -61,6 +61,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
     align-items: center;
     width: 88%;
     top: 2rem;
+    @include md(){
+      display: none;
+    }
+    @include lg(){
+      display: none;
+    }
     .index_entry_button_img_prop{
       width: 13vw;
       height: 13vw;
@@ -113,7 +119,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         height: 40%;
       }
       .left_top_container{
-        height: 70%;
+        height: 65%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -147,7 +153,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         }
       }
       .left_bottom_container{
-        height: 30%;
+        height: 35%;
         margin-top: -3rem;
         display: flex;
         justify-content: flex-start;
