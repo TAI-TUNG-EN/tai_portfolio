@@ -54,7 +54,17 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
     justify-content: center;
     padding-bottom: 0;
   }
-  // padding-bottom: 12rem;
+  .index_entry_button_img_container{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 88%;
+    top: 2rem;
+    .index_entry_button_img_prop{
+
+    }
+  }
   .hashtag_template_container{
     width: 94%;
     display: flex;

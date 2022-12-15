@@ -11,10 +11,16 @@ import Sidebar from '../components/Sidebar'
 import BackTo from '../components/BackTo';
 import Footer from '../Footer'
 import HashtagPad from './HashtagPad'
-
+import indexEntryButtonImg from '../static/img/hashtags/mobileIndexEntry.png'
 
 
 const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, currentIndex, prevImgPosition, nextImgPosition, prevImgUrl, nextImgUrl }) => {
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
 
   const [width, setWidth] = useState(window.innerWidth);
   function handleWindowSizeChange() {
@@ -47,6 +53,9 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
       <PageLayout>
         <SidebarHashtagTemplate/>
         <section id={hashtempCss.hashtag_template}>
+          <Link to="/hashtags_mobile" className={hashtempCss.index_entry_button_img_container}>
+            <img src={indexEntryButtonImg} className={hashtempCss.index_entry_button_img_prop}></img>
+          </Link>
           <div className={hashtempCss.hashtag_template_container}>
             <div className={hashtempCss.back_to_container}>
               {/* <BackTo buttonName="Back to list" url="/hashtags" buttonSize="8rem"/> */}
