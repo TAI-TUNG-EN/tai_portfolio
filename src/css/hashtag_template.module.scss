@@ -32,6 +32,16 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
     height: 15%;
   }
 }
+@keyframes fadeInAnimationPrevMobile {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: .4;
+    width: 10%;
+  }
+}
 
 #hashtag_template{
   width: 100vw;
@@ -153,7 +163,6 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         height: 15%;
         object-fit: cover;
         opacity: .4;
-        animation: fadeInAnimationPrev cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
         transition: all .3s ease-in-out;
         &:hover{
           opacity: .8;
@@ -165,6 +174,13 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           display: flex;
           justify-content: center;
           align-items: center;
+          animation: fadeInAnimationPrevMobile cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
+        }
+        @include md(){
+          animation: fadeInAnimationPrev cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
+        }
+        @include lg(){
+          animation: fadeInAnimationPrev cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
         }
         
       }
