@@ -47,6 +47,11 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
   }
 
   var descriptionRender = description.map(item => <div>{item}</div>);
+  var padWidthSize = "13%";
+  if(isPad){
+    padWidthSize = "25%"
+  }
+
   return(
     <>
       <Cursor cursorTypes='🐭' />
@@ -68,7 +73,7 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
               </div>
               <div className={hashtempCss.left_bottom_container}>
                 <div className={hashtempCss.pad_conatainer}>
-                  <HashtagPad currentIndex={currentIndex} padWidth="13%"/>
+                  <HashtagPad currentIndex={currentIndex} padWidth={padWidthSize}/>
                 </div>
               </div>
             </div>

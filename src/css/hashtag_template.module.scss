@@ -118,6 +118,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         width: 80%;
         height: 40%;
       }
+      @include md(){
+        width: 40%;
+      }
+      @include lg(){
+        width: 30%;
+      }
       .left_top_container{
         height: 65%;
         display: flex;
@@ -138,6 +144,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           @include sm(){
             width: 100%;
           }
+          @include md(){
+            width: 100%;
+          }
+          @include lg(){
+            width: 80%;
+          }
         }
         .description_prop{
           width: 80%;
@@ -149,6 +161,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           animation: fadeInAnimation ease-in-out .3s;
           @include sm(){
             width: 100%;
+          }
+          @include md(){
+            width: 100%;
+          }
+          @include lg(){
+            width: 80%;
           }
         }
       }
@@ -175,6 +193,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         width: 110%;
         flex-direction: row;
         height: 40%;
+      }
+      @include md(){
+        width: 60%;
+      }
+      @include lg(){
+        width: 70%;
       }
       .prev_next_img_prop{
         width: 60%;
@@ -210,6 +234,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         animation: fadeInTransformAnimation cubic-bezier(0.84, -0.21, 0.07, 1.43) 1.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        @include md(){
+          width: 90%;
+        }
+        @include lg(){
+          width: 70%;
+        }
       }
       .link_img_prop{
         width: 100%;
