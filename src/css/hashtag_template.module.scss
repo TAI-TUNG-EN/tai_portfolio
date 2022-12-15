@@ -3,6 +3,24 @@ $BG_COLOR_1: #FDFCFB;
 $BG_COLOR_2: #E2DBC3;
 $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
 
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes fadeInAnimationForPrevNext {
+  0% {
+    opacity: 0;
+}
+  100% {
+      opacity: .4;
+  }
+}
+
 #hashtag_template{
   width: 100vw;
   height: 102vh;
@@ -133,12 +151,16 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           justify-content: center;
           align-items: center;
         }
+        
       }
       .main_img_prop{
         width: 70%;
         // height: calc(100vw * .94 * .7 * .7 * .75);
         object-fit: cover;
         margin: 1rem 0;
+        animation: fadeInAnimation ease-in-out 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
       }
       .link_img_prop{
         width: 100%;
