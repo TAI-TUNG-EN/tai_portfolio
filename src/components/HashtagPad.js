@@ -25,65 +25,72 @@ import hashtag_img_18 from '../static/img/hashtags/page/hashtag_18.png'
 import hashtag_img_19 from '../static/img/hashtags/page/hashtag_19.png'
 import hashtag_img_20 from '../static/img/hashtags/page/hashtag_20.png'
 
-const Block = ({hasImg, hashtag, content, contentPosition, pageUrl}) => {
+const Block = ({hasImg, hashtag, content, contentPosition, pageUrl, padSize}) => {
   if(hasImg){
     return(
-      <Link className={hashtagPadCss.hashtag_index_container} to={ pageUrl }>
+      <Link className={hashtagPadCss.hashtag_index_container} to={ pageUrl } style={{width: padSize}}>
         <img className={hashtagPadCss.hashtag_index_img_prop} src={hashtag}></img>
       </Link>
     )
   } else {
     return(
-      <div className={hashtagPadCss.hashtag_index_container} style={{alignItems: contentPosition}}>
+      <div className={hashtagPadCss.hashtag_index_container} style={{alignItems: contentPosition, width: padSize}}>
         <div className={hashtagPadCss.hashtag_index_content_prop}>{content}</div>
       </div>
     )
   }
 }
 
-const HashtagPad = ({currentIndex}) => {
+const HashtagPad = ({currentIndex, padSize}) => {
+  console.log(currentIndex);
+  useEffect(()=>{
+    // document.getElementById(currentIndex).style.opacity = '1';
+  }, []);
+  
   return(
     <div id={hashtagPadCss.hashtag_pad}>
       <div className={hashtagPadCss.hashtag_pad_container}>
         <div className={hashtagPadCss.hashtag_pad_contents_container}>
-          <Block content=""/>
-          <Block hashtag={hashtag_img_1} pageUrl="/hashtags/hashtag_1" hasImg={true}/>
-          <Block hashtag={hashtag_img_2} pageUrl="/hashtags/hashtag_2" hasImg={true}/>
-          <Block hashtag={hashtag_img_3} pageUrl="/hashtags/hashtag_3" hasImg={true}/>
+          <Block content="" padSize={padSize}/>
+          <Block hashtag={hashtag_img_1} pageUrl="/hashtags/hashtag_1" hasImg={true} id="hashtag_1" padSize={padSize}/>
+          <Block hashtag={hashtag_img_2} pageUrl="/hashtags/hashtag_2" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_3} pageUrl="/hashtags/hashtag_3" hasImg={true} padSize={padSize}/>
         </div>
         <div className={hashtagPadCss.hashtag_pad_contents_container}>
-          <Block hashtag={hashtag_img_4} pageUrl="/hashtags/hashtag_4" hasImg={true}/>
-          <Block hashtag={hashtag_img_5} pageUrl="/hashtags/hashtag_5" hasImg={true}/>
-          <Block content="" contentPosition="flex-start"/>
-          <Block content=""/>
+          <Block hashtag={hashtag_img_4} pageUrl="/hashtags/hashtag_4" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_5} pageUrl="/hashtags/hashtag_5" hasImg={true} padSize={padSize}/>
+          <Block content="" contentPosition="flex-start" padSize={padSize}/>
+          <Block content="" padSize={padSize}/>
         </div>
         <div className={hashtagPadCss.hashtag_pad_contents_container}>
-          <Block content="" contentPosition="flex-end"/>
-          <Block hashtag={hashtag_img_6} pageUrl="/hashtags/hashtag_6" hasImg={true}/>
-          <Block hashtag={hashtag_img_7} pageUrl="/hashtags/hashtag_7" hasImg={true}/>
-          <Block hashtag={hashtag_img_8} pageUrl="/hashtags/hashtag_8" hasImg={true}/>
+          <Block content="" contentPosition="flex-end" padSize={padSize}/>
+          <Block hashtag={hashtag_img_6} pageUrl="/hashtags/hashtag_6" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_7} pageUrl="/hashtags/hashtag_7" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_8} pageUrl="/hashtags/hashtag_8" hasImg={true} padSize={padSize}/>
         </div>
         <div className={hashtagPadCss.hashtag_pad_contents_container}>
-          <Block hashtag={hashtag_img_9} pageUrl="/hashtags/hashtag_9" hasImg={true}/>
-          <Block hashtag={hashtag_img_10} pageUrl="/hashtags/hashtag_10" hasImg={true}/>
-          <Block content=""/>
-          <Block hashtag={hashtag_img_11} pageUrl="/hashtags/hashtag_11" hasImg={true}/>
+          <Block hashtag={hashtag_img_9} pageUrl="/hashtags/hashtag_9" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_10} pageUrl="/hashtags/hashtag_10" hasImg={true} padSize={padSize}/>
+          <Block content="" padSize={padSize}/>
+          <Block hashtag={hashtag_img_11} pageUrl="/hashtags/hashtag_11" hasImg={true} padSize={padSize}/>
         </div>
         <div className={hashtagPadCss.hashtag_pad_contents_container}>
-          <Block hashtag={hashtag_img_12} pageUrl="/hashtags/hashtag_12" hasImg={true}/>
-          <Block content=""/>
-          <Block hashtag={hashtag_img_13} pageUrl="/hashtags/hashtag_13" hasImg={true}/>
-          <Block hashtag={hashtag_img_14} pageUrl="/hashtags/hashtag_14" hasImg={true}/>
+          <Block hashtag={hashtag_img_12} pageUrl="/hashtags/hashtag_12" hasImg={true} padSize={padSize}/>
+          <Block content="" padSize={padSize}/>
+          <Block hashtag={hashtag_img_13} pageUrl="/hashtags/hashtag_13" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_14} pageUrl="/hashtags/hashtag_14" hasImg={true} padSize={padSize}/>
         </div>
         <div className={hashtagPadCss.hashtag_pad_contents_container}>
-          <Block hashtag={hashtag_img_15} pageUrl="/hashtags/hashtag_15" hasImg={true}/>
-          <Block hashtag={hashtag_img_16} pageUrl="/hashtags/hashtag_16" hasImg={true}/>
-          <Block hashtag={hashtag_img_17} pageUrl="/hashtags/hashtag_17" hasImg={true}/>
+          <Block hashtag={hashtag_img_15} pageUrl="/hashtags/hashtag_15" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_16} pageUrl="/hashtags/hashtag_16" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_17} pageUrl="/hashtags/hashtag_17" hasImg={true} padSize={padSize}/>
+          <Block content="" padSize={padSize}/>
         </div>
         <div className={hashtagPadCss.hashtag_pad_contents_container}>
-          <Block hashtag={hashtag_img_18} pageUrl="/hashtags/hashtag_18" hasImg={true}/>
-          <Block hashtag={hashtag_img_19} pageUrl="/hashtags/hashtag_19" hasImg={true}/>
-          <Block hashtag={hashtag_img_20} pageUrl="/hashtags/hashtag_20" hasImg={true}/>
+          <Block content="" padSize={padSize}/>
+          <Block hashtag={hashtag_img_18} pageUrl="/hashtags/hashtag_18" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_19} pageUrl="/hashtags/hashtag_19" hasImg={true} padSize={padSize}/>
+          <Block hashtag={hashtag_img_20} pageUrl="/hashtags/hashtag_20" hasImg={true} padSize={padSize}/>
         </div>
       </div>
     </div>

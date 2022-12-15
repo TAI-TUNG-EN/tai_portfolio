@@ -175,7 +175,7 @@ export default function Works(){
                         descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
                         url="/works/sleep_well"/>
 
-              <Projects name="Everything’s Gonna Be Alright" type={["Music video"]} 
+              <Projects name="Everything's Gonna Be Alright" type={["Music video"]} 
                         roles={["Design (illustration), Animation"]} 
                         img={index_everything} 
                         imgWidth="29.27rem" imgHeight="18.29rem" 

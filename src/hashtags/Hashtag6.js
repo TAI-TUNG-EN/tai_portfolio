@@ -39,7 +39,7 @@ export default function Hashtag1() {
         prevImgPosition="center"
         nextImg={ nextImg }
         nextImgPosition="top"
-        currentIndex={1}
+        currentIndex="hashtag_6"
         prevImgUrl="/hashtags/hashtag_5"
         nextImgUrl="/hashtags/hashtag_7"
       />

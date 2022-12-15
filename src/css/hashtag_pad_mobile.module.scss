@@ -1,0 +1,17 @@
+@import './main.scss';
+
+#hashtag_pad_mobile{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $COLOR_BLACK;
+  .close_window{
+    background-color: white;
+    color: $COLOR_BLACK;
+    width: 5rem;
+    height: 5rem;
+  }
+}

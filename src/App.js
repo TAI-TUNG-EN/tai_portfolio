@@ -7,6 +7,7 @@ import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import About from './About'
 import Works from './Works'
 import Hashtags from './Hashtag'
+import HashtagPadMobile from './HashtagPadMobile'
 import WorksAnotheries from './works/Anotheries'
 import WorksEverythingIsGonnaBeAlright from './works/EverythinsIsGonnaBeAlright'
 import OrganVoice from './works/OrganVoice'
@@ -80,6 +81,7 @@ const App = () => {
         <Route path="/works/organ_voice" element={<><OrganVoice /></>}></Route>
         <Route path="/works/surface_apparel" element={<><SurfaceApporel /></>}></Route>
 
+        <Route path="/hashtags_mobile" element={<><HashtagPadMobile /></>}></Route>
         <Route path="/hashtags/hashtag_1" element={<><Hashtag1 /></>}></Route>
         <Route path="/hashtags/hashtag_2" element={<><Hashtag2 /></>}></Route>
         <Route path="/hashtags/hashtag_3" element={<><Hashtag3 /></>}></Route>
