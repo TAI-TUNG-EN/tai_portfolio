@@ -119,15 +119,24 @@ a{
         font-size: 1.1rem;
         margin-bottom: .6rem;
         transition: all .3s ease-in-out;
-        @include hover_footer;
-        @include sm(){
-          font-size: 1.3rem;
-        }
-        @include md(){
-          font-size: 1.3rem;
-        }
-        @include md(){
-          font-size: $FONT_30;
+        .upper_right_contents_prop_hashtag{
+          color: #DBDFE0;
+          font-size: .7rem;
+          margin-bottom: 1.5rem;
+          transition: all .3s ease-in-out;
+          @include hover_footer;
+          @include sm(){
+            font-size: 1rem;
+            margin-bottom: 4.5rem;
+          }
+          @include md(){
+            font-size: 1rem;
+            margin-bottom: 4.5rem;
+          }
+          @include lg(){
+            font-size: $FONT_30;
+            margin-bottom: 1.5rem;
+          }
         }
       }
       .upper_right_contents_prop_hashtag{
@@ -154,16 +163,25 @@ a{
         font-size: 1.1rem;
         margin-bottom: 6rem;
         transition: all .3s ease-in-out;
-        @include hover_footer;
-        @include sm(){
-          font-size: 1.3rem;
-          margin-bottom: 0;
-        }
-        @include md(){
-          font-size: 1.3rem;
-        }
-        @include md(){
-          font-size: $FONT_30;
+        
+        .upper_right_contents_prop_hashtag{
+          color: #DBDFE0;
+          font-size: .7rem;
+          margin-bottom: 1.5rem;
+          transition: all .3s ease-in-out;
+          @include hover_footer;
+          @include sm(){
+            font-size: 1rem;
+            margin-bottom: 4.5rem;
+          }
+          @include md(){
+            font-size: 1rem;
+            margin-bottom: 4.5rem;
+          }
+          @include lg(){
+            font-size: $FONT_30;
+            margin-bottom: 1.5rem;
+          }
         }
       }
       .upper_right_contents_prop_back_to_top{
@@ -172,9 +190,7 @@ a{
         font-size: $FONT_16;
         transition: all .3s ease-in-out;
         @include hover_footer;
-        // &:hover{
-        //   cursor: pointer;
-        // }
+        
         @include sm(){
           position: absolute;
           bottom: 3vh;
@@ -186,6 +202,7 @@ a{
           right: 10vw;
         }
         @include lg(){
+          width: 30%;
           position: unset;
           bottom: unset;
           right: unset;

@@ -75,10 +75,12 @@ export default function Footer(){
           <span className={footerCss.upper_left_contents_prop}>All the best days</span>
         </div>
         <div className={footerCss.upper_right_container}>
-          <Link to="/about"><div className={footerCss.upper_right_contents_prop_about}>About</div></Link>
+          
+          <div className={footerCss.upper_right_contents_prop_about}><Link to="/about" className={footerCss.upper_right_contents_prop_hashtag}>About</Link></div>
           <div className={footerCss.upper_right_contents_prop_hashtag}><Link to="/hashtags" className={footerCss.upper_right_contents_prop_hashtag}>Special content-Learn me by #hashtags</Link></div>
-          <Link to="/works"><div className={footerCss.upper_right_contents_prop_works}>Works</div></Link>
-          <div className={footerCss.upper_right_contents_prop_back_to_top} onClick={scrollToTop}>Back to top</div>
+          
+          <div className={footerCss.upper_right_contents_prop_works}><Link to="/works" className={footerCss.upper_right_contents_prop_hashtag}>Works</Link></div>
+          <a className={footerCss.upper_right_contents_prop_back_to_top} onClick={scrollToTop}>Back to top</a>
         </div>
       </div>
 
