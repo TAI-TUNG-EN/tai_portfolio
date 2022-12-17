@@ -193,6 +193,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           line-height: 1.8rem;
           margin: 1rem 0;
           animation: fadeInAnimation ease-in-out .3s;
+          text-align: justify;
           @include sm(){
             width: 100%;
           }
@@ -200,7 +201,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
             width: 100%;
           }
           @include lg(){
-            width: 80%;
+            width: 100%;
           }
         }
       }
@@ -264,14 +265,14 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         }
         @include md(){
           width: 10%;
-          height: 70%;
+          height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           animation: fadeInAnimationPrevMobile cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
         }
         @include lg(){
-          width: 60%;
+          width: calc(60vh * 4 / 3 *.75);
           height: 15%;
           display: flex;
           justify-content: center;
@@ -288,11 +289,17 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         animation: fadeInTransformAnimation cubic-bezier(0.84, -0.21, 0.07, 1.43) 1.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        @include sm(){
+          width: 20rem;
+          height: 15rem;
+        }
         @include md(){
-          width: 70%;
+          width: 40rem;
+          height: 30rem;
         }
         @include lg(){
-          width: 70%;
+          width: calc(60vh * 4 / 3);
+          height: 60vh;
         }
       }
       .link_img_prop{
