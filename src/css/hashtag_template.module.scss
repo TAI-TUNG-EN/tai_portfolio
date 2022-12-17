@@ -139,7 +139,8 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
       padding: 0 3rem;
       @include sm(){
         width: 80%;
-        height: 40%;
+        height: 35%;
+        margin-top: -7vh;
       }
       @include md(){
         width: 80%;
@@ -159,7 +160,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           justify-content: flex-start;
         }
         @include md(){
-          width: 100%;
+          width: 85%;
           justify-content: flex-start;
         }
         @include lg(){
@@ -172,8 +173,8 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           width: 80%;
           font-size: $FONT_20;
           color: #3F729B;
-          font-weight: bold;
-          margin: 1rem 0;
+          font-weight: 600;
+          margin: .8rem 0;
           animation: fadeInAnimation ease-in-out .7s;
           @include sm(){
             width: 100%;
@@ -191,7 +192,6 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           color: $COLOR_BLACK;
           font-weight: normal;
           line-height: 1.8rem;
-          margin: 1rem 0;
           animation: fadeInAnimation ease-in-out .3s;
           text-align: justify;
           @include sm(){

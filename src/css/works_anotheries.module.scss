@@ -117,7 +117,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       }
       @include lg(){
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
       }
 
       .photo_contents_container{
@@ -236,7 +236,8 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               height: 15rem;
             }
             @include lg(){
-              height: 15rem;
+              height: 10rem;
+              margin-bottom: 3rem;
             }
 
             .paragraph_2_title{
@@ -244,7 +245,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
               font-size: 1.2rem;
               color: $COLOR_BLACK;
               line-height: 1.5rem;
-              margin: 1.5rem 0;
+              margin-bottom: 1.5rem;
             }
             .paragraph_2_description{
               font-weight: 400;
