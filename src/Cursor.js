@@ -15,6 +15,8 @@ export default function Cursor(cursorTypes){
     var cursorinner = document.getElementById(`${cursorCss.cursor2}`);
     var a = document.querySelectorAll('a');
     document.addEventListener('mousemove', function(e){
+      cursor.style.display = 'unset';
+      cursorinner.style.display = 'unset';
       var x = e.clientX;
       var y = e.clientY;
       cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`

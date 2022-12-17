@@ -32,7 +32,7 @@ body, html {
     display: none;
   }
   @include lg(){
-    display: unset;
+    display: none;
   }
 }
 
@@ -54,7 +54,7 @@ body, html {
     display: none;
   }
   @include lg(){
-    display: unset;
+    display: none;
   }
 }
 
