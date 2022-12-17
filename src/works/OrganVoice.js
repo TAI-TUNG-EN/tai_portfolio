@@ -74,11 +74,11 @@ export default function OrganVoice(){
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='loadingTimeControl'/>
       <PageLayout>
         <section id={organCss.works_organ}>
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
           <div className={organCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column-reverse"
-              name="臓器の夜間問診"
+              names={["臓器の夜間問診"]}
               type="Exhibition (School project)" roles={["Direction, Project Management,", "Design, Photography "]} date="2018.10-2018.12" tool="Illustrator, Photoshop, Lightroom" 
               url="" urlTitle=""
               bannerImg={banner}

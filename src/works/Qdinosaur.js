@@ -82,11 +82,11 @@ export default function Qdinosaur(){
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section id={dinasourCss.works_dinasour}>
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
           <div className={dinasourCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column-reverse"
-              name="Q dinosaur恐恐龍"
+              names={["Q dinosaur恐恐龍"]}
               type="Line sticker (Side project)" roles={["Design (illustration)"]} date="2020.10-2020.12" tool="Adobe illustratior" 
               url="https://store.line.me/stickershop/product/14468519" 
               urlTitle="Sticker page"

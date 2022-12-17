@@ -73,11 +73,11 @@ export default function SleepWell(){
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section id={sleepCss.works_sleep}>
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
           <div className={sleepCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              name="SLEEP WELL"
+              names={["SLEEP WELL"]}
               type="Application design (School project)" roles={["Direction, Project Management,", "Design"]} 
               date="2019.05-2019.06" tool="Xmind, Adobe XD" 
               url="http://tuip2t5.weebly.com/" urlTitle="Project site"

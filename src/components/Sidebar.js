@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { images } from '../images.ts'
 import sidebarCss from '../css/sidebar.module.scss'
 
-const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text, marginTopSetting }) => {
+const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text, marginTopSetting, colorEmoji }) => {
   const [width, setWidth] = useState(window.innerWidth);
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -33,7 +33,7 @@ const Sidebar = ({ sidebarTitle, emoji_1, emoji_1_text, emoji_2, emoji_2_text, m
       </div>
       <div className={sidebarCss.emoji_container} style={{marginBottom: "2rem"}}>
         <div className={sidebarCss.emoji_prop}>{ emoji_2 }</div>
-        <div className={sidebarCss.emoji_text_prop} style={{color: "#945D00"}}>{ emoji_2_text }</div>
+        <div className={sidebarCss.emoji_text_prop} style={{color: colorEmoji}}>{ emoji_2_text }</div>
       </div>
     </div>
   )

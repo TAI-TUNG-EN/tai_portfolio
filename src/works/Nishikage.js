@@ -43,13 +43,17 @@ export default function Nishikage() {
   }, []);
   const isMobile = width <= 768;
   const isPad = (width > 768) && (width <= 992);
+  var nameLayout = ["にしかげクリニック　アネックス"];
   let width_worksBackToAnchor = '70%';
   if(isMobile){
     width_worksBackToAnchor = '80%'
+    nameLayout = ["にしかげクリニック","アネックス"];
   } else if(isPad){
     width_worksBackToAnchor = '75%'
+    nameLayout = ["にしかげクリニック　アネックス"];
   } else{
     width_worksBackToAnchor = '66%'
+    nameLayout = ["にしかげクリニック　アネックス"];
   }
 
   const navigate = useNavigate();
@@ -69,11 +73,11 @@ export default function Nishikage() {
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section id={nishikageCss.works_nishikage}>
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
           <div className={nishikageCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              name="にしかげクリニック　アネックス"
+              names={nameLayout}
               type="Website (Client project with willstyle)" roles={["Design"]} date="2022.10" tool="Adobe XD, Lightroom, Photoshop" 
               url="https://nishikage-anex.jp/" 
               urlTitle="Website"

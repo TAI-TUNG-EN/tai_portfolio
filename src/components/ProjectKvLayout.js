@@ -13,9 +13,10 @@ import arrow from '../static/icons/arrow_up_right.svg'
 
 
 
-export default function ProjectKvLayout ({ kv_column_direction, name, nameEN, nameCN, nameJP, type, roles, date, tool, bannerImg, bannerHeight, bannerImgPosition, url, urlTitle, urlNeed, comment}){
+export default function ProjectKvLayout ({ kv_column_direction, names, type, roles, date, tool, bannerImg, bannerHeight, bannerImgPosition, url, urlTitle, urlNeed, comment}){
   console.log(kv_column_direction);
   var roleRender = roles.map(item => <div className={projectKvCss.detailed_info_prop_contents}>{item}</div>);
+  var nameRender = names.map(item => <div>{item}</div>);
   
   useEffect(() => {
     window.scrollTo({
@@ -45,10 +46,7 @@ export default function ProjectKvLayout ({ kv_column_direction, name, nameEN, na
         data-aos-once="false">
         <div className={projectKvCss.info_container}>
           <div className={projectKvCss.project_name_prop}>
-            { name }
-            {/* { nameEN }
-            <span style={{fontFamily: FONT_JP}}>{ nameJP }</span>
-            <span style={{fontFamily: FONT_JP, fontSize: '1.5rem'}}>&nbsp;{ nameCN }</span> */}
+            {nameRender}
           </div>
           <div className={projectKvCss.detailed_info_container}>
             <div className={projectKvCss.detailed_info_left_container}>
@@ -82,7 +80,7 @@ export default function ProjectKvLayout ({ kv_column_direction, name, nameEN, na
         </div>
         
         <div className={projectKvCss.banner_container}>
-          <img src={ bannerImg } alt={ nameEN + nameCN + nameJP } className={projectKvCss.banner_img_prop} style={{objectPosition: bannerImgPosition, height: bannerHeight}}></img>
+          <img src={ bannerImg } alt={ names } className={projectKvCss.banner_img_prop} style={{objectPosition: bannerImgPosition, height: bannerHeight}}></img>
         </div>
       </div>
     </div>

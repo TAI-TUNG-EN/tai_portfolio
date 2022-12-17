@@ -68,11 +68,11 @@ export default function EverythinsIsGonnaBeAlright(){
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section id={everythingCss.works_everything}>
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
           <div className={everythingCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              name="Everything’s Gonna Be Alright"
+              names={["Everything’s Gonna Be Alright"]}
               type="Music video" roles={["Design (illustration), Animation"]} date="2020.03-2020.12" tool="After Effects, Illustrator, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
               bannerImg={banner} bannerImgPosition="bottom"
               urlNeed='false'/>

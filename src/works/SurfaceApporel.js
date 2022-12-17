@@ -73,11 +73,11 @@ export default function SurfaceApporel(){
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section id={surfaceCss.works_surface}>
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
           <div className={surfaceCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              name="SurfAce Apparel"
+              names={["SurfAce Apparel"]}
               type="Runway animation" roles={["Project Management, Design , Animation"]} date="2018.10-2018.12" tool="After Effects, Photoshop" url="https://store.line.me/stickershop/product/14468519" urlTitle="Watch the video"
               bannerImg={banner}
               urlNeed='false'/>

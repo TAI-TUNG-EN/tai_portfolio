@@ -82,11 +82,11 @@ export default function Anotheries() {
             <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
             <PageLayout>
                 <section id={anotheriesCss.works_anotheries}>
-                    <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem"/>
+                    <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
                     <div className={anotheriesCss.kv_container}>
                         <ProjectKvLayout
                             kv_column_direction="column"
-                            name="Anotheries"
+                            names={["Anotheries"]}
                             type="Website (Side project)" roles={["Direction, Writing, Project Management,", "Art Direction, Design, Photography "]} date="2022.10-now" 
                             tool="Xmind, Figma, Lightroom, Photoshop" 
                             url="https://yihanyozikua.github.io/anotheries/" urlTitle="Website"

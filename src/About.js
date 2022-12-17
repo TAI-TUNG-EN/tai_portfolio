@@ -411,7 +411,7 @@ export default function About() {
             </div>
           </div>
 
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" colorEmoji="#945D00" />
 
           <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
             <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>

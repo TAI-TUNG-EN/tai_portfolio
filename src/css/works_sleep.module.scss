@@ -463,14 +463,14 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           color: $COLOR_BLACK;
           font-weight: 400;
           font-size: 1rem;
-          margin: 2rem 0;
+          margin: 1.5rem 0;
         }
         .especially_thanks_description_prop{
           color: $COLOR_GRAY;
           font-weight: 400;
-          font-size: .7rem;
-          line-height: 1.2rem;
-          &:nth-child(1){
+          font-size: $FONT_15;
+          line-height: 1.5rem;
+          &:nth-child(2){
             font-weight: 600;
           }
         }

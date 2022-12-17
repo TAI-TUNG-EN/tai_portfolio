@@ -69,11 +69,11 @@ export default function MotenaSea() {
       <Loading bg_style={loadingCss.loader_works} loadingTimeControl='1000'/>
       <PageLayout>
         <section id={motenaSeaCss.works_motena_sea}>
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#945D00"/>
           <div className={motenaSeaCss.kv_container}>
             <ProjectKvLayout 
               kv_column_direction="column"
-              name="株式会社MOTENA-Sea"
+              names={["株式会社MOTENA-Sea"]}
               type="Website (Client project with willstyle)" roles={["Design"]} date="2022.10" tool="Adobe XD, Lightroom, Photoshop" 
               url="https://motena-sea.co.jp/" 
               urlTitle="Website"

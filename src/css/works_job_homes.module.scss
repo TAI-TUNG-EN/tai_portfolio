@@ -148,6 +148,7 @@ $COLOR_PARA_DESCIPTION: #282D2F;
         justify-content: center;
         align-items: flex-start;
         @include sm(){
+          width: 94%;
           flex-direction: column;
           justify-content: center;
           align-items: center;

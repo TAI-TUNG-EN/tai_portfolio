@@ -252,7 +252,7 @@ export default function Hashtags(){
     } else {
       return(
         <>
-          <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Click" style={{top: '0'}} />
+          <Sidebar sidebarTitle="Enjoy this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Click" style={{top: '0'}} colorEmoji="#8B7E85"/>
           <div className={hashtagCss.hashtags_container}>
             <div className={hashtagCss.back_to_container}>
               <BackTo buttonName="Back to about" url="/about" buttonSize="8rem"/>
