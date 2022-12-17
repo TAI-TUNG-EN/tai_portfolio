@@ -53,6 +53,10 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         font-size: 1.5rem;
         color: $COLOR_BLACK;
         margin: 2rem 0;
+        @include md(){
+          margin-top: 2rem;
+          margin-bottom: 1.2rem;
+        }
         @include lg(){
           margin-top: 2rem;
           margin-bottom: 1.2rem;
@@ -86,9 +90,13 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
       justify-content: center;
       align-items: center;
       margin: 1rem 0;
+      @include md(){
+        margin-top: 0;
+        margin-bottom: 0rem;
+      }
       @include lg(){
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
       }
       
       .pieces_prop{

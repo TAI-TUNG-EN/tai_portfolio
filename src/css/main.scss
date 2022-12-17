@@ -91,8 +91,8 @@ body{
   line-height: 2rem;
 }
 @mixin md_content_font{
-  font-size: 1rem;
-  line-height: 1.8rem;
+  font-size: $FONT_15;
+  line-height: $LINE_HEIGHT_28;
 }
 @mixin lg_content_font{
   font-size: $FONT_15;

@@ -44,6 +44,8 @@ $COLOR_PARA_DESCIPTION: #282D2F;
       }
       @include md(){
         width: 75%;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
       }
       @include lg(){
         width: 75%;

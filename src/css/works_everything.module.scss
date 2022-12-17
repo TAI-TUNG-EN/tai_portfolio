@@ -45,7 +45,8 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
         margin-top: 0;
         margin-bottom: 3rem;
         &:nth-child(2){
-          margin-top: 4rem;
+          margin-top: 0;
+          margin-top: 1rem;
         }
       }
       @include lg(){
@@ -68,7 +69,8 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
 
         }
         @include md(){
-
+          margin-top: 1rem;
+          margin-bottom: 1.2rem;
         }
         @include lg(){
           margin-top: 1rem;
@@ -147,6 +149,8 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
           }
           @include md(){
             flex-direction: column;
+            margin-top: 0;
+            margin-bottom: 3rem;
           }
           @include lg(){
             margin-top: 0;

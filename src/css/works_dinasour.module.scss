@@ -45,7 +45,7 @@ $COLOR_PARA: #282D2F;
         margin-top: 0;
         margin-bottom: 3rem;
         &:nth-child(2){
-          margin-top: 4rem;
+          margin-top: 1rem;
         }
       }
       @include lg(){
@@ -65,7 +65,8 @@ $COLOR_PARA: #282D2F;
 
         }
         @include md(){
-
+          margin-top: 2rem;
+          margin-bottom: 1.2rem;
         }
         @include lg(){
           margin-top: 3rem;
