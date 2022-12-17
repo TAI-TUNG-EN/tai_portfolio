@@ -24,6 +24,15 @@
         justify-content: center;
         align-items: center;
       }
+      @include md(){
+        justify-content: center;
+        align-items: center;
+      }
+      @include lg(){
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: row;
+      }
 
       .hashtag_index_container{
         width: 10%;
@@ -36,6 +45,18 @@
         }
         @include sm(){
           opacity: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        @include md(){
+          opacity: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        @include lg(){
+          opacity: .3;
           display: flex;
           justify-content: center;
           align-items: center;

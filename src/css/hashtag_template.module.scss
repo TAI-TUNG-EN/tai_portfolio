@@ -49,10 +49,15 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
   background: $BG;
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 10rem;
+  padding-bottom: 0rem;
   @include sm(){
     justify-content: center;
-    padding-bottom: 0;
+  }
+  @include md(){
+    justify-content: center;
+  }
+  @include lg(){
+    justify-content: flex-end;
   }
   .index_entry_button_img_container{
     position: absolute;
@@ -62,7 +67,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
     width: 88%;
     top: 2rem;
     @include md(){
-      display: none;
+      display: flex;
     }
     @include lg(){
       display: none;
@@ -71,6 +76,10 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
       width: 13vw;
       height: 13vw;
       animation: fadeInTransformAnimation cubic-bezier(0.84, -0.21, 0.07, 1.43) .7s;
+      @include md(){
+        width: 10vw;
+        height: 10vw;
+      }
     }
   }
   .hashtag_template_container{
@@ -81,6 +90,20 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
       justify-content: center;
       align-items: center;
       flex-direction: column-reverse;
+    }
+    @include md(){
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10rem;
+      flex-direction: column-reverse;
+    }
+    @include lg(){
+      width: 94%;
+      justify-content: unset;
+      align-items: unset;
+      flex-direction: row;
+      margin-top: unset;
     }
     .back_to_container{
       position: absolute;
@@ -119,10 +142,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         height: 40%;
       }
       @include md(){
-        width: 40%;
+        width: 80%;
+        height: 40%;
       }
       @include lg(){
         width: 30%;
+        height: unset;
       }
       .left_top_container{
         height: 65%;
@@ -133,6 +158,15 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           width: 100%;
           justify-content: flex-start;
         }
+        @include md(){
+          width: 100%;
+          justify-content: flex-start;
+        }
+        @include lg(){
+          width: unset;
+          justify-content: center;
+        }
+
 
         .title_prop{
           width: 80%;
@@ -178,6 +212,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         @include sm(){
           display: none;
         }
+        @include md(){
+          display: none;
+        }
+        @include lg(){
+          display: flex;
+        }
         .pad_conatainer{
           width: 80%;
         }
@@ -195,10 +235,14 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         height: 40%;
       }
       @include md(){
-        width: 60%;
+        width: 100%;
+        flex-direction: row;
+        height: 40%;
       }
       @include lg(){
         width: 70%;
+        flex-direction: column;
+        height: unset;
       }
       .prev_next_img_prop{
         width: 60%;
@@ -219,9 +263,19 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           animation: fadeInAnimationPrevMobile cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
         }
         @include md(){
-          animation: fadeInAnimationPrev cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
+          width: 10%;
+          height: 70%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: fadeInAnimationPrevMobile cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
         }
         @include lg(){
+          width: 60%;
+          height: 15%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           animation: fadeInAnimationPrev cubic-bezier(0.84, -0.21, 0.07, 1.43) 2s;
         }
         
@@ -235,7 +289,7 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         @include md(){
-          width: 90%;
+          width: 70%;
         }
         @include lg(){
           width: 70%;
@@ -247,6 +301,12 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
         object-fit: cover;
         @include sm(){
           height: 90%;
+        }
+        @include md(){
+          height: 90%;
+        }
+        @include lg(){
+          height: 100%;
         }
       }
     }

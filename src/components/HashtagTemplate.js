@@ -35,7 +35,7 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
   const isMobile = width <= 768;
   const isPad = (width > 768) && (width <= 992);
   const SidebarHashtagTemplate = () => {
-    if(isMobile){
+    if(isMobile || isPad){
       return(
         <></>
       )

@@ -56,7 +56,7 @@ const HashtagPad = ({currentIndex, padWidth}) => {
   const isMobile = width <= 768;
   const isPad = (width > 768) && (width <= 992);
   useEffect(()=>{
-    if(!isMobile){
+    if(!isMobile && !isPad){
       document.getElementById(currentIndex).style.opacity = '1';
     }
   }, []);

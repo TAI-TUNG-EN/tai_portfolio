@@ -27,7 +27,7 @@ const HashtagPadMobile = () => {
 
   const navigate = useNavigate();
 
-  if(isMobile){
+  if(isMobile || isPad){
     return(
       <>
         <PageLayout>
