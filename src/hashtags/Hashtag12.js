@@ -33,7 +33,7 @@ export default function Hashtag1() {
     <>
       <HashtagTemplate 
         title="ENFJ"
-        description={["心理テストなんて信じないのに、16Personalities性格診断テストだけは信じています。", "毎回毎回当てはまりすぎて逆に怖いくらい。", "直近のテスト結果は（主人公）です。", "ENFJは外向(E)、直観(N)、感情(F)、判断(J)を略しています。", "カリスマ性があり、エネルギッシュな野心家だそうです。", "今成長意欲MAXの私にぴったりな結果ではないでしょうか。"]}
+        description={["心理テストなんて信じないのに、16Personalities性格診断テストだけは信じています。", "毎回毎回当てはまりすぎて逆に怖いくらい。", "直近のテスト結果は（主人公）です。", "ENFJは外向(E)、直観(N)、感情(F)、判断(J)を略しています。", "カリスマ性があり、エネルギッシュな野心家だそうです。", "今成長意欲MAXの私にぴったりな結果です。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"

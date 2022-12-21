@@ -41,7 +41,7 @@ const HashtagTemplate = ({ title, description, mainImg, prevImg, nextImg, curren
       )
     }else {
       return(
-        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="View" marginTopSetting="2rem" colorEmoji="#8B7E85"/>
+        <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="🐭" emoji_2_text="Click" marginTopSetting="2rem" colorEmoji="#8B7E85"/>
       )
     }
   }
