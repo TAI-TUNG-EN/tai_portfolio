@@ -65,6 +65,8 @@
       width: 90%;
     }
     .login_title_prop{
+      display: flex;
+      flex-direction: column;
       font-family: $FONT_EN;
       font-weight: 400;
       font-size: $FONT_40;
