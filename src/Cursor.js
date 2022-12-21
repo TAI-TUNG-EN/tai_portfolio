@@ -6,6 +6,19 @@ import cursorCss from './css/cursor.module.scss'
 import footerCss from './css/footer.module.scss'
 
 export default function Cursor(cursorTypes){
+  const [width, setWidth] = useState(window.innerWidth);
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+  const isMobile = width <= 768;
+  const isPad = (width > 768) && (width <= 992);
+
   useEffect(() => {
     console.log(`cursorTypes: ${cursorTypes.cursorTypes}`);
     document.getElementById(`${cursorCss.cursor}`).innerHTML = cursorTypes.cursorTypes;
@@ -15,8 +28,10 @@ export default function Cursor(cursorTypes){
     var cursorinner = document.getElementById(`${cursorCss.cursor2}`);
     var a = document.querySelectorAll('a');
     document.addEventListener('mousemove', function(e){
-      cursor.style.display = 'unset';
-      cursorinner.style.display = 'unset';
+      if(!isMobile && !isPad){
+        cursor.style.display = 'unset';
+        cursorinner.style.display = 'unset';
+      }
       var x = e.clientX;
       var y = e.clientY;
       cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
