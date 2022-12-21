@@ -55,6 +55,13 @@ const Login = () => {
     var titleRender = titleContents[0] + titleContents[1]
   }
 
+  useEffect(() => {
+    var passwordInput = document.getElementById('password');
+    passwordInput.addEventListener('blur', function() {
+      window.scrollTo(0, 0);
+    })
+  }, [])
+
   return(
     <div id={loginCss.login}>
       <div className={loginCss.login_container}>                                            
