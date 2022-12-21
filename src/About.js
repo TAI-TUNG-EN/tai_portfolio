@@ -435,7 +435,7 @@ export default function About() {
                       <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
                       <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる仕事をしたいと思い、Webデザイナーとして制作会社へ入社。</span>
                       <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるクリエティブ制作に励んでおります。</span>
-                      <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も携わっております。</span>
+                      <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も手掛けております。</span>
                     </div>
                   </div>
                   <div className={aboutCss.about_underline_div}></div>
@@ -513,60 +513,39 @@ export default function About() {
             <div className={aboutCss.about_special_contents_prop_container}>
               <div className={aboutCss.about_special_contents_title}>Special content</div>
               <div className={aboutCss.about_special_contents_img_container}>
-                <div className={aboutCss.about_special_contents_img_middle_container}>
-                  <img src={ hashImg_6 } className={aboutCss.about_special_contents_img_prop}
-                    data-aos="fade-up"
-                    data-aos-easing="ease-in-out"
-                    data-aos-delay="0"
-                    data-aos-offset="10"
-                    data-aos-duration="1000"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-bottom"></img>
-                  <div className={aboutCss.special_contents_bottom_words_prop}
-                    data-aos="fade-up"
-                    data-aos-easing="ease-in-out"
-                    data-aos-delay="0"
-                    data-aos-offset="10"
-                    data-aos-duration="1000"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-bottom">#カメラ女子</div>
+                <div className={aboutCss.about_special_contents_img_middle_container}
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-delay="0"
+                  data-aos-offset="10"
+                  data-aos-duration="1000"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-bottom">
+                  <img src={ hashImg_6 } className={aboutCss.about_special_contents_img_prop}></img>
+                  <div className={aboutCss.special_contents_bottom_words_prop}>#カメラ女子</div>
                 </div>
                 <div className={aboutCss.about_special_contents_img_upper_container}>
-                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
-                    <img src={ hashImg_9 } className={aboutCss.about_special_contents_upper_img_prop}
-                      data-aos="fade-up-left"
-                      data-aos-easing="ease-in-out"
-                      data-aos-delay="1200"
-                      data-aos-offset="10"
-                      data-aos-duration="1000"
-                      data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom"></img>
-                    <div className={aboutCss.special_contents_bottom_words_prop}
-                      data-aos="fade-up-left"
-                      data-aos-easing="ease-in-out"
-                      data-aos-delay="1200"
-                      data-aos-offset="10"
-                      data-aos-duration="1000"
-                      data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom">#ヨーグルト妖怪</div>
+                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}
+                    data-aos="fade-up-left"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="1200"
+                    data-aos-offset="10"
+                    data-aos-duration="1000"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom">
+                    <img src={ hashImg_9 } className={aboutCss.about_special_contents_upper_img_prop}></img>
+                    <div className={aboutCss.special_contents_bottom_words_prop} >#ヨーグルト妖怪</div>
                   </div>
-                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}>
-                    <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}
-                      data-aos="fade-up-right"
-                      data-aos-easing="ease-in-out"
-                      data-aos-delay="600"
-                      data-aos-offset="10"
-                      data-aos-duration="1000"
-                      data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom"></img>
-                    <div className={aboutCss.special_contents_bottom_words_prop}
-                      data-aos="fade-up-right"
-                      data-aos-easing="ease-in-out"
-                      data-aos-delay="600"
-                      data-aos-offset="10"
-                      data-aos-duration="1000"
-                      data-aos-once="false"
-                      data-aos-anchor-placement="top-bottom">#コピー本が好き</div>
+                  <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}
+                    data-aos="fade-up-right"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="600"
+                    data-aos-offset="10"
+                    data-aos-duration="1000"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom">
+                    <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}></img>
+                    <div className={aboutCss.special_contents_bottom_words_prop}>#コピー本が好き</div>
                   </div>
                 </div>
               </div>
