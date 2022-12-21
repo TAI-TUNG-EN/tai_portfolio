@@ -269,12 +269,13 @@ $COLOR_PARA_DESCIPTION: #282D2F;
           margin: 2rem 0;
           .especially_thanks_description_prop{
             color: $COLOR_GRAY;
-            font-weight: 400;
+            font-weight: 600;
             font-size: .8rem;
             line-height: 1.3rem;
             display: flex;
 
             &:nth-child(1){
+              font-family: $FONT_EN;
               font-weight: 600;
             }
             &:nth-child(2){

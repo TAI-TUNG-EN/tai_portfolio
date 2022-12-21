@@ -109,7 +109,7 @@ export default function Hashtags(){
             </div>
             <div className={hashtagCss.emoji_container} style={{marginBottom: "2rem"}}>
               <div className={hashtagCss.emoji_prop}>🐭</div>
-              <div className={hashtagCss.emoji_text_prop} style={{color: "#945D00"}}>Click</div>
+              <div className={hashtagCss.emoji_text_prop} style={{color: "#8B7E85"}}>Click</div>
             </div>
           </div>
 

@@ -388,6 +388,7 @@ $COLOR_BG: linear-gradient(158.84deg, $COLOR_BG_1, $COLOR_BG_2);
             line-height: 1.2rem;
 
             &:nth-child(1){
+              font-family: $FONT_EN;
               font-weight: 600;
             }
           }
