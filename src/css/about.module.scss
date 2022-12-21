@@ -768,10 +768,10 @@ $COLOR_VIEW_WORKS_BUTTON: #282D2F;
         height: 50%;
       }
       @include md(){
-
+        height: 25%;
       }
       @include lg(){
-        
+        height: 100%;
       }
 
       .about_learn_me_by_hashtags_button_link{
