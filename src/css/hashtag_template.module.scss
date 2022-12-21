@@ -194,6 +194,8 @@ $BG: linear-gradient(135deg, $BG_COLOR_1, $BG_COLOR_2);
           line-height: 1.8rem;
           animation: fadeInAnimation ease-in-out .3s;
           text-align: justify;
+          display: flex;
+          flex-direction: column;
           @include sm(){
             width: 100%;
           }
