@@ -92,12 +92,13 @@ function isKvScrollThrough(element){
 }
 
 export default function About() {
+  useEffect(()=>{
+    window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
+    });
+  }, []);
 
-  // const [loading, setLoading] = useState(true)
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(false), 6000)
-  // }, [])
-  // Set loading state to true initially
   const [loading, setLoading] = useState(true);
       
   useEffect(() => {
