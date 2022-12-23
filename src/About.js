@@ -556,7 +556,7 @@ export default function About() {
           <div className={aboutCss.about_learn_me_by_hashtags_button_container} ref={learn_me_by_hashtag_ref}>
             <div className={aboutCss.about_learn_me_by_hashtags_button_prop_container}>
               <Link to="/hashtags" className={aboutCss.about_learn_me_by_hashtags_button_link}
-                data-aos="fade-up"
+                data-aos="fade-in"
                 data-aos-easing="ease-in-out"
                 data-aos-delay="1100"
                 data-aos-offset="10"
