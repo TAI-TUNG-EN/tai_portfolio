@@ -33,7 +33,7 @@ export default function Hashtag1() {
     <>
       <HashtagTemplate 
         title="香りのある暮らし"
-        description={["テレワーク時期、マインドセットのため始まる新習慣。", "香水、キャンドル、アロマ。香りグッズは一式揃っています。", "部屋には常に香りを漂っていることで、気分が和んだりリフレッシュできたりします。"]}
+        description={["テレワーク時期、マインドセットのため始まる新習慣。", "香水、キャンドル、アロマ。香りグッズは一式揃っています。部屋には常に香りを漂っていることで、気分が和んだりリフレッシュできたりします。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"

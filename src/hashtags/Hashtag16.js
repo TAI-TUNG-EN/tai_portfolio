@@ -33,7 +33,7 @@ export default function Hashtag1() {
     <>
       <HashtagTemplate 
         title="Apple製品愛用者"
-        description={["これは多くな方に共感してもらえると思います。", "初めはiPhone、次はMacBookとiPad、イヤホン買う時そろそろ別のものにしようと思い、いろいろ試したけど、結局AirPods Proを購入。", "もうアップルの沼から離れません。今はApple watchを狙っています。"]}
+        description={["これは多くな方に共感してもらえると思います。", "初めはiPhone、次はMacBookとiPad、イヤホン買う時そろそろ別のものにしようと思い、いろいろ試したけど、結局AirPods Proを購入。", "もうAppleの沼から離れません。今はApple watchを狙っています。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"

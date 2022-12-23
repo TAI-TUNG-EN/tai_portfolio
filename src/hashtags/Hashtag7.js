@@ -33,7 +33,7 @@ export default function Hashtag1() {
     <>
       <HashtagTemplate 
         title="毎日自炊"
-        description={["平日では晩ごはんと明日の弁当作りは30分で完結させます。", "週末ではレシピ本を参照しながら手を込んだ料理を挑戦します。", "最近は冷凍スープにはまっております。"]}
+        description={["平日では晩ごはんと明日の弁当作りは30分で完結させます。週末ではレシピ本を参照しながら手を込んだ料理を挑戦します。", "最近は冷凍スープにはまっております。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"

@@ -33,7 +33,7 @@ export default function Hashtag1() {
     <>
       <HashtagTemplate 
         title="ヨガ部員"
-        description={["普通の常温ヨガからハンモックを使うエアリアルヨガまでやっています。", "きっかけはテレワークによる運動不足を解消するためでしたが、", "今は生活の一部になって、毎週欠かさずに通っています。"]}
+        description={["普通の常温ヨガからハンモックを使うエアリアルヨガまでやっています。", "きっかけはテレワークによる運動不足を解消するためでしたが、今は生活の一部になって、毎週欠かさずに通っています。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"
