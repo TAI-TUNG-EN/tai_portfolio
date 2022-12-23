@@ -182,7 +182,7 @@ export default function About() {
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
             <span>だから私は考えている。</span>
-            <span>何かブラッシュアップできることがないか。何か新しいアイデアを生み出せるのではないか。今までも、これからも、もっとよくなる明日のために、クオリティの高いデザインを追求し続けます。</span>
+            <span>何かブラッシュアップできることがないか。何か新しいアイデアを生み出せるのではないか。今までも、これからも、もっとよくなる明日のために、人に寄り添うデザインを追求し続けます。</span>
           </div>
         </div>
       )
@@ -207,7 +207,7 @@ export default function About() {
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_4}>
             <span>今までも、これからも、もっとよくなる明日のために、</span>
-            <span>クオリティの高いデザインを追求し続けます。</span>
+            <span>人に寄り添うデザインを追求し続けます。</span>
           </div>
         </div>
       )
