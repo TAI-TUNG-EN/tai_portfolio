@@ -7,7 +7,7 @@ import { auth } from '../firebase';
 
 import HashtagTemplate from '../components/HashtagTemplate';
 
-import mainImg from '../static/img/hashtags/page/hashtag_10.png'
+import mainImg from '../static/img/hashtags/page/hashtag_10.jpg'
 import prevImg from '../static/img/hashtags/page/hashtag_9.png'
 import nextImg from '../static/img/hashtags/page/hashtag_11.png'
 

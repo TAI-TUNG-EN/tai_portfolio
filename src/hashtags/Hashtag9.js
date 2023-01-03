@@ -9,7 +9,7 @@ import HashtagTemplate from '../components/HashtagTemplate';
 
 import mainImg from '../static/img/hashtags/page/hashtag_9.png'
 import prevImg from '../static/img/hashtags/page/hashtag_8.png'
-import nextImg from '../static/img/hashtags/page/hashtag_10.png'
+import nextImg from '../static/img/hashtags/page/hashtag_10.jpg'
 
 export default function Hashtag1() {
 
