@@ -87,7 +87,7 @@ export default function Qdinosaur(){
             <ProjectKvLayout 
               kv_column_direction="column-reverse"
               names={["Q dinosaur恐恐龍"]}
-              type="Line sticker (Side project)" roles={["Design (illustration)"]} date="2020.10-2020.12" tool="Adobe illustratior" 
+              type="LINE sticker (Side project)" roles={["Design (illustration)"]} date="2020.10-2020.12" tool="Adobe illustratior"
               url="https://store.line.me/stickershop/product/14468519" 
               urlTitle="Sticker page"
               bannerImg={banner}

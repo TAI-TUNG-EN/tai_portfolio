@@ -161,7 +161,7 @@ export default function Works(){
                         descriptionContainerHeight="18.29rem" descriptionPositonChoice={`${worksCss.project_container_right}`}
                         url="/works/anotheries"/>
 
-              <Projects name="Q dinosaur" type={["Line sticker (Side project)"]}
+              <Projects name="Q dinosaur" type={["LINE sticker (Side project)"]}
                         roles={["Design (illustration)"]} 
                         img={index_dinasour}
                         imgWidth="29.27rem" imgHeight="18.29rem" 

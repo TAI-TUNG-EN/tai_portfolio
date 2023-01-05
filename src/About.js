@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
-import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
-import { NavLink, useNavigate } from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import {Parallax, useParallax, ParallaxProvider} from 'react-scroll-parallax';
+import {NavLink, useNavigate} from 'react-router-dom'
 import AOS from 'aos'
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { auth } from './firebase';
+import {getAuth, onAuthStateChanged} from "firebase/auth";
+import {auth} from './firebase';
 
 import PageLayout from './components/PageLayout'
 import Cursor from './Cursor';
@@ -16,7 +16,7 @@ import Sidebar from './components/Sidebar'
 import aboutCss from './css/about.module.scss'
 import loadingCss from './css/loading.module.scss'
 import specialContentsImg from './static/img/special_contents.png'
-import { images } from './images.ts'
+import {images} from './images.ts'
 import avatarImg from './static/img/about_avatar.jpg'
 // import avatarImg from './static/img/about_avatar-min.png'
 import hashImg_6 from './static/img/hashtags/hashtag_6.png'
@@ -27,20 +27,19 @@ import wireframe from './static/img/about_wireframe.png'
 const BG_COLOR_1 = "#F6F6F6"
 const BG_COLOR_2 = "#DBDEE0"
 
-
 const Exp = ({year, exp_contents}) => {
   var expRender = exp_contents.map(item => <div>{item}</div>);
-  return(
+  return (
     <div className={aboutCss.about_experience_contents}>
-      <div className={aboutCss.about_experience_contents_prop}>{ year }</div>
-      <div className={aboutCss.about_experience_contents_prop}>{ expRender }</div>
+      <div className={aboutCss.about_experience_contents_prop}>{year}</div>
+      <div className={aboutCss.about_experience_contents_prop}>{expRender}</div>
     </div>
   )
 }
 
 /* unused function */
-function addToRef(toBeAddList){
-  [].forEach.call(toBeAddList, function(r){
+function addToRef(toBeAddList) {
+  [].forEach.call(toBeAddList, function (r) {
     r = useRef(null);
   });
   return toBeAddList;
@@ -53,22 +52,23 @@ function isInViewPort(element, inViewHeight) {
   // Checking part. Here the code checks if it's *fully* visible
   // Edit this part if you just want a partial visibility
   if (
-      (bounding.top >= 0 &&
-        ((bounding.top + bounding.bottom) / inViewHeight) <= (window.innerHeight || document.documentElement.clientHeight))
-      ||
-      (bounding.top < 0 && bounding.bottom > 0 &&
-        (bounding.bottom) <= (window.innerHeight || document.documentElement.clientHeight))
+    (bounding.top >= 0 &&
+     ((bounding.top + bounding.bottom) / inViewHeight) <=
+     (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (bounding.top < 0 && bounding.bottom > 0 &&
+     (bounding.bottom) <= (window.innerHeight || document.documentElement.clientHeight))
   ) {
-      console.log(bounding.top, ', ', bounding.bottom)
-      console.log(window.innerHeight)
-      return true;
+    console.log(bounding.top, ', ', bounding.bottom)
+    console.log(window.innerHeight)
+    return true;
   } else {
-      console.log(`Not in the viewport. :(`);
-      return false;
+    console.log(`Not in the viewport. :(`);
+    return false;
   }
 }
 
-function scrollToParagraph( scrollToSection, callback ){
+function scrollToParagraph(scrollToSection, callback) {
   console.log('scroll to paragraph: ', scrollToSection);
   window.scrollTo({
     top: scrollToSection,
@@ -78,29 +78,30 @@ function scrollToParagraph( scrollToSection, callback ){
   callback();
 }
 
-function isKvScrollThrough(element){
+function isKvScrollThrough(element) {
   var bounding = element.getBoundingClientRect();
-  if(
+  if (
     bounding.top >= 0 &&
     bounding.left >= 0
-    && ((bounding.top + bounding.bottom)/2) <= (window.innerHeight / 6 || document.documentElement.clientHeight / 6)
-  ){
+    && ((bounding.top + bounding.bottom) / 2) <=
+    (window.innerHeight / 6 || document.documentElement.clientHeight / 6)
+  ) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
 
 export default function About() {
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo({
-    top: 0, 
-    behavior: 'smooth'
+      top: 0,
+      behavior: 'smooth'
     });
   }, []);
 
   const [loading, setLoading] = useState(true);
-      
+
   useEffect(() => {
     // Loading function to load data or 
     // fake it using setTimeout;
@@ -112,12 +113,10 @@ export default function About() {
       // Toggle loading state
       setLoading((loading) => !loading);
     };
-      
+
     loadData();
   }, [])
 
-
-  
   const kv_ref = useRef(null);
   const kv_ref_1 = useRef(null);
   const kv_ref_2 = useRef(null);
@@ -154,22 +153,22 @@ export default function About() {
   const [kvParallax, setKvParallax] = useState([0, 0]);
   const [footerParallax, setFooterParallax] = useState([0, 0]);
 
-
   function handleWindowSizeChange() {
-      setWidth(window.innerWidth);
+    setWidth(window.innerWidth);
   }
+
   useEffect(() => {
-      window.addEventListener('resize', handleWindowSizeChange);
-      return () => {
-          window.removeEventListener('resize', handleWindowSizeChange);
-      }
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    }
   }, []);
   const isMobile = width <= 768;
   const isPad = (width > 768) && (width <= 992);
 
   const TopParagraph = () => {
-    if(isMobile){
-      return(
+    if (isMobile) {
+      return (
         <div className={aboutCss.about_paragragh_contents_sec_container}>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
             <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
@@ -186,8 +185,8 @@ export default function About() {
           </div>
         </div>
       )
-    }else{
-      return(
+    } else {
+      return (
         <div className={aboutCss.about_paragragh_contents_sec_container}>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_1}>
             <span ref={paragraph_anchor_ref}>もう見慣れていたあのポスターも、</span>
@@ -213,20 +212,20 @@ export default function About() {
       )
     }
   }
-  
-  useEffect(()=>{
-    if(isMobile){
+
+  useEffect(() => {
+    if (isMobile) {
       console.log('mobile');
       setKvParallax([0, 0]);
-    }else{
+    } else {
       console.log('PC');
       setKvParallax([0, -500]);
     }
   }, [])
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo({
-      top: 0, 
+      top: 0,
       behavior: 'smooth'
     });
   }, []);
@@ -235,10 +234,11 @@ export default function About() {
   useEffect(() => {
     console.log(isFirstScrollDown);
     const kv = kv_ref.current;
-    const kv_list = [ kv_ref_1.current, kv_ref_2.current ];
+    const kv_list = [kv_ref_1.current, kv_ref_2.current];
     const paragraph_anchor = paragraph_ref_1.current.getBoundingClientRect().top + window.scrollY
     const paragraph = paragraph_ref.current
-    const paragraph_list = [ paragraph_ref_1.current, paragraph_ref_2.current, paragraph_ref_3.current, paragraph_ref_4.current ]
+    const paragraph_list = [paragraph_ref_1.current, paragraph_ref_2.current, paragraph_ref_3.current,
+                            paragraph_ref_4.current]
     const self_intro_img_anchor = self_intro_img_ref.current
     const circle_1 = circle_1_ref.current
     const circle_2 = circle_2_ref.current
@@ -260,89 +260,90 @@ export default function About() {
     const learn_me_by_hashtag = learn_me_by_hashtag_ref.current
 
     // ========== view my works button animation =========
-    document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseover', ()=>{
-      view_works_button_bg.style.width = '12rem';
-      view_works_button_bg.style.height = '12rem';
-      view_works_button_text_1.style.color = 'white';
-      view_works_button_text_2.style.color = 'white';
-      view_works_button_bg.style.transition = 'all .4s ease-in-out'
-    })
-    document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener('mouseleave', ()=>{
-      view_works_button_bg.style.width = '0rem';
-      view_works_button_bg.style.height = '0rem';
-      view_works_button_text_1.style.color = '#282D2F';
-      view_works_button_text_2.style.color = '#282D2F';
-      view_works_button_bg.style.transition = 'all .4s ease-in-out'
-    })
+    document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener(
+      'mouseover', () => {
+        view_works_button_bg.style.width = '12rem';
+        view_works_button_bg.style.height = '12rem';
+        view_works_button_text_1.style.color = 'white';
+        view_works_button_text_2.style.color = 'white';
+        view_works_button_bg.style.transition = 'all .4s ease-in-out'
+      })
+    document.getElementsByClassName(`${aboutCss.about_view_my_works_button_link}`)[0].addEventListener(
+      'mouseleave', () => {
+        view_works_button_bg.style.width = '0rem';
+        view_works_button_bg.style.height = '0rem';
+        view_works_button_text_1.style.color = '#282D2F';
+        view_works_button_text_2.style.color = '#282D2F';
+        view_works_button_bg.style.transition = 'all .4s ease-in-out'
+      })
 
     // ========== learn me by hashtags =========
-    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener('mouseover', ()=>{
-      learn_me_by_hashtag_button_bg.style.width = '12.3rem';
-      learn_me_by_hashtag_button_bg.style.height = '2.3rem';
-      learn_me_by_hashtag_text.style.color = 'white';
-      learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
-    })
-    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener('mouseleave', ()=>{
-      learn_me_by_hashtag_button_bg.style.width = '0rem';
-      learn_me_by_hashtag_button_bg.style.height = '0rem';
-      learn_me_by_hashtag_text.style.color = '#282D2F';
-      learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
-    })
+    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener(
+      'mouseover', () => {
+        learn_me_by_hashtag_button_bg.style.width = '12.3rem';
+        learn_me_by_hashtag_button_bg.style.height = '2.3rem';
+        learn_me_by_hashtag_text.style.color = 'white';
+        learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
+      })
+    document.getElementsByClassName(`${aboutCss.about_learn_me_by_hashtags_button_link}`)[0].addEventListener(
+      'mouseleave', () => {
+        learn_me_by_hashtag_button_bg.style.width = '0rem';
+        learn_me_by_hashtag_button_bg.style.height = '0rem';
+        learn_me_by_hashtag_text.style.color = '#282D2F';
+        learn_me_by_hashtag_button_bg.style.transition = 'all .4s ease-in-out'
+      })
 
     // ========== paragraph scroll to animation ==========
-    const paragraph_offsetTop = document.getElementsByClassName(`${aboutCss.about_paragragh_contents_sec}`)[0].offsetTop;
+    const paragraph_offsetTop = document.getElementsByClassName(
+      `${aboutCss.about_paragragh_contents_sec}`)[0].offsetTop;
     console.log(paragraph_offsetTop);
 
-
     window.onscroll = function (e) {
-      /* if first scroll down, then direactly scroll to paragraph */ 
-      if(isFirstScrollDown){
+      /* if first scroll down, then direactly scroll to paragraph */
+      if (isFirstScrollDown) {
         console.log('first scroll');
         scrollToParagraph(300, () => {
           isFirstScrollDown = false;
         });
       }
       /* kv animation */
-      if(isKvScrollThrough(kv_list[0])){ 
+      if (isKvScrollThrough(kv_list[0])) {
         console.log('down & kv through');
 
-        [].forEach.call(kv_list, function(el){
+        [].forEach.call(kv_list, function (el) {
           el.style.opacity = '0';
           el.style.transition = 'all 1s ease-in-out';
         });
-      }
-      else if(this.oldScroll > this.scrollY){
+      } else if (this.oldScroll > this.scrollY) {
         console.log('up');
-        
-        [].forEach.call(kv_list, function(el){
+
+        [].forEach.call(kv_list, function (el) {
           el.style.opacity = '1';
           el.style.transition = 'all .3s ease-in-out';
         });
-      }
-      else{
+      } else {
         console.log('not moving');
       }
       this.oldScroll = this.scrollY;
-      
+
       /* circle animation */
-      if(isInViewPort(self_intro_img_anchor, 2.8)){
+      if (isInViewPort(self_intro_img_anchor, 2.8)) {
         circle_1.style.transform = 'rotate(0deg)';
         circle_1.style.marginLeft = '0';
         circle_1.style.opacity = '1';
         circle_1.style.transition = 'all 1s ease-in-out'
-        setTimeout(()=>{
+        setTimeout(() => {
           circle_2.style.transform = 'rotate(0deg)';
           circle_2.style.marginLeft = '-6rem';
           circle_2.style.opacity = '1';
-          circle_2.style.transition = 'all 1s ease-in-out' 
+          circle_2.style.transition = 'all 1s ease-in-out'
         }, 200)
-      }
-      else{
+      } else {
         circle_1.style.transform = 'rotate(-45deg)';
         circle_1.style.marginLeft = '-5rem';
         circle_1.style.opacity = '0';
         circle_1.style.transition = 'all .3s ease-in-out'
-        setTimeout(()=>{
+        setTimeout(() => {
           circle_2.style.transform = 'rotate(-45deg)';
           circle_2.style.marginLeft = '-8rem';
           circle_2.style.opacity = '0';
@@ -351,54 +352,53 @@ export default function About() {
       }
 
       /* self intro name */
-      const description_list = [ name_anchor, description_1, description_2, description_3, description_4 ]
-      if(!isMobile){
-        if(isInViewPort(self_intro_img_anchor, 1.5)){
-          [].forEach.call(description_list, function(des){
+      const description_list = [name_anchor, description_1, description_2, description_3, description_4]
+      if (!isMobile) {
+        if (isInViewPort(self_intro_img_anchor, 1.5)) {
+          [].forEach.call(description_list, function (des) {
             des.style.opacity = '1';
             des.style.transition = 'all .7s ease-in-out';
           })
-        } else{
-          [].forEach.call(description_list, function(des){
+        } else {
+          [].forEach.call(description_list, function (des) {
             des.style.opacity = '0';
             des.style.transition = 'all .7s ease-in-out';
           })
         }
-      }else{
+      } else {
 
       }
 
       /* exp animation */
-      if(isInViewPort(exp_anchor, 7)){
+      if (isInViewPort(exp_anchor, 7)) {
         exp_anchor.style.opacity = '1';
         exp_anchor.style.transition = 'all .7s ease-in-out';
-      }else{
+      } else {
         exp_anchor.style.opacity = '0';
         exp_anchor.style.transition = 'all .7s ease-in-out';
       }
     }
-    
+
   }, [])
-  
+
   const loading_anchor = loading_ref.current;
 
-  function handleImageLoaded(){
+  function handleImageLoaded() {
     console.log('Finished loading');
   }
 
   const navigate = useNavigate();
   onAuthStateChanged(auth, (user) => {
-    if(user){
+    if (user) {
       console.log("user log in: " + user.uid);
-    }
-    else{
+    } else {
       navigate("/login");
     }
   })
-  return(
+  return (
     <>
       <Cursor cursorTypes='👀' />
-      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='1000' ref={loading_ref}/>
+      <Loading bg_style={loadingCss.loader_about} loadingTimeControl='1000' ref={loading_ref} />
       <PageLayout>
         <section id={aboutCss.about}>
           <Navbar />
@@ -407,12 +407,14 @@ export default function About() {
             <div className={aboutCss.about_kv_contents} ref={kv_ref}>
               <div className={aboutCss.about_kv_contents_prop_container}>
                 <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_1}>All in design</span>
-                <span className={aboutCss.about_kv_contents_prop} ref={kv_ref_2}>All for our beautiful days</span>
+                <span className={aboutCss.about_kv_contents_prop}
+                      ref={kv_ref_2}>All for our beautiful days</span>
               </div>
             </div>
           </div>
 
-          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀" emoji_2_text="View" colorEmoji="#945D00" />
+          <Sidebar sidebarTitle="Explore this page" emoji_1="⬇️" emoji_1_text="Scroll" emoji_2="👀"
+                   emoji_2_text="View" colorEmoji="#945D00" />
 
           <div className={aboutCss.about_paragragh_container} ref={paragraph_ref}>
             <Parallax className={aboutCss.about_paragraph_contents} translateY={kvParallax} speed={-10}>
@@ -422,7 +424,8 @@ export default function About() {
           <div className={aboutCss.about_self_intro_container} ref={self_intro_ref}>
             <Parallax className={aboutCss.about_self_intro_contents}>
               <div className={aboutCss.about_self_intro_contents_container}>
-                <img src={avatarImg} alt="tai_avatar" className={aboutCss.about_self_intro_img} ref={self_intro_img_ref} onLoad = {handleImageLoaded()}></img>
+                <img src={avatarImg} alt="tai_avatar" className={aboutCss.about_self_intro_img}
+                     ref={self_intro_img_ref} onLoad={handleImageLoaded()}></img>
                 <div className={aboutCss.about_self_intro_right_section_container}>
                   <div className={aboutCss.about_self_intro_circle_container}>
                     <div className={aboutCss.about_self_intro_circle_contents_container}>
@@ -433,32 +436,38 @@ export default function About() {
                   <div className={aboutCss.about_self_intro_paragraph_container}>
                     <div className={aboutCss.about_self_intro_paragraph_name} ref={name_ref}>Tai, Tung-En</div>
                     <div className={aboutCss.about_self_intro_paragraph_description_container}>
-                      <span ref={description_1_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
-                      <span ref={description_2_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる仕事をしたいと思い、Webデザイナーとして制作会社へ入社。</span>
-                      <span ref={description_3_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるクリエティブ制作に励んでおります。</span>
-                      <span ref={description_4_ref} className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も手掛けております。</span>
+                      <span ref={description_1_ref}
+                            className={aboutCss.about_self_intro_paragraph_description_prop}>1997年台湾生まれ。日本語への熱意で来日。</span>
+                      <span ref={description_2_ref}
+                            className={aboutCss.about_self_intro_paragraph_description_prop}>留学を経て、語学力を活かせながら、大好きなものづくりに携わる仕事をしたいと思い、Webデザイナーとして制作会社へ入社。</span>
+                      <span ref={description_3_ref}
+                            className={aboutCss.about_self_intro_paragraph_description_prop}>全てのデザインに理由があることを信じ、見た目もロジックも納得してもらえるクリエティブ制作に励んでおります。</span>
+                      <span ref={description_4_ref}
+                            className={aboutCss.about_self_intro_paragraph_description_prop}>今までは飲食・工務店・クリニック・スポーツジムから化学材料・金属めっきメーカーまで、幅広い分野でWebデザインをしております。デザイン以外、ディレクションとマーケティング、写真撮影も手掛けております。</span>
                     </div>
                   </div>
                   <div className={aboutCss.about_underline_div}></div>
                   <div className={aboutCss.about_experience_container} ref={exp_ref}>
-                    <Exp year="2021年" exp_contents={["ウィルスタイル株式会社","Webデザイナー新卒入社"]}/>
-                    <Exp year="2020年" exp_contents={["台湾国立政治大学卒業","広告学科､デジタルコンテンツ学位取得"]}/>
-                    <Exp year="2019年" exp_contents={["京都同志社大学留学"]}/>
-                    <Exp year="2018年" exp_contents={["出版社 ハースト・コーポレーション", "コスモポリタン編集部インターンシップ", <br></br>, "メディア代理店 dentsu X","企画部インターンシップ"]}/>
-                    <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]}/>
+                    <Exp year="2021年" exp_contents={["ウィルスタイル株式会社", "Webデザイナー新卒入社"]} />
+                    <Exp year="2020年" exp_contents={["台湾国立政治大学卒業", "広告学科､デジタルコンテンツ学位取得"]} />
+                    <Exp year="2019年" exp_contents={["京都同志社大学留学"]} />
+                    <Exp year="2018年"
+                         exp_contents={["出版社 ハースト・コーポレーション", "コスモポリタン編集部インターンシップ", <br></br>,
+                                        "メディア代理店 dentsu X", "企画部インターンシップ"]} />
+                    <Exp year="2015年" exp_contents={["台湾国立政治大学入学"]} />
                   </div>
                 </div>
               </div>
             </Parallax>
           </div>
-          
+
           <div className={aboutCss.design_principle_container}
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="100"
-            data-aos-offset="0"
-            data-aos-duration="300"
-            data-aos-once="false">
+               data-aos="fade-zoom-in"
+               data-aos-easing="ease-in-back"
+               data-aos-delay="100"
+               data-aos-offset="0"
+               data-aos-duration="300"
+               data-aos-once="false">
             <div className={aboutCss.design_principle_contents_container}>
               <div className={aboutCss.design_principle_contents_shell}>
                 <div className={aboutCss.design_principle_title_container}>
@@ -484,12 +493,12 @@ export default function About() {
           </div>
 
           <div className={aboutCss.design_approach_container}
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="100"
-            data-aos-offset="0"
-            data-aos-duration="300"
-            data-aos-once="false">
+               data-aos="fade-zoom-in"
+               data-aos-easing="ease-in-back"
+               data-aos-delay="100"
+               data-aos-offset="0"
+               data-aos-duration="300"
+               data-aos-once="false">
             <div className={aboutCss.design_approach_contents_container}>
               <div className={aboutCss.design_approach_contents_shell}>
                 <div className={aboutCss.design_approach_title_container}>
@@ -502,50 +511,49 @@ export default function About() {
                   </div>
                 </div>
                 <div className={aboutCss.design_approach_img_container}>
-                  <img src={ wireframe } className={aboutCss.design_approach_img_prop}></img>
+                  <img src={wireframe} className={aboutCss.design_approach_img_prop}></img>
                 </div>
               </div>
             </div>
           </div>
 
-          
 
           <div className={aboutCss.about_special_contents_container} ref={special_contents_ref}>
             <div className={aboutCss.about_special_contents_prop_container}>
               <div className={aboutCss.about_special_contents_title}>Special content</div>
               <div className={aboutCss.about_special_contents_img_container}>
                 <div className={aboutCss.about_special_contents_img_middle_container}
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-out"
-                  data-aos-delay="0"
-                  data-aos-offset="10"
-                  data-aos-duration="1000"
-                  data-aos-once="false"
-                  data-aos-anchor-placement="top-bottom">
-                  <img src={ hashImg_6 } className={aboutCss.about_special_contents_img_prop}></img>
+                     data-aos="fade-up"
+                     data-aos-easing="ease-in-out"
+                     data-aos-delay="0"
+                     data-aos-offset="10"
+                     data-aos-duration="1000"
+                     data-aos-once="false"
+                     data-aos-anchor-placement="top-bottom">
+                  <img src={hashImg_6} className={aboutCss.about_special_contents_img_prop}></img>
                   <div className={aboutCss.special_contents_bottom_words_prop}>#カメラ女子</div>
                 </div>
                 <div className={aboutCss.about_special_contents_img_upper_container}>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}
-                    data-aos="fade-up-left"
-                    data-aos-easing="ease-in-out"
-                    data-aos-delay="1200"
-                    data-aos-offset="10"
-                    data-aos-duration="1000"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-bottom">
-                    <img src={ hashImg_9 } className={aboutCss.about_special_contents_upper_img_prop}></img>
-                    <div className={aboutCss.special_contents_bottom_words_prop} >#ヨーグルト妖怪</div>
+                       data-aos="fade-up-left"
+                       data-aos-easing="ease-in-out"
+                       data-aos-delay="1200"
+                       data-aos-offset="10"
+                       data-aos-duration="1000"
+                       data-aos-once="false"
+                       data-aos-anchor-placement="top-bottom">
+                    <img src={hashImg_9} className={aboutCss.about_special_contents_upper_img_prop}></img>
+                    <div className={aboutCss.special_contents_bottom_words_prop}>#ヨーグルト妖怪</div>
                   </div>
                   <div className={aboutCss.about_special_contents_upper_img_contents_container_prop}
-                    data-aos="fade-up-right"
-                    data-aos-easing="ease-in-out"
-                    data-aos-delay="600"
-                    data-aos-offset="10"
-                    data-aos-duration="1000"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-bottom">
-                    <img src={ hashImg_13 } className={aboutCss.about_special_contents_upper_img_prop}></img>
+                       data-aos="fade-up-right"
+                       data-aos-easing="ease-in-out"
+                       data-aos-delay="600"
+                       data-aos-offset="10"
+                       data-aos-duration="1000"
+                       data-aos-once="false"
+                       data-aos-anchor-placement="top-bottom">
+                    <img src={hashImg_13} className={aboutCss.about_special_contents_upper_img_prop}></img>
                     <div className={aboutCss.special_contents_bottom_words_prop}>#コピー本が好き</div>
                   </div>
                 </div>
@@ -556,28 +564,32 @@ export default function About() {
           <div className={aboutCss.about_learn_me_by_hashtags_button_container} ref={learn_me_by_hashtag_ref}>
             <div className={aboutCss.about_learn_me_by_hashtags_button_prop_container}>
               <Link to="/hashtags" className={aboutCss.about_learn_me_by_hashtags_button_link}
-                data-aos="fade-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="1100"
-                data-aos-offset="10"
-                data-aos-duration="500"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-bottom">
+                    data-aos="fade-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="1100"
+                    data-aos-offset="10"
+                    data-aos-duration="500"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-bottom">
                 <div className={aboutCss.about_learn_me_by_hashtags_contents}>
                   Learn me by #️⃣hashtags
                 </div>
               </Link>
             </div>
           </div>
-          
+
           <div className={aboutCss.about_view_my_works_button_container} ref={view_works_ref}>
             <div className={aboutCss.about_view_my_works_button_prop_container}>
               <Link to="/works" className={aboutCss.about_view_my_works_button_link}>
                 <div className={aboutCss.about_view_my_works_contents}>
-                  <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_1_ref}>Hover to</div>
-                  <div className={aboutCss.about_view_my_works_contents_prop} ref={view_works_button_text_2_ref}>View my Works</div>
+                  <div className={aboutCss.about_view_my_works_contents_prop}
+                       ref={view_works_button_text_1_ref}>Hover to
+                  </div>
+                  <div className={aboutCss.about_view_my_works_contents_prop}
+                       ref={view_works_button_text_2_ref}>View my Works
+                  </div>
                 </div>
-                <div className={aboutCss.about_view_my_works_button_hover_bg} ref={view_works_button_ref}> </div>
+                <div className={aboutCss.about_view_my_works_button_hover_bg} ref={view_works_button_ref}></div>
               </Link>
             </div>
           </div>
@@ -585,8 +597,7 @@ export default function About() {
         <Footer />
       </PageLayout>
     </>
-    
+
   )
 
-  
 }
