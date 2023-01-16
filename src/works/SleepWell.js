@@ -244,7 +244,7 @@ export default function SleepWell(){
                 data-aos-duration="300"
                 data-aos-once="false">
                 <div className={sleepCss.prototype_title_prop}>Prototype</div>
-                <iframe className={sleepCss.prototype_prop} src="https://xd.adobe.com/embed/c82ed3f5-d277-4d05-8ee5-67f4a493fe9e-9d7d/" frameborder="0" allowfullscreen></iframe>
+                <iframe className={sleepCss.prototype_prop} src="https://xd.adobe.com/embed/f19f85da-a465-45f3-888d-9b6de362fce5-a4cc/" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
 
