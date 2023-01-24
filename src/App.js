@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import AOS from 'aos';
-import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 
 import About from './About'
 import Works from './Works'
