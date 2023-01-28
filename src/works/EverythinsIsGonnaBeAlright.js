@@ -18,7 +18,7 @@ import banner from '../static/img/works/covers/everything.png'
 import everything_1_anim from '../static/img/works/everything_1_anim.png'
 import everythingCss from '../css/works_everything.module.scss'
 import loadingCss from '../css/loading.module.scss'
-import mv from '../static/img/videos/everything_igtv.mov'
+import mv from '../static/img/videos/everything_igtv_compressed.mp4'
 import { images } from '../images.ts'
 
 export default function EverythinsIsGonnaBeAlright(){
