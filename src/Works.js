@@ -98,7 +98,7 @@ const Projects = ({name, type, roles, img, imgWidth, imgHeight, descriptionConta
 export default function Works(){
   useEffect(()=>{
     window.scrollTo({
-      top: 0, 
+      top: 0,
       behavior: 'smooth'
     });
   }, []);

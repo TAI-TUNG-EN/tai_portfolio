@@ -284,6 +284,7 @@ export default function JobHomes() {
                   <div className={jobHomesCss.shared_gallery_title_prop}>Thanks for sharing</div>
                   <div className={jobHomesCss.website_details_container}>
                     <a className={jobHomesCss.website_details_description_prop} href="https://responsive-jp.com/12271.html" target="_blank">RESPONSIVE WEB DESIGN JP</a>
+                    <a className={jobHomesCss.website_details_description_prop} href="https://cmsdesign.jp/cms/wordpress/job-homes/" target="_blank">cmsdesign</a>
                   </div>
                 </div>
               </div>

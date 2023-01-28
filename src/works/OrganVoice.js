@@ -224,6 +224,8 @@ export default function OrganVoice(){
                     <div className={organCss.especially_thanks_title_prop}>Especially thanks</div>
                     <div className={organCss.especially_thanks_description_prop}>Illustration</div>
                     <div className={organCss.especially_thanks_description_prop}>Willi</div>
+                    <div className={organCss.especially_thanks_description_prop}>Poem</div>
+                    <div className={organCss.especially_thanks_description_prop}>李靖雅</div>
                   </div>
                 </div>
               </div>
