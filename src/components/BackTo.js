@@ -37,6 +37,7 @@ export default function BackTo({buttonName, url, buttonSize}){
     }
   }, []);
 
+  const location = useLocation();
 
   return(
     <div className={backCss.back_btn_container}
@@ -46,7 +47,11 @@ export default function BackTo({buttonName, url, buttonSize}){
       data-aos-offset="0"
       data-aos-duration="500"
       data-aos-once="false">
-      <Link className={backCss.back_btn_contents_container} to={url}>
+      <Link className={backCss.back_btn_contents_container} to={url}
+        state={{
+          previousPage: location.pathname
+        }}
+      >
         {/* <img className={backCss.arrow_prop} src={arrow}></img> */}
         <div className={backCss.btn_prop} ref={button_name_ref}>
           <span className={backCss.btn_arrow_prop}><HiArrowLongLeft/></span>

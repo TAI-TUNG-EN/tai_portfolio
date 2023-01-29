@@ -59,8 +59,8 @@ function isInViewPort(element, inViewHeight) {
     (bounding.top < 0 && bounding.bottom > 0 &&
      (bounding.bottom) <= (window.innerHeight || document.documentElement.clientHeight))
   ) {
-    console.log(bounding.top, ', ', bounding.bottom)
-    console.log(window.innerHeight)
+    // console.log(bounding.top, ', ', bounding.bottom)
+    // console.log(window.innerHeight)
     return true;
   } else {
     console.log(`Not in the viewport. :(`);
@@ -308,7 +308,7 @@ export default function About() {
       }
       /* kv animation */
       if (isKvScrollThrough(kv_list[0])) {
-        console.log('down & kv through');
+        // console.log('down & kv through');
 
         [].forEach.call(kv_list, function (el) {
           el.style.opacity = '0';
