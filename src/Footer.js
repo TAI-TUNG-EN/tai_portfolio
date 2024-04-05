@@ -87,7 +87,7 @@ export default function Footer(){
       <div className={footerCss.underline_prop}></div>
       
       <div className={footerCss.bottom_section_container}>
-        <div className={footerCss.copyright_prop}>©2022~2023Tai, Tung-En</div>
+        <div className={footerCss.copyright_prop}>©2022~2024Tai, Tung-En</div>
         <div className={footerCss.bottom_right_container}>
           <div className={footerCss.author_container}>
             <div className={footerCss.responsibility_prop}>Presented by</div>
