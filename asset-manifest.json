@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tai_portfolio/static/css/main.774c359d.css",
-    "main.js": "/tai_portfolio/static/js/main.f348b058.js",
+    "main.js": "/tai_portfolio/static/js/main.1dd607ef.js",
     "static/js/787.e80ad7ad.chunk.js": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js",
     "static/media/nishikage_03.png": "/tai_portfolio/static/media/nishikage_03.ccec6ee0bc2800c0706b.png",
     "static/media/motena_sea.png": "/tai_portfolio/static/media/motena_sea.3e10b6a5249b7078019e.png",
@@ -106,11 +106,11 @@
     "static/media/arrow_right.svg": "/tai_portfolio/static/media/arrow_right.3687a61f714499d60826e72733e92fc9.svg",
     "static/media/arrow_left.svg": "/tai_portfolio/static/media/arrow_left.12bf2802f98fadfab22970c4bc56f7e0.svg",
     "main.774c359d.css.map": "/tai_portfolio/static/css/main.774c359d.css.map",
-    "main.f348b058.js.map": "/tai_portfolio/static/js/main.f348b058.js.map",
+    "main.1dd607ef.js.map": "/tai_portfolio/static/js/main.1dd607ef.js.map",
     "787.e80ad7ad.chunk.js.map": "/tai_portfolio/static/js/787.e80ad7ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.774c359d.css",
-    "static/js/main.f348b058.js"
+    "static/js/main.1dd607ef.js"
   ]
 }
