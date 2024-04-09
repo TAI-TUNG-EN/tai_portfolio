@@ -33,7 +33,7 @@ export default function Hashtag1() {
     <>
       <HashtagTemplate 
         title="カメラ女子"
-        description={["一眼カメラ歴は7年目､フィルムカメラ歴は5年目に突入。", "記憶が薄れていくもので､この日のこと､この瞬間のことを形に残さなきゃと思いながらシャッターを切っています。"]}
+        description={["一眼カメラ歴は9年目､フィルムカメラ歴は7年目に突入。", "記憶が薄れていくもので､この日のこと､この瞬間のことを形に残さなきゃと思いながらシャッターを切っています。"]}
         mainImg={ mainImg }
         prevImg={ prevImg }
         prevImgPosition="center"

@@ -1,13 +1,10 @@
-import { useState, useRef, useEffect } from "react"
-import { Link } from 'react-router-dom'
-import { Parallax, useParallax, ParallaxProvider } from 'react-scroll-parallax';
-
-import { images } from './images.ts'
-import Cursor from './Cursor'
+import {useEffect, useState} from "react"
+import {Link} from 'react-router-dom'
+import {Parallax} from 'react-scroll-parallax';
 import footerCss from './css/footer.module.scss'
-import mailIcon from './static/icons/envelope.svg'
 import mediumIcon from './static/icons/medium.svg'
 import githubIcon from './static/icons/github.svg'
+import twitterIcon from './static/icons/twitter.svg'
 
 export default function Footer(){
   const [width, setWidth] = useState(window.innerWidth);
@@ -94,7 +91,7 @@ export default function Footer(){
             <div className={footerCss.author_contents}>
               <span className={footerCss.author_emoji}>☺️</span>
               <span className={footerCss.author_name}>Tai, Tung-En (Direction/Design)</span>
-              <Mailto email="chloe981219@gmail.com" subject="Greetings from {Please Enter Your Name Here}" body=""><img src={mailIcon} alt="" className={footerCss.author_img}></img></Mailto>
+              <OpenExternalLink url="https://twitter.com/tai_t_"><img src={twitterIcon} alt="" className={footerCss.author_img}></img></OpenExternalLink>
               <OpenExternalLink url="https://chloe981219.medium.com/"><img src={mediumIcon} alt="" className={footerCss.author_img}></img></OpenExternalLink>
             </div>
           </div>

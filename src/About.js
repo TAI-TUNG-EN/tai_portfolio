@@ -177,7 +177,7 @@ export default function About() {
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
             <span>だから私は信じている。</span>
-            <span>物事をデザインするのによって私たちの生活をよくすること。</span>
+            <span>物事をデザインすることによって私たちの生活がよくなれる。</span>
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
             <span>だから私は考えている。</span>
@@ -197,7 +197,7 @@ export default function About() {
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_2}>
             <span>だから私は信じている。</span>
-            <span>物事をデザインするのによって私たちの生活をよくすること。</span>
+            <span>物事をデザインすることによって私たちの生活がよくなれる。</span>
           </div>
           <div className={aboutCss.about_paragragh_contents_sec} ref={paragraph_ref_3}>
             <span>だから私は考えている。</span>
@@ -448,6 +448,7 @@ export default function About() {
                   </div>
                   <div className={aboutCss.about_underline_div}></div>
                   <div className={aboutCss.about_experience_container} ref={exp_ref}>
+                    <Exp year="2023年" exp_contents={["株式会社マウント", "Webデザイナー中途入社"]} />
                     <Exp year="2021年" exp_contents={["ウィルスタイル株式会社", "Webデザイナー新卒入社"]} />
                     <Exp year="2020年" exp_contents={["台湾国立政治大学卒業", "広告学科､デジタルコンテンツ学位取得"]} />
                     <Exp year="2019年" exp_contents={["京都同志社大学留学"]} />
